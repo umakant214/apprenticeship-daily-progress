@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 900px;
+        height: 600px;
+        background-color: aqua;
+        margin: auto;
+        padding: 50px 100px;
+        box-sizing: border-box;
+      }
+      #main {
+        width: 700px;
+        height: 500px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .left {
+        width: 350px;
+        height: 500px;
+        background-color: #3986be;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+      .right {
+        width: 350px;
+        height: 500px;
+        background-color: white;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        position: relative;
+      }
+      h2 {
+        text-transform: uppercase;
+        color: white;
+        font-size: 27px;
+      }
+      p {
+        color: white;
+      }
+      .btn1 {
+        width: 200px;
+        height: 40px;
+        background-color: white;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+      .fname {
+        font-size: 20px;
+      }
+      .txt {
+        width: 40.7%;
+        height: 35px;
+        margin-top: 10px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        padding-left: 10px;
+        box-sizing: border-box;
+      }
+      .lname {
+        font-size: 20px;
+        position: absolute;
+        bottom: 79%;
+      }
+      .etxt {
+        width: 92%;
+        height: 35px;
+        margin-top: 10px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: 18px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      .pass {
+        font-size: 20px;
+        position: absolute;
+        bottom: 46%;
+      }
+      #check {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="main">
+        <div class="left">
+          <h2>Information</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            distinctio recusandae a modi voluptate nam iste quae! Repellat
+            temporibus dolorum recusandae qui maxime explicabo, necessitatibus
+            sapiente aliquid maiores, nostrum sed!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum
+            ullam veniam facere aut quam facilis laudantium odio unde officia?
+          </p>
+          <button class="btn1">Have An Account</button>
+        </div>
+        <div class="right">
+          <h3>Register Form</h3>
+          <label class="fname" for="fname">First Name</label> <br />
+          <input
+            class="txt"
+            type="text"
+            name=""
+            id="fname"
+            placeholder="name"
+          />
+          <label class="lname" for="fname">Last Name</label>
+          <input
+            placeholder="lname"
+            class="txt"
+            type="text"
+            name=""
+            id="fname"
+          />
+          <br />
+          <label class="ename" for="fname">Your Email</label> <br />
+          <input
+            class="etxt"
+            placeholder="email"
+            type="email"
+            name=""
+            id="fname"
+          />
+          <br />
+          <label class="fname" for="fname"> Password</label> <br />
+          <input
+            class="txt"
+            type="password"
+            name=""
+            id="fname"
+            placeholder="password"
+          />
+          <label class="pass" for="fname">Confirm Password</label>
+          <input
+            placeholder="password"
+            class="txt"
+            type="password"
+            name=""
+            id="fname"
+          />
+          <br />
+          <input type="checkbox" name="" /><span id="check"
+            >I agree to the <a href="#">Term and Condition</a></span
+          >
+          <br />
+          <button style="background-color: #3986be; color: white" class="btn1">
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,345 @@
+<font></font>
+color 
+size
+face :style change
+----------------------
+<img/>
+src
+height
+width
+title
+alt
+------------------
+Marquee Tag
+================
+height
+direction : left(default),right,up,down
+onmouseover:stop()
+onmouseleave:start()
+scrollamount:number |speed manageement
+bgcolor: for background color
+behavior:scroll(default)(one side start and one side end) |alternate(both side move) |slide (one side start and stop)
+loop: number | infinite(default)
+vspace: it is used to define space over html element on top and bottom
+hspace: left and right outer space
+-----------------------------
+
+list in html:
+------------------------
+1. ordered : type => 1(default),a,A,i,I
+reversed
+start: number
+2. Unordered:type => disc(default) |circle |aquare
+3. definition |description list : 
+<dl></dl> :=> definition list
+<dt></dt> :=> definition term
+<dd></dd> :=> definition data
+
+=========================================
+video
+--------
+src 
+controls(play|pause|muted|unmuted)
+poster > thumbnail
+autoplay
+muted
+=================
+audio
+src 
+controls(play|pause|muted|unmuted)
+autoplay
+muted
+
+=================
+anchor tag (a tag)
+----
+href
+target : > _self(default),_blank(for open url in new tab )
+href=" tel :+918081727385" => for mobile
+href="mailto:umakantweb80@gmail.com" => for email
+
+
+===============
+Web Form |Form Controls =>
+Tags of form controls ->
+<input/>
+Textarea => rows ,col
+Select</select> => multiple
+<option></option>
+Optgroup
+Datalist
+Legend
+Fieldset
+Form
+Button
+label
+
+========
+Attributes of form controls
+type
+value
+name
+placeholder
+required
+disable
+readonly
+selected
+multiple
+min 
+max
+tabindex =>number 
+autofocus
+autocomplete
+accept => file extention (.png,.jpg , .pdf, .gif) |
+all file allow imgage/* , video/* ,audio/* 
+checked
+list
+enctype : text/plain(default value) | multipart/form-data(file upload)
+
+method =>
+get(default)
+1. less secure
+2. it is used for small forms
+3. url lenght limit availabe (2048 character)
+4. file upload is not possible
+
+
+post 
+1. more secure
+2. it is used for big forms3. no url lenght limit available
+3. no url lenght limit availabe
+4. file upload is possible here
+ case me : 
+enctype :  multipart/form-data(file upload) | method="post"
+---------------------
+
+=========================
+Tabel Tag 
+------------
+Tabel
+tr 
+td 
+th 
+thead
+tbody
+tfoot
+caption
+==========
+Attributes
+--------------------
+align : left |right| center
+bordercolor
+cellpadding => inner space of cell
+cellspacing => outer space of cell
+bgcolor
+colspan
+rowspan
+
+
+=================================
+CSS - > CSS stands for cascading stylesheet
+css was developed by Hakon wium lie and BERt boss in 1996.
+CSS Descibes how to HTML Elements are to be display on Web Browser.
+------------
+Types of CSS > there are three type of css
+1. Internal css
+2. Inline css
+3. External css
+
+==============
+1. Internal CSS>
+syntax : 
+<style>
+selector
+{
+    property:value;
+    property:value;
+    property:value;
+}
+</style>
+=============
+Selector : selector is used to select  HTML tags to appy CSS.
+
+Types of Selector
+----
+1. Tag / element selector
+2. class selector
+3. ID selector
+4. Group Selector
+5. Child selector
+6. Pseudo Selector
+7. Odd Selector
+8. Even Selector
+9. Direct Child Selector
+10. nth-child Selector
+11. Universal Selector
+etc
+.....
+border :
+border-width
+border-style : solid (default) | dotted | dashed | doubled | groove
+
+shorthand rule :
+border:with style color
+
+=============
+text-align : left ,right , center , justify
+----------------
+ write a vertical  text : 
+ writing-mode: Horizontal -tb (default) | vertical -rl | vertical-lr
+ text-transform : uppercase | lowercase | capitalize
+ line-height:
+ word-spacing:
+ letter-spacing:
+
+ ==================
+border-radius:
+==================
+
+priority of css
+First Priority => Inline CSS
+second Priority => Internal CSS
+Third Priority => External CSS
+
+=========================
+use !important to change css Priority
+
+
+==========================================
+
+block level element & Inline level element =>
+block level element -> line by line(div,h1,p)
+Inline level element -> side by side(img,video,audio,b,s,i)
+======================
+margin -outer space 
+padding- inner space
+box-sizing -> content-box(default) | border-box(padding|border)
+
+================================
+hover property :
+
+selector:hover{
+    property:value;
+    property:value;
+}
+h1:hover{
+    background:red;
+    color:black;
+}
+
+============
+transition:property time in second;
+transition:background 2s,border 1s;
+same time >
+transition:all 5s
+
+==================
+text-shadow : Horizontal vertical blur color
+box-shadow : Horizontal vertical blur spread color side
+==================================================================
+Gradient background =>
+------------------------------
+background:
+linear-Gradient:
+repeating-linear-Gradient:
+radial-Gradient:
+repeating-radial-Gradient:
+conic-Gradient:
+repeating-conic-Gradient:
+---------------------------
+rgba
+============
+Browser Support:
+------------------
+-o-linear-gradient:
+-moz-linear-gradient:
+-safari-linear-gradient:
+=============================
+
+position : static(default) | absolute | relative | fixed |sticky
+top | bottom
+left | right
+
+===============================
+z-index: show overlap div up 
+
+==========
+animation-name
+animation-duration:time in second |5s;
+animation-delay:time in second |5s;
+animation-direction:normal | reversed | alternate | alternate-reversed;
+animation-iteration-count: number | infinite;
+animation-play-state:running | paused;
+animation-file-mode:none | forwards | backwards| both
+animation-timing-function :
+linear => same speed from start to end
+ease => start slow then fast  and end slow
+ease-in  => start slow 
+ease-out => end slow
+ease-in-out => start and end slow
+steps   => steps complete (jumped)
+===============
+animation shorthand rule =>
+animation:animation-name animation-duration timing-function delay iteration-count direction fill-mode play-state
+------------------------
+syntax =>
+
+@keyframes animationname
+{
+    from{
+        property:value;
+        property:value;
+    }
+    to{
+        property:value;
+        property:value;
+    }
+
+}
+
+=================
+@keyframes animationname
+{
+    0%{
+        property:value;
+        property:value;
+    }
+    100%{
+        property:value;
+        property:value;
+    }
+
+}
+
+============
+0%{}
+50%
+==============
+scrollbar remove :=>
+overflow: hidden;
+=======================
+backdrop-filter:blur(5px);
+
+
+=======================
+
+------------
+overflow-x
+overflow-y
+overflow:visible | hidden| scroll| auto
+
+===================================
+
+<details>
+<summary>Heading</summary>
+<p>Details</p>
+</details>
+============
+background-clip: border-box(default) (border+padding+content) | padding-box(padding+content) | content-box(only content) | text
+-------------------------
+====================================
+Navbar =>
+<div></div>
+<nav></nav>   => SEO friendly
+==============
+  text-decoration: underline (default) | overline | line-through | none

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 600px;
+        height: 600px;
+        background-color: red;
+      }
+      #top {
+        width: 600px;
+        height: 100px;
+        background-color: aqua;
+      }
+      #bottom {
+        width: 600px;
+        height: 500px;
+        background-color: khaki;
+      }
+      #b1 {
+        width: 100px;
+        height: 500px;
+        background-color: magenta;
+        float: left;
+      }
+      #b2 {
+        width: 400px;
+        height: 500px;
+        background-color: mediumaquamarine;
+        float: left;
+      }
+      #b3 {
+        width: 100px;
+        height: 500px;
+        background-color: thistle;
+        float: left;
+      }
+      #m1 {
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+      }
+      #m2 {
+        width: 400px;
+        height: 100px;
+        background-color: cadetblue;
+      }
+      #u1 {
+        width: 400px;
+        height: 200px;
+        background-color: darkblue;
+      }
+      #u2 {
+        width: 400px;
+        height: 200px;
+        background-color: honeydew;
+      }
+      #c1,
+      #f1 {
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+        float: left;
+      }
+      #c2,
+      #f1 {
+        width: 200px;
+        height: 200px;
+        background-color: gold;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="top"></div>
+      <div id="bottom">
+        <div id="b1"></div>
+        <div id="b2">
+          <div id="m1">
+            <div id="u1">
+              <div id="c1"></div>
+              <div id="c2"></div>
+            </div>
+            <div id="u2">
+              <div id="f1"></div>
+              <div id="f2"></div>
+            </div>
+          </div>
+          <div id="m2"></div>
+        </div>
+        <div id="b3"></div>
+      </div>
+    </div>
+  </body>
+</html>

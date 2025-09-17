@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        height: 500px;
+        width: 1000px;
+        margin: 100px auto;
+        text-align: center;
+        line-height: 500px;
+        font-size: 100px;
+        color: white;
+        background: url("img.jpg");
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-size: 100% 100%;
+        transition: all 1s;
+      }
+      #outer:hover {
+        background: url("img2.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">Techpile</div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        height: 500px;
+        width: 700px;
+        background-color: aqua;
+      }
+      #a {
+        height: 500px;
+        width: 100px;
+        background-color: brown;
+        float: left;
+      }
+      #b {
+        height: 500px;
+        width: 600px;
+        background-color: blueviolet;
+        float: left;
+      }
+      #top {
+        height: 250px;
+        width: 600px;
+        background-color: burlywood;
+      }
+      #bottom {
+        height: 250px;
+        width: 600px;
+        background-color: cadetblue;
+      }
+      #left {
+        height: 250px;
+        width: 300px;
+        background-color: black;
+        float: left;
+      }
+      #right {
+        height: 250px;
+        width: 300px;
+        background-color: green;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="a"></div>
+      <div id="b">
+        <div id="top"></div>
+        <div id="bottom">
+          <div id="left"></div>
+          <div id="right"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

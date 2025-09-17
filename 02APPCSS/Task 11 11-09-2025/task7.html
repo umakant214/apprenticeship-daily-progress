@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 600px;
+        height: 500px;
+        margin: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        background: linear-gradient(to right, #ae80ed, #6f5cea);
+      }
+      .main {
+        width: 500px;
+        height: 400px;
+        background-color: red;
+      }
+      .m {
+        width: 250px;
+        height: 400px;
+        background-color: #02b4d2;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      h3 {
+        color: white;
+        text-align: center;
+        margin-top: 80px;
+        font-size: 20px;
+      }
+      p {
+        color: white;
+      }
+      h2 {
+        text-align: center;
+      }
+      #txt {
+        width: 100%;
+        height: 30px;
+        resize: none;
+        background-color: #eeeeee;
+        border: none;
+        padding-left: 10px;
+        box-sizing: border-box;
+        line-height: 25px;
+        font-size: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+      }
+      #textbox {
+        width: 100%;
+        height: 60px;
+        background-color: #eeeeee;
+        resize: none;
+        border: none;
+        margin-top: 10px;
+        padding-left: 10px;
+        line-height: 50px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main">
+        <div class="m">
+          <h3>Let's Chat</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur .</p>
+        </div>
+        <div style="background-color: white" class="m">
+          <h2>Contact</h2>
+          <label>Required</label>
+          <textarea name="" id="txt" placeholder="Name*"></textarea>
+          <textarea name="" id="txt" placeholder="Email*"></textarea>
+          <textarea name="" id="txt" placeholder="Company*"></textarea>
+          <textarea name="" id="txt" placeholder="Phone*"></textarea>
+          <textarea name="" id="textbox" placeholder="Message"></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

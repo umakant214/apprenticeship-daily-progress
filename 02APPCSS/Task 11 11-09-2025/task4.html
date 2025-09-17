@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin: 50px auto;
+        position: relative;
+      }
+      .main {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+      }
+      .main1 {
+        width: 50px;
+        height: 50px;
+        background-color: #0296ff;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+      }
+      .main2 {
+        width: 50px;
+        height: 50px;
+        background-color: #ff00cd;
+        position: absolute;
+        top: 88%;
+        left: 0%;
+      }
+      .main3 {
+        width: 50px;
+        height: 50px;
+        background-color: #000000;
+        position: absolute;
+        top: 88%;
+        right: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main"></div>
+      <div class="main1"></div>
+      <div class="main2"></div>
+      <div class="main3"></div>
+    </div>
+  </body>
+</html>

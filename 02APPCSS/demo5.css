@@ -1,0 +1,24 @@
+h1 {
+  color: white;
+  background-color: red;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+p {
+  color: red;
+  background-color: yellow;
+  font-size: 10px;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 30px;
+}
+h2 {
+  color: green;
+  background-color: gainsboro;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 30px;
+}

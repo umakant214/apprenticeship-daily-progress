@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #menu {
+        width: 1000px;
+        height: 50px;
+        border: 1px solid lightgray;
+        margin: 20px auto;
+        /* background: linear-gradient(to right, green 60%, blue); */
+        animation: abc 1s infinite normal;
+        border-radius: 5px;
+      }
+      #menu ul {
+        list-style: none;
+      }
+      #menu ul li {
+        width: 120px;
+        height: 40px;
+        margin-left: 10px;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+        transform: translatey(-11px);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+      }
+      #menu ul li:hover {
+        color: white;
+        animation: abc 1s infinite normal;
+      }
+      @keyframes abc {
+        from {
+          background: linear-gradient(to right, black, orange);
+          transition: all 1s;
+        }
+        to {
+          background: linear-gradient(to right, green, red);
+          transition: all 1s;
+        }
+      }
+      .btn {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        animation: abc 0.5s infinite normal;
+        transition: all 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <a href="#"> <li>Home</li> </a>
+        <a href="#"> <li>About Us</li> </a>
+        <a href="#"> <li>Contact Us</li> </a>
+        <a href="#"> <li>Services</li> </a>
+        <a href="#"> <li>Gallary</li> </a>
+        <a href="#"> <li>Register</li> </a>
+        <a href="#"> <li>Login</li> </a>
+      </ul>
+      <button class="btn">Login</button>
+    </div>
+  </body>
+</html>

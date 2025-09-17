@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 350px;
+        height: 450px;
+        border-radius: 20px;
+        background-color: pink;
+        padding-top: 30px;
+        box-sizing: border-box;
+      }
+      #inn {
+        width: 300px;
+        height: 400px;
+        background-color: white;
+        border-radius: 30px;
+        padding: 50px;
+        box-sizing: border-box;
+
+        margin-left: 25px;
+      }
+      #txt {
+        width: 200px;
+        height: 50px;
+        resize: none;
+        border: none;
+        border-radius: 10px;
+        padding: 0px 10px 0px 10px;
+        box-sizing: border-box;
+        font-size: 25px;
+        line-height: 50px;
+        text-align: right;
+        border: none;
+        resize: none;
+      }
+      #row {
+        width: 200px;
+        height: 50px;
+      }
+      .col {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        float: left;
+        background-color: white;
+        margin: 5px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+        float: left;
+      }
+      .a {
+        background-color: pink;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inn">
+        <textarea id="txt"></textarea>
+        <div id="row">
+          <div class="col a" style="font-size: 15px">AC</div>
+          <div class="col a" style="font-size: 15px">DEL</div>
+          <div class="col a">%</div>
+          <div class="col a">/</div>
+        </div>
+        <div id="row">
+          <div class="col a">7</div>
+          <div class="col a">8</div>
+          <div class="col a">9</div>
+          <div class="col a">+</div>
+        </div>
+        <div id="row">
+          <div class="col a">4</div>
+          <div class="col a">5</div>
+          <div class="col a">6</div>
+          <div class="col a">-</div>
+        </div>
+        <div id="row">
+          <div class="col a">1</div>
+          <div class="col a">2</div>
+          <div class="col a">3</div>
+          <div class="col a">x</div>
+        </div>
+        <div id="row">
+          <div class="col a">0</div>
+          <div class="col a">00</div>
+          <div class="col a">.</div>
+          <div class="col a">=</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

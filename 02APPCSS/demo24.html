@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 800px;
+        height: 500px;
+        border: 10px solid purple;
+        margin: 50px auto;
+        position: relative;
+      }
+      #inner {
+        height: 100px;
+        width: 100px;
+        background-color: plum;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+      }
+      #inner1 {
+        height: 100px;
+        width: 100px;
+        background-color: plum;
+        position: absolute;
+        left: -50px;
+        top: -50px;
+        transition: all 2s;
+      }
+      #inner3 {
+        height: 100px;
+        width: 100px;
+        background-color: plum;
+        position: absolute;
+        left: -50px;
+        bottom: -50px;
+        transition: all 2s;
+      }
+      #inner4 {
+        height: 100px;
+        width: 100px;
+        background-color: plum;
+        position: absolute;
+        right: -50px;
+        bottom: -50px;
+        transition: all 2s;
+      }
+      #inner1:hover {
+        left: 600px;
+        border-radius: 50%;
+        transition: all 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner"></div>
+      <div id="inner1"></div>
+      <div id="inner3"></div>
+      <div id="inner4"></div>
+    </div>
+  </body>
+</html>

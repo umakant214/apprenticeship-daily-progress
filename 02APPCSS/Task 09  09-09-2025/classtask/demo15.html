@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 300px;
+        min-height: 350px;
+        background-color: black;
+        border-radius: 30px;
+        padding: 50px;
+        box-sizing: border-box;
+        border: 2px solid black;
+      }
+      #txt {
+        width: 200px;
+        height: 50px;
+        resize: none;
+        border: none;
+        border-radius: 10px;
+        padding: 0px 10px 0px 10px;
+        box-sizing: border-box;
+        font-size: 25px;
+        line-height: 50px;
+        text-align: right;
+      }
+      #row {
+        width: 200px;
+        height: 50px;
+      }
+      .col {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        float: left;
+        background-color: white;
+        margin: 5px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+        float: left;
+      }
+      .a {
+        background-color: orange;
+        color: white;
+      }
+      .b {
+        background-color: green;
+        color: white;
+      }
+      .c {
+        background-color: red;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <textarea id="txt"> 375</textarea>
+      <div id="row">
+        <div class="col a">0</div>
+        <div class="col a">1</div>
+        <div class="col a">2</div>
+        <div class="col a">+</div>
+      </div>
+      <div id="row">
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">-</div>
+      </div>
+      <div id="row">
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">x</div>
+      </div>
+      <div id="row">
+        <div class="col">9</div>
+        <div class="col">=</div>
+        <div class="col">/</div>
+        <div class="col b">c</div>
+      </div>
+      <div id="row">
+        <div class="col c">.</div>
+      </div>
+    </div>
+  </body>
+</html>

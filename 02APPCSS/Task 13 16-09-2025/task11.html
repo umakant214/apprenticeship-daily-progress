@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 800px;
+        height: 50px;
+        background-color: #4a99f8;
+      }
+      .left {
+        width: 150px;
+        height: 50px;
+        background-color: #4a99f8;
+        float: left;
+        text-align: center;
+        line-height: 10px;
+        color: white;
+      }
+      .right {
+        width: 650px;
+        height: 50px;
+        float: left;
+      }
+      ul li {
+        width: 130px;
+        height: 50px;
+        color: white;
+        float: left;
+        list-style: none;
+
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 50px;
+      }
+      .right ul {
+        transform: translateY(-15px);
+      }
+      input {
+        width: 600px;
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border: none;
+        transform: translateY(5px);
+        font-size: 16px;
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="left">
+        <h2>CodingLab</h2>
+      </div>
+      <div class="right">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Services</li></a>
+          <a href="#"><li>Products</li></a>
+          <a href="#"><li>Contact Us</li></a>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div id="outer">
+      <div class="left">
+        <h2>CodingLab</h2>
+      </div>
+      <div class="right">
+        <input type="search" placeholder="Search here......." />
+      </div>
+    </div>
+  </body>
+</html>

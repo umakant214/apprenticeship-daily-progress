@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 50px;
+        width: 200px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        /* animation-name: abc;
+        animation-duration: 5s;
+        animation-iteration-count: infinite; */
+      }
+      .a1 {
+        background: red;
+        top: 0px;
+        animation: abc 5s linear infinite alternate;
+      }
+      .a2 {
+        background: yellow;
+        top: 50px;
+        animation: abc 5s ease infinite alternate;
+      }
+      .a3 {
+        background: yellowgreen;
+        top: 100px;
+        animation: abc 6s ease-in infinite alternate;
+      }
+      .a4 {
+        background: greenyellow;
+        top: 150px;
+        animation: abc 6s ease-out infinite alternate;
+      }
+      .a5 {
+        background: orange;
+        top: 200px;
+        animation: abc 6s ease-in-out infinite alternate;
+      }
+      .a6 {
+        background: orangered;
+        top: 250px;
+        animation: abc 6s steps(7) infinite alternate;
+      }
+      @keyframes abc {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 1000px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a1">Linear</div>
+    <div class="a2">ease</div>
+    <div class="a3">ease-in</div>
+    <div class="a4">ease-out</div>
+    <div class="a5">ease-in-out</div>
+    <div class="a6">steps</div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 1000px;
+        height: 600px;
+        background-color: #5eb459;
+        padding: 50px 300px;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 28px;
+        box-sizing: border-box;
+      }
+      h2 {
+        text-align: center;
+        font-size: 28px;
+        text-transform: uppercase;
+        font-family: serif;
+      }
+      .txt {
+        width: 100%;
+        height: 40px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+      .ta {
+        width: 100%;
+        height: 80px;
+        resize: none;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        margin-bottom: 20px;
+      }
+      .btn {
+        width: 100%;
+        height: 40px;
+        background: #5eb459;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 20px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main">
+        <h2>Contact us</h2>
+        <input type="text" placeholder="Name" class="txt" /> <br />
+        <input type="text" placeholder="Subject" class="txt" />
+        <br />
+        <input type="number" placeholder="Phone" class="txt" /> <br />
+        <input type="email" placeholder="Email" class="txt" />
+        <br />
+        <textarea class="ta"></textarea>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

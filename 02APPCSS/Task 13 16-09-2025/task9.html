@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #outer {
+        width: 1365px;
+        height: 640px;
+        background: red;
+      }
+      .top {
+        width: 1365px;
+        height: 50px;
+        background-color: antiquewhite;
+      }
+      .bottom {
+        width: 1365px;
+        height: 590px;
+        background: url(images/img.jpg);
+        background-size: cover;
+        position: relative;
+      }
+      .l1 {
+        width: 132.5px;
+        height: 50px;
+        background-color: #406ae1;
+        float: left;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-size: 20px;
+      }
+      .l2 {
+        width: 1100px;
+        height: 50px;
+        background-color: black;
+        float: left;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+      ul li {
+        width: 120px;
+        height: 50px;
+        float: left;
+        transform: translatey(-24px);
+        text-align: center;
+        line-height: 50px;
+        font-size: 17px;
+        font-weight: bold;
+        list-style: none;
+        color: white;
+      }
+      ul li:hover {
+        background-color: orange;
+      }
+      .l1 p:hover {
+        background-color: orange;
+      }
+      p {
+        color: white;
+
+        font-size: 25px;
+        position: absolute;
+        top: 200px;
+        left: 500px;
+      }
+      h1 {
+        color: white;
+
+        font-size: 40px;
+        position: absolute;
+        top: 250px;
+        left: 620px;
+      }
+      .btn {
+        width: 200px;
+        height: 50px;
+        background-color: #406ae1;
+        border: none;
+        color: white;
+
+        font-size: 20px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 330px;
+        left: 600px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="top">
+        <div class="l1">NATURE</div>
+        <div class="l2">
+          <ul>
+            <a href="#"><li>Course1</li></a>
+            <a href="#"><li>Course2</li></a>
+            <a href="#"><li>Course3</li></a>
+            <a href="#"><li>Course4</li></a>
+            <a href="#"><li>Course5</li></a>
+          </ul>
+        </div>
+        <div class="l1" style="background-color: black"><p>About</p></div>
+      </div>
+      <div class="bottom">
+        <p>Learn to code with the wiset masters</p>
+        <h1>TREES</h1>
+        <button class="btn">Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>

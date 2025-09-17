@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 600px;
+        height: 600px;
+        background-color: aliceblue;
+      }
+      #top {
+        width: 600px;
+        height: 250px;
+        background-color: aqua;
+      }
+      #mid {
+        width: 600px;
+        height: 100px;
+        background-color: rebeccapurple;
+      }
+      #bottom {
+        width: 600px;
+        height: 250px;
+        background-color: green;
+      }
+      .col1 {
+        width: 250px;
+        height: 250px;
+        background-color: darkblue;
+        float: left;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+      .col2 {
+        width: 100px;
+        height: 250px;
+        background-color: yellowgreen;
+        float: left;
+      }
+      .col3 {
+        width: 250px;
+        height: 250px;
+        background-color: darkblue;
+        float: left;
+      }
+      .mcol1 {
+        width: 250px;
+        height: 100px;
+        background-color: mediumseagreen;
+        float: left;
+      }
+      .mcol2 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        float: left;
+      }
+      .mcol3 {
+        width: 250px;
+        height: 100px;
+        background-color: mediumseagreen;
+        float: left;
+      }
+      .main {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+      }
+      .m1 {
+        width: 200px;
+        height: 100px;
+        background-color: white;
+      }
+      .m2 {
+        width: 200px;
+        height: 100px;
+        background-color: white;
+      }
+      .n1 {
+        width: 60px;
+        height: 60px;
+        background-color: darkblue;
+        float: left;
+        margin: 20px;
+      }
+      .k1 {
+        width: 33.2px;
+        height: 250px;
+        background-color: white;
+        float: left;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .mk1 {
+        width: 250px;
+        height: 33px;
+        background-color: white;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .d1 {
+        width: 33.2px;
+        height: 41.3px;
+        background-color: white;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .acolor {
+        background-color: red;
+      }
+      .bcolor {
+        background-color: yellow;
+      }
+      .ccolor {
+        background-color: green;
+      }
+      .d {
+        background-color: darkblue;
+      }
+      .f1 {
+        width: 41.3px;
+        height: 32px;
+        background-color: white;
+        float: left;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="top">
+        <div class="col1">
+          <div class="main">
+            <div class="m1">
+              <div class="n1"></div>
+              <div class="n1"></div>
+            </div>
+            <div class="m2">
+              <div class="n1"></div>
+              <div class="n1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="k1">
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+          </div>
+          <div class="k1">
+            <div class="d1"></div>
+            <div class="d1 acolor"></div>
+            <div class="d1 acolor"></div>
+            <div class="d1 acolor"></div>
+            <div class="d1 acolor"></div>
+            <div class="d1 acolor"></div>
+          </div>
+          <div class="k1">
+            <div class="d1"></div>
+            <div class="d1 acolor"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+          </div>
+        </div>
+        <div class="col1 acolor">
+          <div class="main">
+            <div class="m1">
+              <div class="n1 acolor"></div>
+              <div class="n1 acolor"></div>
+            </div>
+            <div class="m2">
+              <div class="n1 acolor"></div>
+              <div class="n1 acolor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mid">
+        <div class="mcol1">
+          <div class="mk1">
+            <div class="f1"></div>
+            <div style="background-color: blue" class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+          </div>
+          <div class="mk1">
+            <div class="f1"></div>
+            <div style="background-color: blue" class="f1"></div>
+            <div style="background-color: blue" class="f1"></div>
+            <div style="background-color: blue" class="f1"></div>
+            <div style="background-color: blue" class="f1"></div>
+            <div style="background-color: blue" class="f1"></div>
+          </div>
+          <div class="mk1">
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+          </div>
+        </div>
+        <div class="mcol2"></div>
+        <div class="mcol3">
+          <div class="mk1">
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+          </div>
+          <div class="mk1">
+            <div style="background-color: green" class="f1"></div>
+            <div style="background-color: green" class="f1"></div>
+            <div style="background-color: green" class="f1"></div>
+            <div style="background-color: green" class="f1"></div>
+            <div style="background-color: green" class="f1"></div>
+            <div class="f1"></div>
+          </div>
+          <div class="mk1">
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div class="f1"></div>
+            <div style="background-color: green" class="f1"></div>
+            <div class="f1"></div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div class="col1 bcolor">
+          <div class="main">
+            <div class="m1">
+              <div class="n1 bcolor"></div>
+              <div class="n1 bcolor"></div>
+            </div>
+            <div class="m2">
+              <div class="n1 bcolor"></div>
+              <div class="n1 bcolor"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="k1">
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div style="background-color: yellow" class="d1"></div>
+            <div class="d1"></div>
+          </div>
+          <div class="k1">
+            <div style="background-color: yellow" class="d1"></div>
+            <div style="background-color: yellow" class="d1"></div>
+            <div style="background-color: yellow" class="d1"></div>
+            <div style="background-color: yellow" class="d1"></div>
+            <div style="background-color: yellow" class="d1"></div>
+            <div class="d1"></div>
+          </div>
+          <div class="k1">
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+            <div class="d1"></div>
+          </div>
+        </div>
+        <div class="col1 ccolor">
+          <div class="main">
+            <div class="m1">
+              <div class="n1 ccolor"></div>
+              <div class="n1 ccolor"></div>
+            </div>
+            <div class="m2">
+              <div class="n1 ccolor"></div>
+              <div class="n1 ccolor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

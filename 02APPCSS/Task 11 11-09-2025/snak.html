@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 600px;
+        height: 600px;
+        background-color: lightgray;
+        margin: 20px auto;
+      }
+      .sm {
+        width: 15px;
+        height: 500px;
+        background-color: maroon;
+        border-radius: 10px;
+        animation: abc 10s infinite normal;
+      }
+      @keyframes abc {
+        form {
+          width: 0px;
+          left: 0px;
+        }
+        to {
+          width: 600px;
+          height: 0px;
+          border-radius: 50%;
+          left: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="sm"></div>
+    </div>
+  </body>
+</html>

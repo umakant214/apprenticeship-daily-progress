@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todays tasks</title>
+    <style>
+      h4 {
+        color: #356197;
+      }
+      #task1 {
+        color: black;
+        background-color: #356197;
+      }
+      #task2 {
+        color: black;
+        background-color: #6ac22e;
+        word-spacing: 10px;
+        letter-spacing: 3px;
+      }
+      #task3 {
+        color: black;
+        background-color: #9f23c5;
+        word-spacing: 10px;
+      }
+      #task4 {
+        color: black;
+        background-color: #d4845c;
+        border: 2px solid #d4845c;
+        word-spacing: 6px;
+        letter-spacing: 1px;
+      }
+      #task5 {
+        color: black;
+        background-color: #09e5f3;
+        border: 2px solid #09e5f3;
+        word-spacing: 6px;
+        letter-spacing: 2px;
+      }
+      #task6 {
+        color: black;
+        background-color: #3e468a;
+        border: 2px solid #3e468a;
+        word-spacing: 4px;
+      }
+      #task7 {
+        color: black;
+        background-color: #73a721;
+        border: 2px solid #73a721;
+        word-spacing: 10px;
+        letter-spacing: 6px;
+      }
+      #task8 {
+        color: black;
+        background-color: #a808b8;
+        border: 2px solid #a808b8;
+        word-spacing: 4px;
+        letter-spacing: 4px;
+      }
+      #task9 {
+        color: black;
+        background-color: #dd694f;
+        border: 2px solid #dd694f;
+      }
+      #task10 {
+        color: black;
+        background-color: #48e3ee;
+        border: 2px solid #49d7e2;
+      }
+      #inside {
+        writing-mode: vertical-lr;
+        letter-spacing: 15px;
+      }
+      #task11 {
+        color: white;
+        background-color: #472b7d;
+        border: 2px solid #472b7d;
+        word-spacing: 4px;
+        letter-spacing: 4px;
+      }
+      #task12 {
+        color: white;
+        background-color: #7c8c14;
+        border: 2px solid #7c8c14;
+      }
+      #task13 {
+        color: rgb(5, 5, 5);
+        background-color: #b1edab;
+        border: 2px solid #b1edab;
+        word-spacing: 4px;
+      }
+      #task14 {
+        color: white;
+        background-color: #e64e42;
+        border: 2px solid #e64e42;
+        word-spacing: 9px;
+        letter-spacing: 3px;
+      }
+      #task15 {
+        color: white;
+        background-color: #1bafd9;
+        border: 2px solid #1bafd9;
+        word-spacing: 9px;
+      }
+      #task16 {
+        color: white;
+        background-color: #501070;
+        border: 2px solid #501070;
+        word-spacing: 5px;
+      }
+      #task17 {
+        color: black;
+        background-color: #857107;
+        border: 2px solid #857107;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+      }
+      #task18 {
+        color: black;
+        background-color: #bad29e;
+        border: 2px solid #bad29e;
+      }
+      #task19 {
+        color: black;
+        background-color: #ef3335;
+        border: 2px solid #ef3335;
+        word-spacing: 5px;
+        letter-spacing: 4px;
+      }
+
+      #task21 {
+        color: black;
+        background-color: #59f563;
+        border: 2px solid #59f563;
+      }
+      #task22 {
+        color: black;
+        background-color: #8e56fa;
+        border: 2px solid #8e56fa;
+        word-spacing: 5px;
+      }
+      #task23 {
+        color: black;
+        background-color: #c3b791;
+        border: 2px solid #c3b791;
+        word-spacing: 5px;
+        letter-spacing: 4px;
+      }
+      #task24 {
+        color: black;
+        background-color: #f81828;
+        border: 2px solid #ef3335;
+      }
+      #task25 {
+        color: black;
+        background-color: #2d79bf;
+        border: 2px solid #2d79bf;
+        word-spacing: 5px;
+      }
+      #task26 {
+        color: black;
+        background-color: #62da56;
+        border: 2px solid #62da56;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+      }
+      #task27 {
+        color: black;
+        background-color: #973bed;
+        border: 2px solid #973bed;
+        word-spacing: 5px;
+      }
+      #task28 {
+        color: black;
+        background-color: #cc9c84;
+        border: 2px solid #cc9c84;
+      }
+      #task29 {
+        color: black;
+        background-color: #01fd1b;
+        border: 2px solid #01fd1b;
+        word-spacing: 8px;
+        letter-spacing: 4px;
+      }
+      #task31 {
+        color: black;
+        background-color: #6bbf49;
+        border: 2px solid #6bbf49;
+        word-spacing: 10px;
+      }
+      #task32 {
+        color: black;
+        background-color: #a020e0;
+        border: 2px solid #a020e0;
+        word-spacing: 8px;
+        letter-spacing: 5px;
+      }
+      #task33 {
+        color: black;
+        background-color: #d58177;
+        border: 2px solid #d58177;
+      }
+      #task34 {
+        color: black;
+        background-color: #0ae20e;
+        border: 2px solid #0ae20e;
+        word-spacing: 10px;
+      }
+      #task35 {
+        color: black;
+        background-color: #3f43a5;
+        border: 2px solid #3f43a5;
+        word-spacing: 15px;
+      }
+      #task36 {
+        color: black;
+        background-color: #74a43c;
+        border: 2px solid #74a43c;
+      }
+      #task37 {
+        color: black;
+        background-color: #a905d3;
+        border: 2px solid #a905d3;
+        letter-spacing: 2px;
+      }
+      #task38 {
+        color: black;
+        background-color: #de666a;
+        border: 2px solid #de666a;
+        word-spacing: 10px;
+        letter-spacing: 7px;
+      }
+      #task39 {
+        color: black;
+        background-color: #13c701;
+        border: 2px solid #13c701;
+        word-spacing: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Task 1 Output</h4>
+    <p id="task1">
+      Tas k 1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 2 Output</h4>
+    <p id="task2">
+      Task 2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 3 Output</h4>
+    <p id="task3">
+      Task 3: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 4 Output</h4>
+    <p id="task4">
+      Task 4: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <h4>Task 5 Output</h4>
+    <p id="task5">
+      Task 5: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 6 Output</h4>
+    <p id="task6">
+      Task 6: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 7 Output</h4>
+    <p id="task7">
+      Task 7: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 8 Output</h4>
+    <p id="task8">
+      Task 8: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 9 Output</h4>
+    <p id="task9">
+      Task 9: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 10 Output</h4>
+    <p id="task10">
+      Task 10: <br />
+      <b id="inside">VERTICAL</b> <br />
+      Lorem ipsum dolor sit amet consecteturS
+    </p>
+    <hr />
+    <h4>Task 11 Output</h4>
+    <p id="task11">
+      Task 11: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 12 Output</h4>
+    <p id="task12">
+      Task 12: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 13 Output</h4>
+    <p id="task13">
+      Task 13: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 14 Output</h4>
+    <p id="task14">
+      Task 14: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 15 Output</h4>
+    <p id="task15">
+      Task 15: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 16 Output</h4>
+    <p id="task16">
+      Task 16: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 17 Output</h4>
+    <p id="task17">
+      Task 17: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 18 Output</h4>
+    <p id="task18">
+      Task 18: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 19 Output</h4>
+    <p id="task19">
+      Task 19: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 20 Output</h4>
+    <p id="task10">
+      Task 10: <br />
+      <b id="inside">VERTICAL</b> <br />
+      Lorem ipsum dolor sit amet consecteturS
+    </p>
+
+    <hr />
+    <h4>Task 21 Output</h4>
+    <p id="task21">
+      Task 21: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 22 Output</h4>
+    <p id="task22">
+      Task 22: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 23 Output</h4>
+    <p id="task23">
+      Task 23: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 24 Output</h4>
+    <p id="task24">
+      Task 24: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 25 Output</h4>
+    <p id="task25">
+      Task 25: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+
+    <hr />
+    <h4>Task 26 Output</h4>
+    <p id="task26">
+      Task 26: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 27 Output</h4>
+    <p id="task27">
+      Task 27: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 28 Output</h4>
+    <p id="task28">
+      Task 28: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 30</h4>
+    <p id="task10">
+      Task 30: <br />
+      <b id="inside">VERTICAL</b> <br />
+      Lorem ipsum dolor sit amet consecteturS
+    </p>
+    <hr />
+    <hr />
+    <h4>Task 29 Output</h4>
+    <p id="task29">
+      Task 29: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 30 Output</h4>
+    <p id="task30">
+      Task 30: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 31 Output</h4>
+    <p id="task31">
+      Task 31: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 32 Output</h4>
+    <p id="task32">
+      Task 32: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 33 Output</h4>
+    <p id="task33">
+      Task 33: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 34 Output</h4>
+    <p id="task34">
+      Task 34: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 35 Output</h4>
+    <p id="task35">
+      Task 35: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 36 Output</h4>
+    <p id="task36">
+      Task 36: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 37 Output</h4>
+    <p id="task37">
+      Task 37: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 38 Output</h4>
+    <p id="task38">
+      Task 38: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 39 Output</h4>
+    <p id="task39">
+      Task 39: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+      debitis alias ea, dolor explicabo minus placeat aliquam laboriosam, fugit,
+      eius enim. Eligendi nostrum magni possimus, debitis quibusdam cum commodi
+      laudantium!
+    </p>
+    <hr />
+    <h4>Task 40 Output</h4>
+    <p id="task10">
+      Task 40: <br />
+      <b id="inside">VERTICAL</b> <br />
+      Lorem ipsum dolor sit amet consecteturS
+    </p>
+  </body>
+</html>

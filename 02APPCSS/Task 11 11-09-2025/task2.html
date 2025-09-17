@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 150px;
+        height: 150px;
+        background-color: #fe6347;
+        margin: 200px auto;
+        position: relative;
+      }
+      .main {
+        width: 100px;
+        height: 100px;
+      }
+      .m1 {
+        background-color: green;
+        position: absolute;
+        bottom: 100%;
+        right: 100%;
+      }
+      .m2 {
+        background-color: #0000fe;
+        position: absolute;
+        bottom: 100%;
+        left: 100%;
+      }
+      .m3 {
+        background-color: #fda600;
+        position: absolute;
+        top: 100%;
+        right: 100%;
+      }
+      .m4 {
+        background-color: yellow;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main m1"></div>
+      <div class="main m2"></div>
+      <div class="main m3"></div>
+      <div class="main m4"></div>
+    </div>
+  </body>
+</html>

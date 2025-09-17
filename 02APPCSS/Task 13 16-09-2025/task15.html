@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 900px;
+        height: 50px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px 5px lightgray;
+      }
+      .left {
+        width: 300px;
+        height: 50px;
+
+        float: left;
+      }
+      .right {
+        width: 600px;
+        height: 50px;
+
+        float: left;
+      }
+      h2 {
+        color: #cb8ae9;
+        padding-left: 100px;
+        box-sizing: border-box;
+        line-height: 10px;
+      }
+      ul li {
+        width: 120px;
+        height: 50px;
+
+        float: left;
+        margin-left: 10px;
+        transform: translateY(-15px);
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+        list-style-type: none;
+        color: black;
+        font-size: 17px;
+      }
+      select {
+        width: 100px;
+        border: none;
+        font-size: 17px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="outer">
+      <div class="left">
+        <h2>BraveSEOTools</h2>
+      </div>
+      <div class="right">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"
+            ><li>
+              <select>
+                <option>Services</option>
+                <option>Web development</option>
+                <option>App development</option>
+                <option>Desktop App development</option>
+              </select>
+            </li></a
+          >
+          <a href="#"><li>Login</li></a>
+          <a href="#"><li>Register</li></a>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>

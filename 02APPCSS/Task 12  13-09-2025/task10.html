@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: lightgray;
+      }
+      #outer {
+        width: 800px;
+        min-height: 500px;
+        background: url(images/img.jpeg);
+        background-size: cover;
+
+        margin: auto;
+      }
+      .main {
+        width: 800px;
+        min-height: 500px;
+        background: rgba(32, 96, 69, 0.5);
+      }
+      .left {
+        width: 200px;
+        height: 500px;
+        padding: 200px 20px;
+        box-sizing: border-box;
+        float: left;
+      }
+      .right {
+        width: 600px;
+        height: 500px;
+        background: white;
+
+        float: left;
+      }
+      h3 {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: serif;
+      }
+      p {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+      }
+      .a1 {
+        width: 300px;
+        height: 600px;
+        float: left;
+
+        padding: 25px;
+        box-sizing: border-box;
+      }
+      .fname {
+        text-transform: uppercase;
+      }
+      .txt {
+        width: 100%;
+        height: 30px;
+        margin-top: 8px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid #c0c0c0;
+        background: #f9f8f8;
+        margin-bottom: 10px;
+      }
+      .drop {
+        width: 100%;
+        height: 30px;
+        margin-top: 8px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid #c0c0c0;
+        background: #f9f8f8;
+        margin-bottom: 10px;
+      }
+      .radio {
+        margin-top: 15px;
+        font-family: sans-serif;
+      }
+      .btn {
+        width: 123px;
+        height: 30px;
+        background-color: #309e5f;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+        margin-top: 80px;
+      }
+      .btn1 {
+        width: 123px;
+        height: 30px;
+        background-color: white;
+        color: black;
+        border: none;
+        border: 1px solid lightgray;
+        border-radius: 6px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main">
+        <div class="left">
+          <h3>Register Now</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div class="right">
+          <div class="a1">
+            <label for="fname" class="fname">First Name*</label>
+            <input type="text" id="fname" class="txt" /> <br />
+            <label for="fname" class="fname">Last Name*</label>
+            <input type="text" id="fname" class="txt" />
+            <br />
+            <label for="fname" class="fname">Company*</label>
+            <input type="text" id="fname" class="txt" />
+            <br />
+            <label for="fname" class="fname">Email*</label>
+            <input type="email" id="fname" class="txt" /> <br />
+            <label for="fname" class="fname">Phone Number*</label>
+            <input type="number" id="fname" class="txt" />
+            <br />
+            <label for="fname" class="fname"> Donate us*</label>
+            <input type="range" id="fname" class="txt" />
+          </div>
+          <div class="a1">
+            <label for="fname" class="fname">Meal Preference</label> <br />
+            <select class="drop">
+              <option>Vogatrian</option>
+              <option>Vogatrian</option>
+              <option>Vogatrian</option>
+              <option>Vogatrian</option>
+            </select>
+            <br />
+            <label for="fname" class="fname">Payment mode</label> <br />
+            <input type="radio" name="mode" id="fname" class="radio" />Cash
+            <input name="mode" type="radio" id="fname" class="radio" />Cheque
+            <input name="mode" type="radio" id="fname" class="radio" />Demand
+            Draf <br />
+            <label for="fname" class="fname"> DD/Cheque no.</label>
+            <input type="number" id="fname" class="txt" />
+            <br />
+            <label for="fname" class="fname">Drawn on (Bank name)</label>
+            <input type="text" id="fname" class="txt" />
+            <br />
+            <label for="fname" class="fname"> Payable At</label>
+            <input type="text" id="fname" class="txt" />
+            <br />
+            <button class="btn">Submit</button>
+            <button class="btn1">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

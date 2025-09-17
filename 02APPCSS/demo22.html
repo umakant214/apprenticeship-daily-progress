@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: url("img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #box {
+        width: 700px;
+        height: 400px;
+        margin: 100px auto;
+        background-color: red;
+        font-size: 100px;
+        text-align: center;
+        line-height: 400px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 3px groove white;
+
+        /* opacity: 0.5;  with content use*/
+
+        /* background: rgba(255, 255, 255, 0.3); */
+        /* background: linear-gradient(
+          45deg,
+          rgba(250, 13, 65, 0.4) 20%,
+          rgba(191, 255, 16, 0.6) 40%,
+          rgba(243, 43, 233, 0.5) 80%
+        );
+      } */
+        background: repeating-radial-gradient(
+          circle at 50% 50%,
+          rgba(250, 13, 65, 0.4) 20%,
+          rgba(191, 255, 16, 0.6) 40%,
+          rgba(243, 43, 233, 0.5) 80%
+        );
+        transition: all 2s;
+        border-radius: 10px;
+      }
+      #box:hover {
+        box-shadow: 0px 0px 1px 10px rgba(255, 255, 255, 0.8),
+          0px 0px 1px 20px rgba(255, 255, 255, 0.6),
+          0px 0px 1px 40px rgba(255, 255, 255, 0.4),
+          0px 0px 1px 60px rgba(255, 255, 255, 0.2);
+        transition: all 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Techpile</div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 800px;
+        height: 500px;
+        background-image: linear-gradient(to right, rgba(176, 164, 189, 0.4)),
+          url(images/img.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 50px 200px;
+        box-sizing: border-box;
+        margin: auto;
+      }
+      .main {
+        width: 350px;
+        height: 400px;
+        background: #9ad459;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+      }
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-size: 27px;
+        font-family: serif;
+        margin-bottom: 20px;
+      }
+      .radio {
+        margin: 20px;
+        text-align: center;
+        font-family: serif;
+        color: white;
+      }
+      .gen {
+        color: white;
+        font-size: 20px;
+      }
+      .fname {
+        width: 100%;
+        height: 30px;
+        border: none;
+        background: #9ad459;
+        border-bottom: 2px solid rgb(154, 152, 152);
+        padding-left: 10px;
+        box-sizing: border-box;
+        color: white;
+        margin-bottom: 20px;
+      }
+      .ta {
+        width: 100%;
+        height: 60px;
+        background: #9ad459;
+        border: none;
+        border-bottom: 2px solid rgb(154, 152, 152);
+        resize: none;
+        margin-bottom: 20px;
+      }
+      .btn {
+        width: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main">
+        <h2>Contact us</h2>
+        <input class="radio" type="radio" id="gen" name="gen" /><label
+          for="gen"
+          class="gen"
+          >Say Hii</label
+        >
+        <input class="radio" type="radio" name="gen" /><label
+          for="gen"
+          class="gen"
+          >Get a Quote</label
+        >
+        <br />
+        <input type="text" class="fname" placeholder="Your Name" />
+        <br />
+        <input type="text" class="fname" placeholder="Your Name" />
+        <br />
+
+        <textarea name="" class="ta" id=""></textarea>
+        <button class="btn">SUBMIT</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 800px;
+        height: 600px;
+        margin: auto;
+        background: linear-gradient(
+          to right,
+          rgba(115, 176, 223),
+          rgba(144, 113, 191)
+        );
+
+        position: relative;
+      }
+      .main {
+        width: 700px;
+        height: 500px;
+        background-color: white;
+        position: absolute;
+        left: 6%;
+        top: 8%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 5px;
+      }
+      h3 {
+        font-size: 29px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .name {
+        font-size: 22px;
+      }
+      .txt {
+        width: 47%;
+        height: 40px;
+        margin-right: 15px;
+        border-radius: 5px;
+        border: none;
+        border: 2px solid lightgray;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .lname {
+        font-size: 22px;
+        position: absolute;
+        top: 20%;
+      }
+      .pnum {
+        font-size: 22px;
+        position: absolute;
+        top: 38%;
+      }
+      .cpass {
+        font-size: 22px;
+        position: absolute;
+        top: 55%;
+      }
+
+      .male {
+        font-size: 21px;
+        margin-right: 110px;
+      }
+      .btn {
+        width: 500px;
+        height: 40px;
+        background: linear-gradient(
+          to right,
+          rgba(115, 176, 223),
+          rgba(144, 113, 191)
+        );
+        margin-left: 60px;
+        margin-top: 25px;
+        color: white;
+        font-size: 22px;
+        border: none;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main">
+        <h3><u>Re</u>gistration</h3>
+        <label class="name" for="fname">Full Name</label><br />
+        <input
+          class="txt"
+          type="text"
+          id="fname"
+          placeholder="Enter Full name"
+        />
+        <label class="lname" for="fname">Username</label>
+        <input
+          class="txt"
+          type="text"
+          id="fname"
+          placeholder="Enter username"
+        />
+        <label class="name" for="fname">Email</label><br />
+        <input
+          class="txt"
+          type="email"
+          id="fname"
+          placeholder="Enter Your email"
+        />
+        <label class="pnum" for="fname">Phone Number</label>
+        <input
+          class="txt"
+          type="number"
+          id="fname"
+          placeholder="Enter your number"
+        />
+        <label class="name" for="fname">Password</label><br />
+        <input
+          class="txt"
+          type="email"
+          id="fname"
+          placeholder="Enter Your password"
+        />
+        <label class="cpass" for="fname">Confirm Password</label>
+        <input
+          class="txt"
+          type="password"
+          id="fname"
+          placeholder="Enter your password"
+        />
+        <br />
+        <label class="name" for="fname">Gender</label><br />
+        <input class="gen" name="gen" id="gender" type="radio" />
+        <label class="male" for="gender">Male</label>
+        <input class="gen" name="gen" type="radio" />
+        <label class="male" for="gender">Female</label>
+        <input class="gen" name="gen" type="radio" />
+        <label class="male" for="gender">Prefer not to say</label>
+        <br />
+        <button class="btn">Register</button>
+      </div>
+    </div>
+  </body>
+</html>

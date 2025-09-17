@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #menu {
+        width: 1000px;
+        height: 50px;
+        background-color: purple;
+        margin: 10px auto;
+      }
+      .left {
+        width: 150px;
+        height: 50px;
+        float: left;
+      }
+      .right {
+        width: 550px;
+        height: 50px;
+        float: left;
+        position: relative;
+      }
+      .mid {
+        width: 300px;
+        height: 50px;
+        float: left;
+      }
+      .left p {
+        font-size: 22px;
+        line-height: 8px;
+        color: white;
+      }
+      .right ul {
+        font-size: 18px;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .right a li {
+        width: 100px;
+        height: 50px;
+        transform: translatey(-18px);
+        margin-left: 5px;
+        line-height: 50px;
+        list-style: none;
+        color: white;
+      }
+      .right ul a {
+        float: left;
+        text-decoration: none;
+      }
+      .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: absolute;
+        left: 470px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <div class="left"><p>Awesome store</p></div>
+      <div class="mid"></div>
+      <div class="right">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About Us</li></a>
+          <a href="#"><li>Works</li></a>
+          <a href="#"><li>User</li></a>
+        </ul>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

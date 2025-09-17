@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        min-width: 800px;
+        height: 600px;
+        background-color: #9f9e99;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      #left {
+        min-width: 800px;
+        height: 600px;
+        background-color: #9f9e99;
+        float: left;
+      }
+      #right {
+        min-width: 400px;
+        height: 600px;
+
+        float: left;
+        margin-left: 20px;
+      }
+      .row {
+        min-width: 800px;
+        height: 50px;
+        background-color: #9f9e99;
+      }
+      .fun {
+        width: 80px;
+        height: 60px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        float: left;
+        margin: 3px;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+      .arrow {
+        width: 170px;
+        height: 60px;
+        background-color: black;
+        float: left;
+        color: white;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .row1 {
+        width: 400px;
+        height: 50px;
+        background-color: #9f9e99;
+      }
+      .k1 {
+        width: 80px;
+        height: 60px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        float: left;
+        margin: 3px;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="left">
+        <div class="row">
+          <div class="fun">Esc</div>
+          <div class="fun">F1</div>
+          <div class="fun">F2</div>
+          <div class="fun">F3</div>
+          <div class="fun">F4</div>
+          <div class="fun">F5</div>
+          <div class="fun">F6</div>
+          <div class="fun">F7</div>
+          <div class="fun">F8</div>
+          <div class="fun">F9</div>
+          <div class="fun">F10</div>
+          <div class="fun">F11</div>
+          <div class="fun">F12</div>
+          <div class="fun">PrtScr</div>
+          <div class="fun">Insert</div>
+          <div class="fun">Delete</div>
+        </div>
+        <div class="row">
+          <div style="width: 120px" class="fun">~</div>
+          <div style="width: 120px" class="fun">! <br />1</div>
+          <div class="fun">
+            @ <br />
+            2
+          </div>
+          <div class="fun">
+            # <br />
+            3
+          </div>
+          <div class="fun">
+            $ <br />
+            4
+          </div>
+          <div class="fun">
+            % <br />
+            5
+          </div>
+          <div class="fun">^ <br />6</div>
+          <div class="fun">
+            & <br />
+            7
+          </div>
+          <div class="fun">* <br />8</div>
+          <div class="fun">
+            ( <br />
+            9
+          </div>
+          <div class="fun">
+            ) <br />
+            0
+          </div>
+          <div class="fun">- <br />_</div>
+          <div class="fun">
+            + <br />
+            =
+          </div>
+          <div style="width: 170px" class="fun">Backspace</div>
+        </div>
+        <div class="row">
+          <div class="fun" style="width: 165px">Tab</div>
+          <div style="width: 87px" class="fun">Q</div>
+          <div style="width: 87px" class="fun">W</div>
+          <div style="width: 87px" class="fun">E</div>
+          <div style="width: 87px" class="fun">R</div>
+          <div style="width: 87px" class="fun">T</div>
+          <div style="width: 87px" class="fun">Y</div>
+          <div style="width: 87px" class="fun">U</div>
+          <div style="width: 87px" class="fun">I</div>
+          <div style="width: 87px" class="fun">O</div>
+          <div style="width: 87px" class="fun">P</div>
+          <div style="width: 87px" class="fun">[</div>
+          <div style="width: 87px" class="fun">]</div>
+          <div class="fun">/</div>
+        </div>
+        <div class="row">
+          <div style="width: 210px" class="fun">CapsLock</div>
+          <div class="fun">A</div>
+          <div class="fun">S</div>
+          <div class="fun">D</div>
+          <div class="fun">F</div>
+          <div class="fun">G</div>
+          <div class="fun">H</div>
+          <div class="fun">J</div>
+          <div class="fun">K</div>
+          <div class="fun">L</div>
+          <div class="fun">
+            : <br />
+            ;
+          </div>
+          <div class="fun">"" <br />'</div>
+          <div style="width: 200px" class="fun">Enter</div>
+        </div>
+        <div class="row">
+          <div style="width: 245px" class="fun">Shift</div>
+          <div class="fun">Z</div>
+          <div class="fun">X</div>
+          <div class="fun">C</div>
+          <div class="fun">V</div>
+          <div class="fun">B</div>
+          <div class="fun">N</div>
+          <div class="fun">M</div>
+          <div class="fun"><</div>
+          <div class="fun">></div>
+          <div class="fun">?</div>
+          <div style="width: 250px" class="fun">Shift</div>
+        </div>
+        <div class="row">
+          <div style="width: 150px" class="fun">Ctrl</div>
+          <div class="fun">Fn</div>
+          <div class="fun">Win</div>
+          <div class="fun">Alt</div>
+          <div style="width: 600px" class="fun">space</div>
+          <div class="fun">Alt</div>
+          <div class="fun">Ctrl</div>
+          <div class="arrow">Arrow key</div>
+        </div>
+      </div>
+
+      <div id="right">
+        <div class="row1">
+          <div class="k1">PgUP</div>
+          <div class="k1">PgDn</div>
+          <div class="k1">Home</div>
+          <div class="k1">End</div>
+        </div>
+        <div class="row1">
+          <div class="k1">Num</div>
+          <div class="k1">/</div>
+          <div class="k1">*</div>
+          <div class="k1">-</div>
+        </div>
+        <div class="row1">
+          <div class="k1">7</div>
+          <div class="k1">8</div>
+          <div class="k1">9</div>
+          <div style="height: 100px" class="k1">+</div>
+        </div>
+        <div class="row1">
+          <div class="k1">4</div>
+          <div class="k1">5</div>
+          <div class="k1">6</div>
+          <div style="height: 100px" class="k1">Enter</div>
+        </div>
+        <div class="row1">
+          <div class="k1">1</div>
+          <div class="k1">2</div>
+          <div class="k1">3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

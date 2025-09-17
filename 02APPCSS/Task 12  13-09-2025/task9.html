@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 1000px;
+        min-height: 600px;
+        background: url(images/img.jpeg);
+        background-size: cover;
+        padding: 50px 100px;
+        box-sizing: border-box;
+        margin: auto;
+      }
+      .main {
+        width: 350px;
+        min-height: 500px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px 30px;
+        box-sizing: border-box;
+      }
+      h3 {
+        font-family: sans-serif;
+        color: #3e3e3c;
+      }
+      .txt {
+        width: 100%;
+        height: 35px;
+        padding-left: 15px;
+        border: none;
+        border-bottom: 1px solid rgb(175, 175, 175);
+        margin-bottom: 15px;
+      }
+      .drop {
+        width: 100%;
+        height: 35px;
+        padding-left: 10px;
+        border: none;
+        border-bottom: 1px solid rgb(175, 175, 175);
+        margin-bottom: 7px;
+      }
+      p {
+        font-weight: bold;
+        margin-left: 10px;
+      }
+      a {
+        color: #262624;
+      }
+      .btn {
+        width: 200px;
+        height: 40px;
+        background-color: #4969b2;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main">
+        <h3>Education Appointment form</h3>
+        <input type="text" class="txt" placeholder="Title" /> <br />
+        <input type="text" class="txt" placeholder="Your Name" /> <br />
+        <input type="email" class="txt" placeholder="Email" /> <br />
+        <input type="number" class="txt" placeholder="Phone Number" /> <br />
+        <select class="drop">
+          <option>Course Type</option>
+          <option>Math</option>
+          <option>Hindi</option>
+          <option>English</option>
+          <option>Science</option>
+          <option>Social Science</option>
+        </select>
+        <br />
+        <p>How would you like to be located ?</p>
+        <select class="drop">
+          <option>By Phone</option>
+          <option>Math</option>
+          <option>Hindi</option>
+          <option>English</option>
+          <option>Science</option>
+          <option>Social Science</option>
+        </select>
+        <select class="drop">
+          <option>Hours 8am 10pm</option>
+          <option>Math</option>
+          <option>Hindi</option>
+          <option>English</option>
+          <option>Science</option>
+          <option>Social Science</option>
+        </select>
+        <p style="color: #818080">
+          I agree to the <a href="#">Terms and Conditions</a>
+        </p>
+        <button class="btn">Request an appointment</button>
+      </div>
+    </div>
+  </body>
+</html>

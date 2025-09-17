@@ -1,0 +1,60 @@
+#largeHeading {
+  color: darkblue;
+  font-size: 40px;
+  text-align: center;
+}
+#a {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}
+#heading4 {
+  letter-spacing: 3px;
+  color: orange;
+  font-size: 22px;
+}
+#task11 {
+  font-size: 16px;
+  line-height: 2;
+  color: darkgreen;
+}
+#task14 {
+  color: purple;
+  font-size: 36px;
+  text-align: center;
+}
+#task17 {
+  font-size: 18px;
+  font-weight: bold;
+  color: navy;
+}
+#task20 {
+  border: 2px solid blue;
+  background-color: lightyellow;
+  text-align: center;
+}
+#task23 {
+  border: 1px solid black;
+  word-spacing: 15px;
+  color: #444;
+}
+#task26 {
+  color: red;
+  text-align: center;
+  letter-spacing: 4px;
+}
+#task29 {
+  border: 2px inset black;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+#task31 {
+  color: darkred;
+  font-size: 18px;
+  text-align: justify;
+}
+#task33 {
+  font-style: italic;
+  color: navy;
+  letter-spacing: 3px;
+}

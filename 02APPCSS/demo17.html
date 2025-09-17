@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 300px;
+        min-height: 300px;
+        background-color: lightgray;
+        border-radius: 10px;
+        margin: 100px auto;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+      #txt {
+        width: 190px;
+        height: 40px;
+        resize: none;
+        border: none;
+        font-size: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        margin: 5px;
+        text-align: right;
+      }
+      .row {
+        width: 200px;
+        height: 50px;
+      }
+      .col {
+        width: 40px;
+        height: 40px;
+        float: left;
+        border: 2px solid gray;
+        box-sizing: border-box;
+        margin: 5px;
+        border-radius: 4px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+        box-shadow: 0px 10px 20px black;
+      }
+      .a {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <textarea id="txt">0</textarea>
+      <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col a">+</div>
+      </div>
+      <div class="row">
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col a">-</div>
+      </div>
+      <div class="row">
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col a">x</div>
+      </div>
+      <div class="row">
+        <div class="col a">/</div>
+        <div class="col a">%</div>
+        <div class="col a">=</div>
+        <div class="col" style="background-color: red; color: white">C</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 800px;
+        height: 750px;
+        background-color: #4cb050;
+        margin: auto;
+        padding: 100px 200px;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 400px;
+        height: 550px;
+        background-color: #f9f9f9;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+      h4 {
+        text-transform: capitalize;
+        font-size: 25px;
+        margin: 0px;
+      }
+      p {
+        font-size: 18px;
+      }
+      .txt {
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        border: none;
+        border: 1px solid lightgray;
+        border-bottom: 10px;
+        font-size: 15px;
+      }
+      .ta {
+        width: 100%;
+        height: 80px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        border: none;
+        border: 1px solid lightgray;
+        resize: none;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      .btn {
+        width: 100%;
+        height: 40px;
+        background-color: #4cb050;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+      }
+      .link {
+        text-align: center;
+        color: #bfbfbf;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="main">
+        <h4>Colorlib Contact Form</h4>
+        <p>Contact us for custom quote</p>
+        <input type="text" class="txt" placeholder="Your name" /> <br />
+        <input type="email" class="txt" placeholder="Your Email Address" />
+        <br />
+        <input
+          type="number"
+          class="txt"
+          placeholder="Your Phone Number(optional)"
+        />
+        <br />
+        <input type="text" class="txt" placeholder="Your Website (optional)" />
+        <br />
+        <textarea
+          class="ta"
+          placeholder="Type Your message here...."
+        ></textarea>
+        <button class="btn">Submit</button>
+        <p class="link">Designed by <a href="#">Colorlib</a></p>
+      </div>
+    </div>
+  </body>
+</html>

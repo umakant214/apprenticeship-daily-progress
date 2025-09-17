@@ -1,0 +1,13 @@
+h1 {
+  color: blue;
+  background-color: chartreuse;
+  font-size: 140px;
+  border: 10px groove lightblue;
+  border-radius: 20px;
+}
+p {
+  color: yellow;
+  background-color: red;
+  border: 10px solid green;
+  border-radius: 10px;
+}
