@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #outer {
+        width: 1200px;
+        min-height: 700px;
+        box-shadow: 0px 0px 5px 1px black;
+        margin: auto;
+      }
+      #top {
+        width: 1200px;
+        height: 50px;
+        background-color: white;
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.4);
+        padding: 0px 100px;
+        box-sizing: border-box;
+      }
+      .left {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        float: left;
+        line-height: 50px;
+        font-size: 18px;
+      }
+      .right {
+        width: 800px;
+        height: 50px;
+
+        float: left;
+      }
+      .right ul {
+        list-style: none;
+      }
+      .right ul li {
+        width: 100px;
+        height: 50px;
+        float: left;
+        transform: translateY(-16px);
+        line-height: 50px;
+        color: rgb(53, 53, 53);
+        font-weight: bold;
+        text-align: center;
+      }
+      .right ul li:hover {
+        width: 100px;
+        height: 45px;
+        border-radius: 5px;
+
+        background-color: orange;
+      }
+      .btn {
+        width: 150px;
+        height: 40px;
+        background: orangered;
+        transform: translateY(-12px);
+        border: none;
+        border-radius: 8px;
+        color: white;
+      }
+      .btn:hover {
+        box-shadow: 0px 0px 8px 6px orange;
+      }
+      #slider {
+        width: 1200px;
+        height: 450px;
+        background: linear-gradient(rgba(255, 255, 255, 0.2)),
+          url(images/nslider1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        /* padding: 100px 400px; */
+        padding-top: 100px;
+        padding-left: 300px;
+        padding-right: 400px;
+        box-sizing: border-box;
+      }
+      .name {
+        font-size: 35px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .text {
+        width: 1200px;
+        height: 200px;
+        padding-top: 50px;
+        padding-left: 400px;
+        box-sizing: border-box;
+      }
+      .a1 {
+        width: 300px;
+        height: 100px;
+        background-color: white;
+        float: left;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <!-- header section -->
+      <div id="top">
+        <div class="left">PORTFOLIO</div>
+        <div class="right">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About Us</li></a>
+            <a href="#"><li>Services</li></a>
+            <a href="#"><li>Portfolio</li></a>
+            <a href="#"><li>Page</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+          <button class="btn">Get Free Consultent</button>
+        </div>
+      </div>
+      <!-- Slider Section -->
+      <div id="slider">
+        <p style="color: orangered">Get Every Single Solution</p>
+        <div class="name">I'm Designer</div>
+        <div class="name">Umakant Yadav</div>
+        <p style="color: rgb(80, 80, 80)">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+          adipisci iure quia odio modi fuga quidem, quo debitis alias ullam id
+          animi architecto incidunt, culpa quam illum numquam soluta doloribus!
+        </p>
+        <button class="btn">Learn More</button>
+        <button
+          style="
+            background-color: rgb(234, 234, 234);
+            border: 1px solid orangered;
+            color: black;
+          "
+          class="btn"
+        >
+          Hire Me
+        </button>
+      </div>
+      <!-- some text -->
+      <div class="text">
+        <div class="a1">
+          <p>Designing with Passion While</p>
+          <p>Exploring The Word.</p>
+        </div>
+        <div class="a1">
+          <p>
+            Any Type of Query <br />
+            & Discussion
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

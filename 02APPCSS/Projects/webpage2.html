@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --ocolor: orangered;
+      }
+      #outer {
+        min-height: 800px;
+        width: 1200px;
+        border: 1px solid black;
+        margin: auto;
+      }
+      .bg-mycolor {
+        background: orangered;
+      }
+      #top1 {
+        width: 1200px;
+        height: 80px;
+        background: rgb(232, 231, 231);
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .x {
+        width: 500px;
+        height: 80px;
+        float: left;
+        font-size: 25px;
+
+        line-height: 80px;
+      }
+      .y {
+        width: 200px;
+        height: 80px;
+        float: left;
+
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 19px;
+      }
+      nav {
+        width: 1200px;
+        height: 50px;
+        background-color: orangered;
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .left {
+        width: 750px;
+        height: 50px;
+        float: left;
+      }
+      .right {
+        width: 150px;
+        height: 50px;
+        float: left;
+      }
+      .left ul {
+        list-style: none;
+      }
+      .left ul li {
+        width: 100px;
+        height: 50px;
+
+        float: left;
+        transform: translateY(-15px);
+        line-height: 50px;
+        font-weight: bold;
+        color: white;
+      }
+      #slider {
+        width: 1200px;
+        height: 450px;
+        background: linear-gradient(rgba(255, 255, 255, 0.2)),
+          url(images/img3.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 100px;
+        padding-left: 200px;
+        padding-right: 400px;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+      }
+      .btn {
+        width: 200px;
+        height: 40px;
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .btn:hover {
+        box-shadow: 0px 0px 5px 3px orange;
+      }
+      .text {
+        width: 1200px;
+        height: 150px;
+        margin-top: 30px;
+        padding: 10px 200px;
+        box-sizing: border-box;
+      }
+      #service {
+        width: 1200px;
+        height: 300px;
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .a1 {
+        width: 280px;
+        height: 280px;
+        background-color: white;
+        float: left;
+        box-shadow: 0px 0px 5px 8px rgba(182, 181, 181, 0.7);
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 10px;
+      }
+      .a1:hover {
+        box-shadow: 0px 0px 8px 10px black;
+        transition: all 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="top1">
+        <div class="x" style="color: orangered">
+          @Techpile<b style="color: orange">Technology</b>
+        </div>
+        <div class="y">
+          Mail
+          <br />
+          abcd@gmail.com
+        </div>
+        <div class="y">
+          Call Us
+          <br />
+          +918083837823
+        </div>
+      </div>
+      <!-- menu section -->
+      <nav>
+        <div class="left">
+          <ul>
+            <a href="#"> <li>Home</li></a>
+            <a href="#"> <li>About Us</li></a>
+            <a href="#"> <li>Services</li></a>
+            <a href="#"> <li>Contact US</li></a>
+            <a href="#"> <li>Register</li></a>
+            <a href="#"> <li>Login</li></a>
+          </ul>
+        </div>
+        <div class="right">
+          <h3 style="color: white; line-height: 10px">Our Company</h3>
+        </div>
+      </nav>
+      <!-- slider section -->
+      <div id="slider">
+        <div style="font-size: 30px; color: white">We Help Enterpreneurs</div>
+        <div style="font-size: 30px; color: white">Achieve Their Goals</div>
+        <p style="font-size: 17px; color: white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+          fuga excepturi, suscipit error vero veniam. Perspiciatis debitis vitae
+          quas nostrum enim, totam deleniti placeat alias dolor laudantium,
+          cupiditate iusto distinctio.
+        </p>
+        <button class="btn">Subscribe Now</button>
+        <button style="background: rgb(208, 206, 206)" class="btn">
+          Read Now
+        </button>
+      </div>
+      <!-- some text section -->
+      <div class="text">
+        <div style="text-align: center; font-weight: bold; font-size: 21px">
+          Bill Grades Begineers Chooose
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+          nesciunt officiis tempore cumque similique quaerat aperiam veniam
+          consectetur fuga eius! Eveniet qui quia laborum sit similique. Est
+          officia dolor veritatis.
+        </p>
+      </div>
+
+      <!-- some Services -->
+      <div id="service">
+        <div class="a1">
+          <h1>Connectivity</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            aperiam fugiat, quos facere libero aut eveniet quae a culpa saepe
+            Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+        <div class="a1">
+          <h1>Connectivity</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            aperiam fugiat, quos facere libero aut eveniet quae a culpa saepe
+            Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+        <div class="a1">
+          <h1>Connectivity</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            aperiam fugiat, quos facere libero aut eveniet quae a culpa saepe
+            Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

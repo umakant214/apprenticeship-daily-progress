@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 1200px;
+        min-height: 800px;
+        border: 1px solid black;
+        margin: auto;
+      }
+      .top1 {
+        width: 1200px;
+        height: 50px;
+
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .left {
+        width: 200px;
+        height: 50px;
+        float: left;
+        text-align: center;
+        line-height: 50px;
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .right {
+        width: 700px;
+        height: 50px;
+        float: left;
+      }
+      .right b {
+        text-align: center;
+        line-height: 50px;
+        margin: 40px;
+      }
+      #menu {
+        width: 1200px;
+        height: 50px;
+        background-color: #16a795;
+        padding: 0px 200px;
+        box-sizing: border-box;
+      }
+      #menu ul li {
+        width: 120px;
+        height: 50px;
+
+        float: left;
+        line-height: 50px;
+        font-weight: bold;
+        list-style: none;
+        color: white;
+      }
+      #slider {
+        width: 1200px;
+        height: 450px;
+        background: linear-gradient(rgba(74, 168, 163, 0.5)),
+          url(images/doc.jpg);
+        background-size: cover;
+        padding: 100px 200px;
+        box-sizing: border-box;
+      }
+      .btn {
+        width: 200px;
+        height: 40px;
+        background-color: #dc5e53;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+      .service {
+        width: 1200px;
+        height: 400px;
+        background-color: antiquewhite;
+      }
+      .t1 {
+        width: 1200px;
+        height: 50px;
+
+        text-align: center;
+        font-size: 20px;
+
+        line-height: 50px;
+      }
+      .t2 {
+        width: 1200px;
+        height: 350px;
+
+        padding: 10px 150px;
+        box-sizing: border-box;
+      }
+      .img1 {
+        width: 300px;
+        height: 350px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="top1">
+        <div class="left">
+          <div>CARDIO</div>
+        </div>
+        <div class="right">
+          <b> Lorem, ipsum dolor.</b>
+          <b> Lorem, ipsum dolor.</b>
+          <b> Lorem, ipsum dolor.</b>
+        </div>
+      </div>
+      <!-- menu section -->
+      <div id="menu">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Service</li></a>
+          <a href="#"><li>Time</li></a>
+          <a href="#"><li>Our Team</li></a>
+        </ul>
+      </div>
+
+      <!-- Slider section -->
+      <div id="slider">
+        <div style="font-size: 30px; color: white">Experts in Heart Health</div>
+        <p style="color: white">
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit.
+        </p>
+        <button class="btn">Explore More</button>
+      </div>
+
+      <!-- Explore services -->
+      <div class="service">
+        <div class="t1">Explore Services</div>
+        <div class="t2">
+          <div class="img1">
+            <img src="images/img1.jpeg" height="300px" width="300px" alt="" />
+          </div>
+          <div class="img1">
+            <img src="images/img2.jpeg" height="300px" width="300px" alt="" />
+          </div>
+          <div class="img1">
+            <img src="images/img3.jpeg" height="300px" width="300px" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

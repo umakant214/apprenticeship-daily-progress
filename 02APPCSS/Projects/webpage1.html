@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --dcolor: #e65100;
+        --lcolor: #ffa726;
+      }
+      /* Universal Selector It selects all tag */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .bg-mycolor {
+        background: linear-gradient(45deg, var(--dcolor), var(--lcolor));
+      }
+      .text-mycolor {
+        color: var(--lcolor);
+      }
+      #outer {
+        min-height: 1000px;
+        width: 1200px;
+        border: 1px solid black;
+        margin: 0px auto;
+      }
+      #top1 {
+        height: 40px;
+        width: 1200px;
+        background: rgba(0, 0, 0.7);
+        padding: 0px 150px;
+        box-sizing: border-box;
+        color: white;
+        line-height: 40px;
+        font-weight: bold;
+      }
+      .x {
+        width: 300px;
+        height: 40px;
+        float: left;
+        font-size: 12px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-left {
+        text-align: left;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .text-justify {
+        text-align: justify;
+      }
+      #top2 {
+        height: 80px;
+        width: 1200px;
+        background: #ececec;
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .a1 {
+        height: 80px;
+        width: 300px;
+        float: left;
+
+        line-height: 80px;
+        font-size: 30px;
+      }
+      .a2 {
+        height: 80px;
+        width: 200px;
+        float: left;
+        padding-top: 20px;
+        box-sizing: border-box;
+      }
+      #slider {
+        min-height: 450px;
+        width: 1200px;
+        background: url(images/slider1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-attachment: fixed;
+        padding: 0px 150px;
+        box-sizing: border-box;
+        animation-name: abc;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+        /* animation: abc 2s infinite alternate; */
+      }
+      #slider:hover {
+        animation-play-state: paused;
+      }
+      .left {
+        height: 410px;
+        width: 400px;
+        float: left;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 50px;
+        box-sizing: border-box;
+        backdrop-filter: blur(5px);
+        margin: 20px 0px;
+        animation-name: bx-shadow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      .right {
+        height: 450px;
+        width: 500px;
+        float: left;
+        /* background: rgba(0, 0, 0, 0.1); */
+        padding-top: 130px;
+        box-sizing: border-box;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .t {
+        height: 45px;
+        width: 100%;
+        margin-bottom: 15px;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid var(--lcolor);
+        color: white;
+        font-size: 13px;
+      }
+      .ta {
+        height: 70px;
+        width: 100%;
+        margin-bottom: 12px;
+        resize: none;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid var(--lcolor);
+        color: white;
+        font-size: 13px;
+      }
+      ::placeholder {
+        color: var(--lcolor);
+      }
+      input:focus {
+        outline: none;
+      }
+      .ta:focus {
+        outline: none;
+      }
+      .btn {
+        height: 45px;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        color: white;
+      }
+      @keyframes abc {
+        0% {
+          background: linear-gradient(rgba(0, 0, 0, 0.6)),
+            url(images/slider3.jfif);
+          background-size: cover;
+        }
+        50% {
+          background: linear-gradient(rgba(255, 255, 255, 0.6)),
+            url(images/slider4.jpg);
+          background-size: cover;
+        }
+        100% {
+          background: linear-gradient(rgba(0, 0, 0, 0.6)),
+            url(images/slider4.webp);
+
+          background-size: cover;
+        }
+      }
+      @keyframes bx-shadow {
+        0% {
+          box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.1);
+        }
+        100% {
+          box-shadow: 0px 0px 1px 5px rgba(255, 255, 255, 0.8),
+            0px 0px 1px 10px rgba(255, 255, 255, 0.6),
+            0px 0px 1px 15px rgba(255, 255, 255, 0.4),
+            0px 0px 5px 8px rgba(255, 255, 255, 0.8) inset;
+        }
+      }
+      nav {
+        height: 45px;
+        width: 1200px;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+
+        padding-left: 65px;
+        box-sizing: border-box;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        height: 40px;
+        width: 110px;
+        text-align: center;
+        line-height: 40px;
+        float: left;
+        color: white;
+
+        transform: translateY(-14px);
+        transition: all 0.5s;
+      }
+      nav ul li:hover {
+        background: rgba(0, 0, 0.7);
+        transition: all 1s;
+      }
+      #services {
+        height: 300px;
+        width: 1200px;
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .s {
+        height: 280px;
+        width: 280px;
+        float: left;
+        background-color: white;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+        padding: 25px;
+        box-sizing: border-box;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <!-- header Section -->
+      <div id="top1">
+        <div class="x">An ISO 9001:2005 Certified Software Company</div>
+        <div class="x">
+          <a
+            href="#"
+            class="bg-mycolor text-center"
+            style="
+              padding: 8px 15px;
+              text-decoration: none;
+              color: white;
+              border-radius: 20px;
+            "
+            >Click to check our Placement Record</a
+          >
+        </div>
+        <div class="x text-right">Click to Purchage Online Course</div>
+      </div>
+      <div id="top2">
+        <div class="a1">Code<b class="text-mycolor">Helper</b></div>
+        <div class="a2">
+          <b>Call Us</b> <br />
+          +91-9282374822
+        </div>
+        <div class="a2">
+          <b>Mail Us</b> <br />
+          abcd@gmail.com
+        </div>
+        <div style="padding-top: 30px" class="a2">
+          <a
+            href="#"
+            class="bg-mycolor text-center"
+            style="
+              padding: 8px 15px;
+              text-decoration: none;
+              color: white;
+              border-radius: 20px;
+              text-align: center;
+            "
+            >Contact Us</a
+          >
+        </div>
+      </div>
+      <!-- Menubar Section -->
+      <nav class="bg-mycolor">
+        <ul>
+          <a href="#"> <li>Home</li></a>
+          <a href="#"> <li>About Us</li></a>
+          <a href="#"> <li>Services</li></a>
+          <a href="#"> <li>Register</li></a>
+          <a href="#"> <li>Plan & Pricing</li></a>
+          <a href="#"> <li>Gallery</li></a>
+          <a href="#"> <li>Product</li></a>
+          <a href="#"> <li>Contact Us</li></a>
+          <a href="#"> <li>Login</li></a>
+        </ul>
+      </nav>
+      <!-- Slider section -->
+      <div id="slider">
+        <div class="left">
+          <input autofocus class="t" type="text" placeholder="Name" /> <br />
+          <input class="t" type="email" placeholder="Email" /> <br />
+          <input class="t" type="number" placeholder="Number" /> <br />
+          <textarea class="ta" placeholder="Message"></textarea> <br />
+          <input class="btn bg-mycolor" type="submit" value="Register" /> <br />
+        </div>
+        <div class="right">
+          <div class="text-center" style="font-size: 35px">
+            Welcome to <b class="text-mycolor">Code Helper</b>
+          </div>
+          <div class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            dolores Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Iusto, quidem?
+          </div>
+          <center>
+            <br />
+            <br />
+            <a
+              href="#"
+              class="bg-mycolor text-center"
+              style="
+                padding: 8px 15px;
+                text-decoration: none;
+                color: white;
+                border-radius: 20px;
+                text-align: center;
+              "
+              >GET IN TOUCH</a
+            >
+          </center>
+        </div>
+      </div>
+      <!-- services section -->
+      <div id="services">
+        <div class="s">
+          <b class="text-center">Heading1</b>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            asperiores amet laborum amet doloribus mollitia debitis. asperiores
+            laborum amet doloribus amet mollitia debitis. laborum amet doloribus
+            mollitia debitis. laborum amet doloribus mollitia debitis.
+          </p>
+        </div>
+        <div class="s">
+          <b>Heading2</b>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            asperiores amet laborum amet doloribus mollitia debitis. asperiores
+            laborum amet doloribus amet mollitia debitis. laborum amet doloribus
+            mollitia debitis. laborum amet doloribus mollitia debitis.
+          </p>
+        </div>
+        <div class="s">
+          <b>Heading3</b>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            asperiores amet laborum amet doloribus mollitia debitis. asperiores
+            laborum amet doloribus amet mollitia debitis. laborum amet doloribus
+            mollitia debitis. laborum amet doloribus mollitia debitis.
+          </p>
+        </div>
+      </div>
+      <div id="intro"></div>
+      <div id="product"></div>
+      <div id="gallery"></div>
+      <div id="Contactus"></div>
+      <div id="login"></div>
+      <div id="ufooter"></div>
+      <div id="bfooter"></div>
+    </div>
+  </body>
+</html>

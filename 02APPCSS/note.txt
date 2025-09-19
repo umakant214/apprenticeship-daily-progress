@@ -343,3 +343,33 @@ Navbar =>
 <nav></nav>   => SEO friendly
 ==============
   text-decoration: underline (default) | overline | line-through | none
+
+
+  ==================================
+  create variable in html CSS
+
+  :root or Html {
+    --color:red;
+    --color:orange;
+  }
+   :rote {
+        --color1: red;
+        --color2: orange;
+        --color3: green;
+      }
+      .a1,
+      .a3,
+      .a6 {
+        color: var(--color1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="a1">Heading1</h1>
+    <h1 class="a2">Heading2</h1>
+    <h1 class="a3">Heading3</h1>
+    <h1 class="a4">Heading4</h1>
+    <h1 class="a5">Heading5</h1>
+    <h1 class="a6">Heading6</h1>
+  </body>
+</html>

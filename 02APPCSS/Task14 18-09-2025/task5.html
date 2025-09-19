@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #outer {
+        width: 1200px;
+        min-height: 800px;
+        border: 1px solid black;
+        margin: auto;
+      }
+      .top {
+        width: 1200px;
+        height: 50px;
+        background-color: rgb(234, 231, 231);
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .left {
+        width: 200px;
+        height: 50px;
+        float: left;
+        line-height: 50px;
+        font-weight: bold;
+      }
+      .right {
+        width: 700px;
+        height: 50px;
+        float: left;
+      }
+      .right ul li {
+        width: 120px;
+        height: 50px;
+
+        float: left;
+        transform: translateY(-16px);
+        line-height: 50px;
+        text-align: center;
+        list-style: none;
+        font-weight: bold;
+        color: black;
+      }
+      #slider {
+        width: 1200px;
+        height: 450px;
+        background: url(images/img6.jpeg);
+        background-size: cover;
+      }
+      .l1 {
+        width: 600px;
+        height: 450px;
+
+        float: left;
+        padding: 150px 150px;
+        box-sizing: border-box;
+        font-weight: bold;
+      }
+      .l2 {
+        width: 600px;
+        height: 450px;
+        float: left;
+      }
+      .btn {
+        width: 200px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        font-size: 17px;
+        background: linear-gradient(
+          to right,
+          rgba(109, 193, 255),
+          rgba(184, 124, 254)
+        );
+      }
+      #service {
+        width: 1200px;
+        height: 600px;
+        background: linear-gradient(
+          to right,
+          rgba(254, 123, 141),
+          rgba(255, 211, 166)
+        );
+        /* padding: 100px 150px;
+        box-sizing: border-box; */
+      }
+      .a1 {
+        width: 1200px;
+        height: 300px;
+
+        color: white;
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .a2 {
+        width: 1200px;
+        height: 300px;
+
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .p1 {
+        width: 300px;
+        height: 300px;
+
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <!-- menu section -->
+      <div class="top">
+        <div class="left">Bootsrapily</div>
+        <div class="right">
+          <ul>
+            <a href="#"><li>Service</li></a>
+            <a href="#"><li>Portfolio</li></a>
+            <a href="#"><li>Clients</li></a>
+            <a href="#"><li>Testimonials</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
+      <!-- slider Section -->
+      <div id="slider">
+        <div class="l1">
+          <div style="font-size: 35px">Hii! I'm Umakant</div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+            accusamus error amet!
+          </p>
+          <p>Lorem ipsum dolor sit amet.</p>
+
+          <button class="btn">I'm Availble</button>
+        </div>
+        <div class="l2"></div>
+      </div>
+
+      <!-- Services -->
+      <div id="service">
+        <div class="a1">
+          <div class="p1">
+            <h1>Servicess</h1>
+            <p>Web & App Design</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              dolores dolor nam sint amet in. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Consequatur similique error dolores
+            </p>
+          </div>
+          <div style="padding-top: 70px" class="p1">
+            <p>Web & App Design</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              dolores dolor nam sint amet in. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Consequatur similique error dolores
+            </p>
+          </div>
+          <div style="padding-top: 70px" class="p1">
+            <p>Web & App Design</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              dolores dolor nam sint amet in. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Consequatur similique error dolores
+              .
+            </p>
+          </div>
+        </div>
+        <div class="a2">
+          <div class="p1">
+            <p>Web & App Design</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              dolores dolor nam sint amet in. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Consequatur similique error dolores
+            </p>
+          </div>
+          <div class="p1">
+            <p>Web & App Design</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              dolores dolor nam sint amet in. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Consequatur similique error dolores
+            </p>
+          </div>
+          <div class="p1">
+            <p>Web & App Design</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              dolores dolor nam sint amet in. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Consequatur similique error dolores
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
