@@ -5,42 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      :root {
+        --gcolor: #94c93b;
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
       #outer {
         width: 1200px;
-        min-height: 700px;
+        min-height: 1000px;
         border: 1px solid black;
-
         margin: auto;
       }
-      #top {
+      #top1 {
         width: 1200px;
-        height: 500px;
-        padding-top: 10px;
+        height: 50px;
+        box-shadow: 0px 0px 5px 5px lightgray;
+        padding: 0px 100px;
         box-sizing: border-box;
-        color: white;
-        background-color: #b2b2b2;
-        padding: 20px 150px;
       }
-      .t1 {
-        width: 200px;
+      .left {
+        width: 300px;
         height: 50px;
         float: left;
       }
-      .t2 {
+      .right {
         width: 700px;
         height: 50px;
         float: left;
+        padding-left: 100px;
+        box-sizing: border-box;
+      }
+      .right ul li {
+        width: 112px;
+        height: 50px;
+        float: left;
+        transform: translateY(-16px);
+        line-height: 50px;
+        font-weight: bold;
+        color: black;
+        list-style: none;
+        text-align: center;
+        transition: all 1s;
+      }
+      .right ul li:hover {
+        background-color: var(--gcolor);
+        transition: all 1s;
+      }
+      #slider {
+        width: 1200px;
+        height: 450px;
+        background: linear-gradient(rgba(154, 154, 154, 0.4)),
+          url(images/business.jpg);
+        background-size: cover;
+        padding-top: 250px;
+        padding-left: 200px;
+        box-sizing: border-box;
+      }
+      #heading {
+        width: 1200px;
+        height: 100px;
+        background-color: #f5f5f5;
+        padding: 20px 300px;
+        box-sizing: border-box;
+      }
+      #service {
+        width: 1200px;
+        min-height: 300px;
+        padding: 20px 300px;
+        box-sizing: border-box;
+        padding: 25px 100px;
+        box-sizing: border-box;
+        background-color: #c6c4c4;
+      }
+      .a1 {
+        width: 300px;
+        height: 250px;
+        float: left;
+        background-color: white;
+        box-shadow: 0px 0px 5px 10px white;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .a1:hover {
+        box-shadow: 0px 0px 10px 5px #94e606;
+        transition: all 1s;
+      }
+      .x1 {
+        width: 300px;
+        height: 300px;
+        float: left;
+        background-color: white;
+        box-shadow: 0px 0px 5px 10px white;
+      }
+      .x1:hover {
+        box-shadow: 0px 0px 10px 5px #94e606;
+        transition: all 1s;
+      }
+      .images {
+        width: 300px;
+        height: 200px;
+      }
+      .text {
+        width: 300px;
+        height: 100px;
+        padding: 5px 10px;
+        box-sizing: border-box;
       }
     </style>
   </head>
   <body>
     <div id="outer">
-      <div id="top">
-        <!-- -->
-        <div class="t1">
-          <div style="font-size: 30px">Kiddy</div>
+      <div id="top1">
+        <div class="left">
+          <div style="font-size: 25px; line-height: 50px">XTREAM</div>
         </div>
-        <div class="t2"></div>
+        <div class="right">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About Us</li></a>
+            <a href="#"><li>Service</li></a>
+            <a href="#"><li>Gallery</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <!-- slider section -->
+      <div id="slider">
+        <h1 style="color: #94e606">BUSINESS INTELLECT</h1>
+        <p style="color: white">
+          Lorem ipsum dolor sit, amet consectetur adipisicing.
+        </p>
+      </div>
+
+      <!-- Our services -->
+      <div id="heading" style="margin-bottom: 20px">
+        <div style="text-align: center; font-size: 25px; font-weight: bold">
+          OUR SERVICES
+        </div>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+          incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div id="service">
+        <div class="a1">
+          <i style="color: #94c93b" class="fa-solid fa-user"></i>
+          <h3 style="text-align: center">Consulting</h3>
+          <p style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            quaerat ipsum doloremque unde, nobis rem consectetur a qui beatae
+            molestias Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div style="margin-left: 50px" class="a1">
+          <i style="color: #94c93b" class="fa-solid fa-user"></i>
+          <h3 style="text-align: center">Consulting</h3>
+          <p style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            quaerat ipsum doloremque unde, nobis rem consectetur a qui beatae
+            molestias Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div style="margin-left: 50px" class="a1">
+          <i style="color: #94c93b" class="fa-solid fa-user"></i>
+          <h3 style="text-align: center">Consulting</h3>
+          <p style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            quaerat ipsum doloremque unde, nobis rem consectetur a qui beatae
+            molestias Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+
+      <!-- Our PROCESS -->
+      <div id="heading" style="background-color: #94e606">
+        <div style="text-align: center; font-size: 25px; font-weight: bold">
+          OUR SERVICES
+        </div>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+          incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div id="service" style="height: 350px; background-color: #94e606">
+        <div class="x1">
+          <div class="images">
+            <img src="images/img6.jpeg" height="200px" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium rerum, beatae quibusdam molestias debitis hic
+            </p>
+          </div>
+        </div>
+        <div style="margin-left: 50px" class="x1">
+          <div class="images">
+            <img src="images/img1.jpeg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium rerum, beatae quibusdam molestias debitis hic
+            </p>
+          </div>
+        </div>
+        <div style="margin-left: 50px" class="x1">
+          <div class="images">
+            <img src="images/n1.jfif" height="200px" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium rerum, beatae quibusdam molestias debitis hic
+            </p>
+          </div>
+          <div class="text"></div>
+        </div>
       </div>
     </div>
   </body>
