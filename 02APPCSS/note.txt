@@ -373,3 +373,37 @@ Navbar =>
     <h1 class="a6">Heading6</h1>
   </body>
 </html>
+
+
+====================
+column-count:number;
+column-gap
+column-rule-width
+column-rule-style
+column-rule-color
+column-span
+
+=========================
+transform:rotate | skew | skewX | skewY | translate | translateX | translateY | scale | scaleX | scaleY
+
+rotate | rotateX | rotateY | rotateZ 
+-------------------
+rotate3d(x,y,z,angle)
+rotate3d(0 ,0,1,30deg)  rotateZ(30deg)
+rotate3d(0 ,1,0,30deg)  rotateY(30deg)
+rotate3d(1 ,0,0,30deg)  rotateX(30deg)
+rotate3d(-1 ,0,0,30deg)  rotateX(-30deg)
+
+=========================
+always use parent div:
+transform-style: flat (default) | preserve-3d
+
+==================
+translate(x,y)
+translateX
+translateY
+translateZ
+translate3d(x,y,z);
+
+==================
+ for use zoom in zoom out

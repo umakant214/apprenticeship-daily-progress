@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      #outer {
+        width: 200px;
+        height: 200px;
+        border: 20px solid #e5e5e5;
+        border-radius: 50%;
+        margin: 200px auto;
+        position: relative;
+        border-left: 20px solid #007acc;
+        animation-name: abc;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes abc {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      #inner {
+        height: 40px;
+        width: 40px;
+        box-shadow: 0px 0px 1px 3px rgba(0, 144, 204, 0.8),
+          0px 0px 1px 3px rgba(0, 144, 204, 0.6),
+          0px 0px 1px 3px rgba(0, 144, 204, 0.4),
+          0px 0px 1px 3px rgba(0, 144, 204, 0.2);
+        border-radius: 50%;
+        background-color: rgba(0, 144, 204, 0.8);
+        position: absolute;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner"></div>
+    </div>
+  </body>
+</html>

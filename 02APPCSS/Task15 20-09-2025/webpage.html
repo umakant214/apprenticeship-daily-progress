@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #outer {
+        width: 1200px;
+        min-height: 800px;
+        border: 1px solid black;
+        margin: 0px auto;
+      }
+      #top {
+        width: 1200px;
+        height: 80px;
+        background-color: #02284c;
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .left {
+        width: 500px;
+        height: 80px;
+        float: left;
+      }
+      .right {
+        width: 400px;
+        height: 80px;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+
+        color: #e1d87d;
+      }
+      #menu {
+        width: 1200px;
+        height: 50px;
+        background-color: #004681;
+        padding: 0px 150px;
+        box-sizing: border-box;
+        transform: translateY(-16px);
+      }
+      nav ul li {
+        width: 120px;
+        height: 50px;
+        float: left;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: white;
+        list-style: none;
+        text-align: center;
+      }
+      nav ul li:hover {
+        background-color: #e1d87d;
+      }
+      #slider {
+        width: 1200px;
+        height: 450px;
+        background: url(boys.jpg);
+        background-size: cover;
+        transform: translateY(-16px);
+        padding: 100px 150px;
+        box-sizing: border-box;
+        color: white;
+        font-weight: bold;
+      }
+      .btn {
+        width: 150px;
+        height: 40px;
+        background-color: #02284c;
+        border: none;
+        border-radius: 10px;
+        color: white;
+      }
+      #box {
+        width: 1200px;
+        height: 350px;
+        transform: translateY(-16px);
+        padding: 0px 150px;
+        box-sizing: border-box;
+        transform: translateY(-100px);
+      }
+      .b1 {
+        width: 280px;
+        height: 330px;
+        background-color: white;
+        float: left;
+        margin: 10px;
+        box-shadow: 0px 0px 8px 8px lightgray;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 10px;
+      }
+      #about {
+        width: 1200px;
+        height: 400px;
+        background-color: #b8daf5;
+        padding: 0px 150px;
+        box-sizing: border-box;
+      }
+      .x {
+        width: 450px;
+        height: 400px;
+        background-color: #e1d87d;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="top">
+        <div class="left">
+          <h1 style="color: #e1d87d">COMPANY</h1>
+        </div>
+        <div class="right">
+          <div><b>Address:</b>121 King Street</div>
+          <div>Lorem ipsum dolor sit amet doloribus!</div>
+          <div><b>Free call:</b>+91309820938</div>
+        </div>
+      </div>
+
+      <nav id="menu">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About US</li></a>
+          <a href="#"><li>Services</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+      </nav>
+
+      <div id="slider">
+        <div style="font-size: 35px">Entrust Your</div>
+        <div style="font-size: 35px">Business to Us</div>
+        <p style="text-align: justify">
+          Lorem ipsum dolor sit, amet consectetur <br />
+          adipisicing elit. Illo quidem quisquam quos in <br />
+          minus odio, nam architecto rem aliquam,
+          <br />
+          ad sint accusamus placeat. Dolores exercitationem <br />
+          animi asperiores quidem!
+        </p>
+        <button class="btn">GET NOW</button>
+      </div>
+
+      <div id="box">
+        <div class="b1">
+          <div><img src="boys.jpg" height="50px" alt="" /></div>
+          <div style="font-size: 25px">Promotion & Marketing</div>
+          <p style="text-align: center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            lorem aliquid quasi exercitationem quam.
+          </p>
+          <a style="color: black; font-weight: bold" href="#">More</a>
+        </div>
+        <div class="b1">
+          <div><img src="boys.jpg" height="50px" alt="" /></div>
+          <div style="font-size: 25px">Monitoring Your Business</div>
+          <p style="text-align: center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            lorem aliquid quasi exercitationem quam.
+          </p>
+          <a style="color: black; font-weight: bold" href="#">More</a>
+        </div>
+        <div class="b1">
+          <div><img src="boys.jpg" height="50px" alt="" /></div>
+          <div style="font-size: 25px">Practice <br />Business</div>
+          <p style="text-align: center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            lorem aliquid quasi exercitationem quam.
+          </p>
+          <a style="color: black; font-weight: bold" href="#">More</a>
+        </div>
+      </div>
+
+      <div id="about">
+        <div
+          style="
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: #004681;
+          "
+          class="x"
+        >
+          <h2 style="color: #7ae7fe">It's Time to Start Your Business</h2>
+          <p style="color: white">Template for your Business</p>
+          <p style="color: white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+            alias cum mollitia molestias, aspernatur tenetur explicabo ipsa
+            inventore dignissimos necessitatibus delectus illo cumque sequi eos
+            temporibus, quo quia laboriosam.
+          </p>
+        </div>
+        <div class="x">
+          <img src="business.jpg" height="400px" width="450px" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

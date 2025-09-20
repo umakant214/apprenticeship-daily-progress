@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 1200px;
+        height: 600px;
+        background-color: #212e36;
+        margin: auto;
+      }
+      .top {
+        width: 1200px;
+        height: 300px;
+      }
+      .a1 {
+        width: 300px;
+        height: 300px;
+
+        float: left;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+      .rodar {
+        width: 100px;
+        height: 100px;
+        border: 10px solid #16948d;
+        border-radius: 50%;
+        border-left: 10px solid black;
+        border-bottom: 10px solid black;
+        border-right: 10px solid black;
+        position: relative;
+        animation: abc 1s linear infinite;
+      }
+      .rodar {
+        width: 100px;
+        height: 100px;
+        border: 10px solid #16948d;
+        border-radius: 50%;
+        border-left: 10px solid black;
+        border-bottom: 10px solid black;
+        border-right: 10px solid black;
+        position: relative;
+        animation: abc 1s linear infinite;
+      }
+
+      /* .circle {
+        width: 10px;
+        height: 10px;
+        border: 10px solid black;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+        top: -5px;
+      } */
+      @keyframes abc {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .rodar1 {
+        width: 100px;
+        height: 100px;
+        border: 10px solid #2c7ac3;
+        border-radius: 50%;
+        position: relative;
+        border-right: 10px solid #212e36;
+        border-bottom: 10px solid #212e36;
+        animation: abc 2s linear infinite;
+      }
+      .rodar2 {
+        width: 60px;
+        height: 60px;
+        border: 10px solid #2c7ac3;
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-right: 10px solid #212e36;
+        border-bottom: 10px solid #212e36;
+        animation: abc 2s linear infinite;
+      }
+      .rodar3 {
+        width: 100px;
+        height: 100px;
+        border: 10px solid #212e36;
+        border-radius: 50%;
+        position: relative;
+        border-bottom: 10px solid #96462b;
+        /* border-right: 10px solid #96462b; */
+        animation: abc 2s linear infinite;
+        position: relative;
+      }
+      .rodar4 {
+        width: 70px;
+        height: 70px;
+        border: 10px solid #212e36;
+        border-radius: 50%;
+        position: relative;
+        border-right: 10px solid #96462b;
+        /* 
+        border-top: 10px solid #96462b; */
+        animation: abc 2s linear infinite;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+      }
+      .rodar5 {
+        width: 40px;
+        height: 40px;
+        border: 10px solid #212e36;
+        border-radius: 50%;
+        position: relative;
+        /* border-bottom: 10px solid #212e36;*/
+        border-top: 10px solid #96462b;
+        animation: abc 2s linear infinite;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div class="top">
+        <div class="a1">
+          <div
+            class="rodar"
+            style="
+              border-left: 10px solid #212e36;
+              border-bottom: 10px solid #212e36;
+              border-right: 10px solid #212e36;
+            "
+          >
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="a1">
+          <div class="rodar">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="a1">
+          <div
+            class="rodar"
+            style="
+              border-top: 10px solid #16948d;
+              border-bottom: 10px solid #16948d;
+            "
+          >
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="a1">
+          <div class="rodar" style="border-right: 10px solid #16948d">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="top">
+        <div class="a1">
+          <div class="rodar1">
+            <div class="rodar2"></div>
+          </div>
+        </div>
+        <div class="a1">
+          <div
+            class="rodar1"
+            style="
+              border-top: 10px solid #832696;
+              border-bottom: 10px solid #832696;
+              border-left: 10px solid #212e36;
+            "
+          >
+            <div
+              class="rodar2"
+              style="
+                border-top: 10px solid #b86dbc;
+                border-bottom: 10px solid #b86dbc;
+                border-left: 10px solid #212e36;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="a1">
+          <div class="rodar3">
+            <div class="rodar4"></div>
+            <div class="rodar5"></div>
+          </div>
+        </div>
+        <div class="a1">
+          <div
+            class="rodar1"
+            style="
+              border-left: 10px solid #d35c41;
+              border-top: 10px solid #d35c41;
+            "
+          >
+            <div
+              style="
+                border-left: 10px solid #41add0;
+                border-top: 10px solid #41add0;
+              "
+              class="rodar2"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
