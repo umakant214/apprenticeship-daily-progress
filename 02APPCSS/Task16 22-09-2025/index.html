@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --acolor:#009dff;
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #outer{
+            width: 1300px;
+            min-height: 1500px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        #top{
+            width: 1300px;
+            height: 60px;
+           box-shadow: 0px 0px 8px 8px lightgray;
+        }
+        .logo{
+            width: 500px;
+            height: 60px;
+            float: left;
+          
+            padding: 0px 150px ;
+            box-sizing: border-box;
+            line-height: 60px;
+            font-size: 40px;
+            color: var(--acolor);
+        }
+         .condetails{
+            width: 800px;
+            height: 80px;
+            float: left;
+          
+              padding: 0px 150px ;
+            box-sizing: border-box;
+           line-height: 22px;
+            font-size: 16px;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+        .opening{
+            width: 150px;
+            height: 80px;
+            float: left;
+            text-align: center;
+           
+        }
+        .callus{
+            width: 150px;
+            height: 80px;
+            float: left;
+            text-align: center;
+           
+        }
+        .emailus{
+            width: 150px;
+            height: 80px;
+            float: left;
+            text-align: center;
+           
+        }
+        #menu{
+            width: 1300px;
+            height: 50px;
+            background: var(--acolor);
+            padding: 0px 70px;
+            box-sizing: border-box;
+           
+        }
+        .left{
+            width: 800px;
+            height: 50px;
+            float: left;
+          
+         transform: translateY(-19px);
+            
+           
+        }
+          .right{
+            width: 200px;
+            height: 50px;
+            float: left;
+          
+            transform: translateY(-19px);
+         
+           
+        }
+        .left ul li {
+            width: 120px;
+            height: 50px;
+            float: left;
+            text-align: center;
+            list-style: none;
+            color: white;
+            font-weight: bold;
+        }
+        .left ul li:hover{
+            background-color: black;
+            transform: translateY(-18px);
+            line-height: 50px;
+        }
+        .btn{
+            width: 10px;
+            height: 30px;
+            text-align: center;
+            background: rgba(255,255,255);
+         
+            border-radius: 30px;
+            margin-left: 50px;
+            margin-top: 20px;
+            border: none;
+        } 
+        .btn:hover{
+            background-color: white;
+            color: #111111;
+        }
+        
+        #slider{
+            width: 1300px;
+            height: 450px;
+            background: linear-gradient(rgba(93,97,93,.6)),url(images/img4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 100px 200px;
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        .card{
+            width: 1300px;
+            height: 300px;
+            background-color: aliceblue;
+            padding: 0px 250px;
+            box-sizing: border-box;
+        }
+        .card1{
+            width: 160px;
+            height: 200px;
+            float: left;
+            background-color: #f8f8f8;
+            margin-top: 50px;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px 6px rgba(0,0,0,.5);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .card1:hover{
+            box-shadow: 0px 0px 10px 10px rgba(0,0,0,.7);
+        }
+        #about{
+            width: 1300px;
+            height: 450px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .a1{
+            width: 600px;
+            height: 400px;
+            float: left;
+            padding-left: 20px;
+            padding-top: 20px;
+            box-sizing: border-box;
+            margin-left: 20px;
+           
+        }
+        .icon{
+            width: 80px;
+            height: 80px;
+          
+            border-radius: 50%;
+        }
+        .icon img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .t1{
+            width: 600px;
+            height: 250px;
+           
+        }
+          .t2{
+            width: 600px;
+            height: 150px;
+        
+        }
+        .x1{
+            width: 100px;
+            height: 100px;
+         
+            float: left;
+           padding:15px 10px;
+            box-sizing: border-box;
+        }
+          .x2{
+            width: 400px;
+            height: 100px;
+          
+            float: left;
+          padding: 25px 20px;
+          box-sizing: border-box;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .btn{
+            width: 150px;
+            height: 50px;
+            background-color:var(--acolor) ;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            transform: translateY(-20px);
+        }
+        #service{
+            width: 1300px;
+            min-height: 600px;
+           
+        }
+        .stext{
+            width: 1300px;
+            height: 150px;
+           
+            padding: 10px 300px;
+            box-sizing: border-box;
+            text-align: center;
+            font-weight: bold;
+           
+        }
+        .simg{
+            width: 1300px;
+            min-height: 800px;
+         
+        }
+        .m1{
+            width: 1300px;
+            height: 300px;
+           
+            padding: 50px 200px;
+            box-sizing: border-box;
+        }
+        .c1{
+            width: 280px;
+            height: 280px;
+            float: left;
+            background-color: aqua;
+            margin: 50px 10px;
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,.4);
+            border-radius: 5px;
+        }
+        .c1 img{
+            width: 280px;
+            height: 280px;
+            border-radius: 5px;
+            
+        }
+        .c1:hover{
+            box-shadow: 0px 0px 10px 10px #111111;
+        }
+       
+        #choose{
+            width: 1000px;
+            height: 400px;
+          
+            margin-top: 40px;
+            padding: 0px 150px;
+        }
+        .p1{
+            width: 500px;
+            height: 400px;
+           
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .border{
+            width: 350px;
+            height: 350px;
+            border: 2px solid var(--acolor);
+            padding-top: 30px;
+            padding-left: 30px;
+            box-sizing: border-box;
+        }
+        #project{
+            width: 1300px;
+            height: 500px;
+           
+            margin-top: 50px;
+        }
+
+        .pro{
+            width: 1300px;
+            height: 150px;
+           
+            padding: 10px 200px;
+            box-sizing: border-box;
+        }
+        .pro1{
+            width: 1300px;
+            height: 300px;
+              padding: 0px 200px;
+            box-sizing: border-box;
+        }
+       
+        .proimg{
+            width: 250px;
+            height: 280px;
+         
+            float: left;
+            margin: 20px;
+        }
+        
+       
+        .imgtop{
+            width: 280px;
+            height: 200px;
+              border-radius: 5px;
+              padding: 10px;
+              box-sizing: border-box;
+              box-shadow: 0px 0px 10px 5px #adabab;
+           
+        }
+        .imgtop:hover{
+            box-shadow: 0px 0px 10px 10px #111111;
+        }
+        .imgtext{
+            width: 240px;
+            height: 50px;
+              border-radius: 5px;
+              padding: 10px;
+              box-sizing: border-box;
+                margin: 5px;
+             
+           
+        }
+        .imgtop img{
+            border-radius: 5px;
+            height: 180px;
+      }
+      #team{
+        width: 1300px;
+        height: 450px;
+      
+      }
+      .team1{
+        width: 1300px;
+        height: 150px;
+         text-align: center;
+       padding-top: 15px;
+        box-sizing: border-box;
+      }
+      .team2{
+        width: 1300px;
+        height: 300px;
+      
+        padding: 0px 200px;
+        box-sizing: border-box;
+       
+      }
+      .pteam{
+        width: 280px;
+        height: 200px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 6px rgba(0,0,0,.4);
+        float: left;
+        margin: 10px;
+         border-radius: 10px;
+      }
+      .pteam:hover{
+            box-shadow: 0px 0px 10px 10px #111111;
+        }
+      .teamimg{
+        width: 100px;
+        height: 100px;
+       
+        border-radius: 50%;
+        padding: 5px 50px;
+        box-sizing: border-box;
+        margin-left: 90px;
+        background: url(images/person1.jpg);
+      }
+      .teamName{
+        width: 280px;
+        height: 100px;
+       
+        text-align: center;
+        padding-top: 30px;
+         border-radius: 10px;
+      }
+      #testimonial{
+        width: 1300px;
+        height: 400px;
+      
+      }
+      .test1{
+        width: 1300px;
+        height: 150px;
+       
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .test2{
+        width: 1300px;
+        height: 250px;
+    
+        padding: 0px 200px;
+        box-sizing: border-box;
+      }
+      .testdetails{
+        width: 280px;
+        height: 230px;
+        
+        float: left;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 6px rgba(0,0,0,.5);
+
+      }
+      .testdetails:hover{
+            box-shadow: 0px 0px 10px 10px #111111;
+        }
+      .deltop{
+        width: 280px;
+        height: 100px;
+      
+      }
+      .delbottom{
+        width: 280px;
+        height: 130px;
+       padding: 20px;
+       box-sizing: border-box;
+      }
+      .delimg{
+        width: 80px;
+        height: 80px;
+       background: url(images/person1.jpg);
+       background-size: cover;
+        float: left;
+        border-radius: 50%;
+      margin-left: 10px;
+      margin-top: 10px;
+      }
+         .delName{
+        width: 180px;
+        height: 100px;
+        padding:20px 30px;
+        box-sizing: border-box;
+       
+        float: left;
+      }
+      #foot{
+        width: 1300px;
+        height: 300px;
+        background-color: #111111;
+        padding: 0px 50px;
+        box-sizing: border-box;
+       
+      }
+    
+      .f{
+        width: 300px;
+        height: 300px;
+       background-color: #111111;
+        float: left;
+        padding-top: 20px;
+        box-sizing: border-box;
+        padding-left: 20px;
+      }
+      #copy{
+        width: 1300px;
+        height: 60px;
+        background-color: #111111;
+        padding: 0px 0px;
+        box-sizing: border-box;
+        
+      }
+      .cop1{
+        width: 650px;
+        height: 60px;
+      
+        float: left;
+        line-height: 60px;
+        color: #797878;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <!-- top section -->
+         <div id="top">
+            <div class="logo">
+                DGCom
+            </div>
+            <div class="condetails">
+              <div class="opening">opening <br> <b>Mon-Fri,8:00-9:00</b>
+            </div>
+              <div class="callus">call us <br><b>+9123894388</b> </div>
+              <div class="emailus">Email us <br> <b>info@gmail.com</b></div>
+            </div>
+         </div>
+
+         <!-- menu section -->
+          <div id="menu">
+            <div class="left">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About US</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Projects</li></a>
+                    <a href="#"><li>Pages</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                 
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Get Started</button>
+            </div>
+           
+          </div>
+
+
+          <!-- slider section -->
+           <div id="slider">
+            <p>WE ARE LEADER IN</p>
+            <h1 style="font-size: 40px;">Creative & Innovative <br> Digital Solution</h1>
+           </div>
+<!-- card section -->
+<div class="card">
+    <div class="card1">
+        <img src="images/img3.webp" height="50px" width="50px" style="border-radius: 50%;" alt="">
+<div style="color: #2e2e2e;">Years <br> Experience
+    <br><b style="font-size: 20px; color: black;">1234</b>
+</div>
+    </div>
+    <div class="card1">
+        <img src="images/img8.jpg" height="50px" width="50px" style="border-radius: 50%;" alt="">
+        <div  style="color: #2e2e2e;">Team <br> Members
+            <br><b style="font-size: 20px; color: black;">1234</b>
+        </div>
+    </div>
+    <div class="card1">
+        <img src="images/img7.jpg" height="50px" width="50px" style="border-radius: 50%;" alt="">
+        <div  style="color: #2e2e2e;">Satisfied <br> Clients
+            <br><b style="font-size: 20px; color: black;">1234</b>
+        </div>
+    </div>
+    <div class="card1">
+        <img src="images/img4.jpg" height="50px" width="50px" style="border-radius: 50%;" alt="">
+        <div  style="color: #2e2e2e;">Projects <br> Done
+            <br><b style="font-size: 20px; color: black;">1234</b>
+        </div>
+    </div>
+</div>
+
+<!-- About Us -->
+ <div id="about">
+    <div style="border: 1px solid black;" class="a1">
+      <div><img src="images/img5.jpg" height="400px" width="580px" alt=""></div>
+    </div>
+    <div style="padding: 20px; box-sizing: border-box;" class="a1">
+      <div class="t1">
+        <p style="color: var(--acolor); font-weight: bold;">ABOUT US</p>
+        <div style="font-size: 40px; font-weight: bold;">#1 Digital Solution With <b style="color: var(--acolor);">10 Years</b>
+            Of Experience</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae, enim quasi tempora illum quae sunt excepturi
+            pariatur tenetur molestiae labore. Doloribus iste veritatis quibusdam autem magni! Minima, minus odit. Ducimus
+            voluptatum unde, illo hic quod est consequatur dolorum optio labore dignissimos? Magnam totam, commodi nisi
+            doloremque at tenetur magni.</p>
+        
+       
+      </div>
+      <div class="t2">
+        <div class="x1"><span class="icon"><img src="images/person1.jpg" alt=""></span></div>
+       
+        <div  class="x2">Jhone Deo <br> SEO & Founder</div>
+       <div class="x3"> <Button class="btn">Rad more</Button></div>
+      </div>
+    </div>
+ </div>
+
+
+ <!-- services section -->
+  <div id="service">
+    <div class="stext">
+        <p style="color: var(--acolor); text-transform: uppercase;">Services</p>
+        <h1>We Focuse On Making The Best <br> In All Sectors</h1>
+    </div>
+    <div class="simg">
+        <div class="m1">
+            <div class="c1">
+                <img src="images/img2.jpg" alt="">
+                <br>
+              <div style="text-align: center; font-size: 20px;padding-top: 20px;">Web Design</div>
+            </div>
+            <div class="c1">
+                <img src="images/img1.png" alt="">
+                <div style="text-align: center; font-size: 20px;padding-top: 20px;">App Development</div>
+            </div>
+            <div class="c1">
+                <img src="images/img3.webp" alt="">
+                <div style="text-align: center; font-size: 20px;padding-top: 20px;">SEO Optimization</div>
+            </div>
+        </div>
+        <div class="m1">
+            <div class="c1">
+                <img src="images/img4.jpg" alt="">
+                <div style="text-align: center; font-size: 20px;padding-top: 20px;">Social Marketing</div>
+            </div>
+            <div class="c1">
+                <img src="images/img7.jpg" alt="">
+                <div style="text-align: center; font-size: 20px;padding-top: 20px;">Email Marketing</div>
+            </div>
+            <div class="c1">
+                <img src="images/img8.jpg" alt="">
+                <div style="text-align: center; font-size: 20px;padding-top: 20px;">PPC Advertising </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Choose us Section -->
+   <div id="choose">
+    <div class="p1">
+        <p style="color: var(--acolor);text-transform: uppercase;font-weight: bold;">Why Choose us</p>
+        <h1>Why People Trust Us? <br>
+        Learn About Us?</h1>
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae culpa, amet alias dolorum nostrum sunt quidem? Accusantium, nostrum. Incidunt?</p>
+        Digital Marketing <br>
+        <input type="range" min="0" max="100" value="85" id="myrange" style="width: 400px;"> 85%
+        <br>
+        SEO & Backings <br>
+        <input type="range" value="90" style="width: 400px;"> 90%
+        <br>
+        Design & Development <br>
+        <input type="range" value="95" style="width: 400px;"> 95%
+    </div>
+    <div class="p1">
+        <div class="border">
+            <img src="images/img5.jpg" height="350px" alt="">
+        </div>
+    </div>
+   </div>
+
+
+
+   <!-- our projects section -->
+    <div id="project">
+        <div class="pro">
+            <p style="text-align: center;color: var(--acolor);">Our Projects</p>
+            <h1 style="text-align: center;">Learn More About Our  <br>Complete Projects</h1>
+        </div>
+        <div class="pro1">
+            <div class="proimg">
+                <div class="imgtop"><img src="images/img6.jpg" alt=""  width="260px"></div>
+                <div class="imgtext">
+                    <div style="font-weight: bold;" >UI / UX Design</div>
+                    <div style="font-size: 16px; color:#797878 ;">Lorem ipsum dolor sit amet consectetur.</div>
+                </div>
+            </div>
+            <div class="proimg">
+                <div class="imgtop"><img src="images/img7.jpg" alt="" width="260px"></div>
+                <div class="imgtext">
+                    <div style="font-weight: bold;">UI / UX Design</div>
+                    <div style="font-size: 16px; color:#797878 ;">Lorem ipsum dolor sit amet consectetur.</div>
+                </div>
+            </div>
+            <div class="proimg">
+                <div class="imgtop"><img src="images/img3.webp" alt="" width="260px"></div>
+                <div class="imgtext">
+                    <div style="font-weight: bold;">UI / UX Design</div>
+                    <div style="font-size: 16px; color:#797878 ;">Lorem ipsum dolor sit amet consectetur.</div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <!-- our team -->
+     <div id="team">
+        <div class="team1">
+            <p style="color: var(--acolor);">OUR TEAM</p>
+            <h1>We Are A Creative Team For <br> Your Dream Project</h1>
+        </div>
+        <div class="team2">
+            <div class="pteam">
+                <div class="teamimg" ></div>
+                <div class="teamName"><b style="font-weight: bold;" >Full Name</b> <br style="color: #969393;">Designation</div>
+            </div>
+            <div class="pteam">
+                <div class="teamimg"></div>
+                <div class="teamName"><b style="font-weight: bold;">Full Name</b> <br style="color: #969393;">Designation</div>
+            </div>
+            <div class="pteam">
+                <div class="teamimg"></div>
+                <div class="teamName"><b style="font-weight: bold;">Full Name</b> <br style="color: #969393;">Designation</div>
+            </div>
+
+        </div>
+     </div>
+
+
+     <!-- Testimonial -->
+      <div id="testimonial">
+        <div class="test1">
+            <p style="color: var(--acolor);text-transform: uppercase;">Testimonial</p>
+            <h1>What Our Clients Say!</h1>
+        </div>
+        <div class="test2">
+            <div class="testdetails">
+                <div class="deltop">
+                    <div class="delimg"></div>
+                    <div class="delName"><b>Client Name</b> <br>Profession</div>
+                </div>
+                <div class="delbottom">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error molestias facilis? Odio, nulla eveniet nemo atque distinctio eum ut?
+                </div>
+            </div>
+            <div class="testdetails">
+                <div class="deltop">
+                    <div class="delimg"></div>
+                    <div class="delName"><b>Client Name</b> <br>Profession</div>
+                </div>
+                <div class="delbottom">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error molestias facilis? Odio, nulla eveniet nemo
+                    atque distinctio eum ut?
+                </div>
+            </div>
+            <div class="testdetails">
+                <div class="deltop">
+                    <div class="delimg"></div>
+                    <div class="delName"><b>Client Name</b> <br>Profession</div>
+                </div>
+                <div class="delbottom">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error molestias facilis? Odio, nulla eveniet nemo
+                    atque distinctio eum ut?
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <!-- footer section  -->
+       <div id="foot">
+       <div class="f">
+        <h3 style="color: white;">Address</h3>
+        <p style="color: #a5a4a4;">123 Street ,New York,<br> USA</p>
+        <p style="color: #a5a4a4;">+012345562334</p>
+        <p style="color: #a5a4a4;">Info@gmail.com</p>
+       </div>
+       <div class="f">
+        <h3 style="color: white;">Ouicks Links</h3>
+        <p style="color: #a5a4a4;">About Us</p>
+        <p style="color: #a5a4a4;">Contact Us</p>
+        <p style="color: #a5a4a4;">Our Services</p>
+        <p style="color: #a5a4a4;">Terms & Conditions</p>
+        <p style="color: #a5a4a4;">Supports</p>
+       </div>
+       <div class="f">
+        <h3 style="color: white;">Services</h3>
+        <p style="color: #a5a4a4;">Web Development</p>
+        <p style="color: #a5a4a4;">App Development</p>
+        <p style="color: #a5a4a4;">SEO Optimization</p>
+        <p style="color: #a5a4a4;">Marketing</p>
+       </div>
+       <div class="f">
+        <h3 style="color: white;">Newsletter</h3>
+        <p style="color: #797878;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique cumque tenetur dolor ullam quos dolorem veniam quisquam deserunt voluptate.</p>
+       </div>
+    </div>
+
+    <!-- @copy section -->
+     <div id="copy">
+        <div class="cop1">&copy;Your Site Name, All Right Reserved</div>
+        <div class="cop1">Designed By <b>Umakant Yadav</div>
+       
+</body>
+</html>
