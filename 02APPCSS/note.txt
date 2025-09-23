@@ -270,7 +270,7 @@ animation-delay:time in second |5s;
 animation-direction:normal | reversed | alternate | alternate-reversed;
 animation-iteration-count: number | infinite;
 animation-play-state:running | paused;
-animation-file-mode:none | forwards | backwards| both
+animation-fill-mode:none | forwards | backwards| both
 animation-timing-function :
 linear => same speed from start to end
 ease => start slow then fast  and end slow
