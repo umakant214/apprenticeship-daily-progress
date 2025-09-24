@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgba(0,0,0,.7);
+        }
+        .outer{
+            height: 50px;
+            width: 50px;
+            margin: 200px auto;
+            border: 10px solid transparent;
+            border-top-color: beige;
+            border-bottom-color: red;
+            border-radius: 50%;
+            animation-name: spinner;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-direction: normal;
+           
+
+        }
+        .inner{
+            height: 50px;
+            width: 50px;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            box-sizing: border-box;
+            border-left-color: blueviolet;
+            border-right-color: orange;
+             animation-name: spinner1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            
+
+
+        }
+        @keyframes spinner{
+            0%{
+                transform: rotate(0deg);
+                opacity: .1;
+            }
+            100%{
+                   transform: rotate(360deg);
+                    opacity: .8;
+            }
+        }
+         @keyframes spinner1{
+            0%{
+                transform: rotate(0deg);
+                opacity: .9;
+            }
+            100%{
+                   transform: rotate(-720deg);
+                   opacity: .3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

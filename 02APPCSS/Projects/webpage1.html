@@ -6,8 +6,10 @@
     <title>Document</title>
     <style>
       :root {
-        --dcolor: #e65100;
-        --lcolor: #ffa726;
+        /* --dcolor: #e65100; */
+        --dcolor: green;
+        /* --lcolor: #ffa726; */
+        --lcolor: lightgreen;
       }
       /* Universal Selector It selects all tag */
       * {
@@ -326,6 +328,41 @@
         width: 100%;
         height: 100%;
       }
+      .col img:hover{
+        box-shadow: 0px 0px 10px 5px rgba(0,0,0,.3);
+      }
+      .col p{
+        background:rgba(0,0,0,.7);
+        color: white;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        border-top: 5px double var(--dcolor);
+        border-bottom: 5px double var(--dcolor);
+        transform: translateY(-50px);
+       display: none;
+       transition: all.5s;
+      }
+      .col img:hover + p{
+        display: block;
+        transition: all .5s;
+         transform: translateY(-150px);
+         /* transform: rotateX(360deg) ; */
+      }
+      .ribben{
+        height: 40px;
+        width: 200px;
+        line-height: 40px;
+        text-align: center;
+        background: var(--lcolor);
+        font-weight: bold;
+        transform: rotate(45deg);
+        position: fixed;
+        top: 25px;
+        right: -60px;
+        border: 2px solid var(--dcolor);
+        box-shadow: 0px 0px 20px rgba(0,0,0,.4);
+      }
     </style>
   </head>
   <body>
@@ -590,23 +627,29 @@
         <div class="row">
           <div class="col">
             <img src="images/slider1.jpg" alt="" />
+            <p>Heading1</p>
           </div>
           <div class="col">
             <img src="images/img2.jpeg" alt="" />
+            <p>Heading2</p>
           </div>
           <div class="col">
             <img src="images/nslider.jpeg" alt="" />
+            <p>Heading3</p>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <img src="images/img1.jpeg" alt="" />
+            <p>Heading4</p>
           </div>
           <div class="col">
             <img src="images/slider4.jpg" alt="" />
+            <p>Heading5</p>
           </div>
           <div class="col">
             <img src="images/slider4.webp" alt="" />
+            <p>Heading6</p>
           </div>
         </div>
       </div>
@@ -615,5 +658,6 @@
       <div id="ufooter"></div>
       <div id="bfooter"></div>
     </div>
+    <div class="ribben">ENQUERY</div>
   </body>
 </html>

@@ -312,6 +312,7 @@ syntax =>
 }
 
 ============
+'
 0%{}
 50%
 ==============
@@ -407,3 +408,138 @@ translate3d(x,y,z);
 
 ==================
  for use zoom in zoom out
+====================================
+
+24-09-2025
+
+tag selector
+id selector
+Group selector
+Universal selector
+class selector
+descendant Selector
+
+============
+Attribute selector
+-------------------------
+syntax:
+element[attribute='value]
+or
+tag[attribute='value]
+
+Ex:
+<input type="text"/>
+<input type="email"/>
+<input type="email" class="xyz"/>
+<input type="text" class="abc"/>
+<img src="abc.jpg" title="google img"/>
+<img src="xyz.png" title="google img"/>
+<div class="abc">Div tag</div>
+<div class="container class">Div tag</div>
+
+==
+input[type="text"] =>
+<input type="text"/>
+<input type="text" class="abc"/>
+
+======
+input [class]  =>
+<input type="email" class="xyz"/>
+<input type="text" class="abc"/>
+==============
+
+[class] =>
+<input type="email" class="xyz"/>
+<input type="text" class="abc"/>
+<div class="abc">Div tag</div>
+<div class="container class">Div tag</div>
+============
+
+
+input[class^="t"] =>start with
+<input type="text" class="abc"/>
+========================
+
+img[src$=".jpg"] =>ends with  =>
+<img src="abc.jpg" title="google img"/>
+
+==========================
+
+img[src*="y"]   => contain with 
+<img src="xyz.png" title="google img"/>
+
+===========================
+
+direct child selector=>
+====================================================
+<div id="outer">
+<p>this is para1</p>
+<p>this is para2</p>
+<div id="inner">
+<p>This is para3</p>
+<p>This is para4</p>
+</div>
+<p>This is para5</p>
+</div>
+
+----------
+#outer > p{
+
+}
+selecte element =>
+ this is para1
+ this is para2
+this is para5
+
+===================================
+adjancent sibling (+)
+all sibling  (~)
+
+--
+<div></div>
+<p>this is para1</p>
+<p>this is para2</p>
+<p>this is para3</p>
+<p>this is para4</p>
+<div id="inner">
+<p>This is para5</p>
+<p>This is para6</p>
+</div>
+
+div + p =>
+para1
+
+div ~p =>
+para1
+para2
+para3
+para4
+
+
+===================
+Pseudo classes 
+:visited
+:active
+:disabled
+:link
+:hover
+:focus
+:checked
+:first-child
+:last-child
+:nth-child(n)    where n =number;
+:nth-child(odd)
+:nth-child(even)
+
+
+---
+Pseudo Elements
+::placeholder
+::after
+::before
+::selection
+::first-line
+::first-letter
+
+===============
+display : block |Inline-block | inline

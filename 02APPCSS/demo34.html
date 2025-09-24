@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h2,p{
+            width: 300px;
+            margin: 0px;
+            padding: 10px;
+            background:rgba(#bdbbbb);
+        }
+        h2{
+            background-color: black;
+            color: white;
+            border-bottom: 2px solid white;
+        }
+        p{
+            display: none;
+             transition: all 1s;
+        }
+    h2:hover + p{
+        display: block;
+        transition: all 1s;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Summer Training</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum? </p>
+    <h2> Apprenticeship</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum? </p>
+    <h2>Winter Training</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum? </p>
+    <h2>Industrial Training</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum? </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:active{
+            color: aqua;
+        }
+        /* tr:first-child{
+            background-color: black;
+            color: white;
+        }
+        tr:last-child{
+            background-color: aqua;
+            color: black;
+        } */
+         /* td:nth-child(odd){
+            background-color: lightblue;
+         }
+         tr:nth-child(even){
+            background-color: maroon;
+            color: white;
+         }
+        tr:first-child{
+        background-color: black;
+        color: white;
+    } */
+
+    tr:nth-child(2){
+        background-color: red;
+        color: white;
+    }
+    tr:nth-child(4){
+        background-color: green;
+        color: white;
+    }
+    input:focus{
+        background-color: red;
+        outline: none;
+        border: none;
+    }
+    input:disabled{
+        opacity: .7;
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <a href="#demo1.html">Link1</a>
+    <a href="#demo2.html">Link2</a>
+    <a href="#demo3.html">Link3</a>
+    <a href="#demo4.html">Link4</a>
+    <a href="#demo5.html">Link5</a>
+
+    <hr>
+
+    <table border="1px" bordercolor="red">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>code</th>
+        </tr>
+        <tr>
+            <td>Saurabh</td>
+            <td>Azamgarh</td>
+            <td>276308</td>
+        </tr>
+        <tr>
+            <td>Lala</td>
+            <td>Azamgarh</td>
+            <td>276308</td>
+        </tr>
+        <tr>
+            <td>Harsh</td>
+            <td>Azamgarh</td>
+            <td>276308</td>
+        </tr>
+    </table>
+
+    <hr>
+    <input disabled  type="text" />
+</body>
+</html>
