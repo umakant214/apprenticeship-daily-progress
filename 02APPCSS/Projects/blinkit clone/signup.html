@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --acolor:#213242;
+            --btncolor:#05d0b8;
+        }
+        #outer{
+            width: 1200px;
+            min-height: 600px;
+            margin: auto;
+        }
+        .left{
+            width: 500px;
+            height: 600px;
+            background-color: var(--acolor);
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+           .right{
+            width: 700px;
+            height: 600px;
+            background-color: var(--btncolor);
+            float: left;
+        }
+        .main{
+            width: 400px;
+            height: 500px;
+            border: 15px solid var(--acolor);
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 
+            0px 0px 10px  rgba(255,255,255,0.8),
+            inset 0px 0px 10px  rgba(255,255,255,0.8);
+            border-radius: 20px;
+
+        }
+        .txt{
+            width: 100%;
+            height: 45px;
+            border-radius: 30px;
+            margin-top: 25px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            color: white;
+            font-size: 17px;
+            background-color: var(--acolor);
+           box-shadow: 0px 0px 10px  rgba(255,255,255,0.8);
+            border: none;
+        }
+        .btn{
+            width: 100%;
+            height: 40px;
+            background-color: var(--btncolor);
+            border-radius: 30px;
+            border: none;
+            margin-top: 30px;
+            font-size: 17px;
+             box-shadow: 0px 0px 10px  rgba(255,255,255,0.5);
+        }
+        .top{
+            width: 700px;
+            height: 200px;
+            padding: 25px;
+            background-color: var(--acolor);
+            box-sizing: border-box;
+            position: relative;
+        }
+         .bottom{
+            width: 700px;
+            height: 400px;
+            background-color:var(--acolor) ;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .txt1{
+             width: 350px;
+            height: 45px;
+            border-radius: 30px;
+            color: white;
+            margin-top: 0px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            font-size: 17px;
+            background-color: var(--acolor);
+           box-shadow: 0px 0px 10px  rgba(255,255,255,0.8);
+            border: none;
+        }
+        .corner{
+            width: 170px;
+            height: 120px;
+            background-color: var(--acolor);
+           box-shadow: 0px 0px 10px 3px  rgba(255,255,255,0.8);
+           position: absolute;
+           right: 0px;
+           top: 0px;
+        }
+        .vertical{
+            width: 50px;
+            height: 350px;
+            background-color: var(--acolor);
+            border-radius: 30px;
+             box-shadow: 0px 0px 10px  rgba(255,255,255,0.5);
+        }
+        .sign{
+             width: 350px;
+            height: 350px;
+            border: 15px solid var(--acolor);
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 
+            0px 0px 10px  rgba(255,255,255,0.8),
+            inset 0px 0px 10px  rgba(255,255,255,0.8);
+            border-radius: 20px;
+            position: absolute;
+            left: 750px;
+            top: 230px;
+        }
+         .txt2{
+             width: 250px;
+            height: 45px;
+            border-radius: 30px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            font-size: 17px;
+            color: white;
+            background-color: var(--acolor);
+           box-shadow: 0px 0px 10px  rgba(255,255,255,0.8);
+            border: none;
+        }
+        input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="left">
+            <div class="main">
+                <div style="text-align: center;color: white;font-size: 28px;">Sign Up</div>
+                <input type="text" class="txt" placeholder="username">
+                <input type="email" class="txt" placeholder="email address">
+                <input type="password" class="txt" placeholder="create password">
+                <input type="password" class="txt" placeholder="confirm password">
+                <button class="btn">Create Account</button>
+                <div style="color: #626f7f;text-align: center;margin-top: 18px;font-size: 17px;">Already a member ? <a href="#" style="color:white;">Log in</a></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="corner"></div>
+                
+                    <input type="text" class="txt1" placeholder="username">
+                <input style="margin-left: 100px;margin-top: 20px;" type="text" class="txt1" placeholder="lastname">
+            </div>
+            <div class="bottom">
+                <div class="vertical"></div>
+                <div class="sign">
+                    <div style="text-align: center;color: white;font-size: 28px;">Sign In</div>
+                    <input type="text" class="txt2" placeholder="username">
+                    <input type="password" class="txt2" placeholder="password">
+                    <button class="btn">Login</button>
+                    <div style="color: #626f7f;text-align: center;margin-top: 18px;font-size: 17px;">Not registered ? <a href="#"
+                    style="color:white;">Create an account</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

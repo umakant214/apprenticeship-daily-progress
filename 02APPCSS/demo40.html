@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+        div{
+            height: 100px;
+            width: 600px;
+            margin: 100px auto;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+        span{
+            display: inline-block;
+        }
+        .bgtext span{
+           background: linear-gradient(45deg,rgba(123,21,233,.3),rgba(12,255,233,.3));
+           background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+        .ftext{
+            color: orange;
+        }
+        p{
+             position: absolute; 
+        }
+        .ftext span{
+            animation-name: abc;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .ftext span:nth-child(1){
+            animation-delay: .2s;
+        }
+        .ftext span:nth-child(2){
+            animation-delay: .4s;
+        }
+        .ftext span:nth-child(3){
+            animation-delay: .6s;
+        }
+        .ftext span:nth-child(4){
+            animation-delay: .8s;
+        }
+        .ftext span:nth-child(5){
+            animation-delay: 1s;
+        }
+        .ftext span:nth-child(6){
+            animation-delay: 1.2s;
+        }
+        .ftext span:nth-child(7){
+            animation-delay: 1.4s;
+        }
+        .ftext span:nth-child(8){
+            animation-delay: 1.6s;
+        }
+        .ftext span:nth-child(9){
+            animation-delay: 1.8s;
+        }
+        .ftext span:nth-child(10){
+            animation-delay: 2s;
+        }
+        @keyframes abc {
+            0%{
+                transform:perspective(300px) rotateY(-90deg);
+                opacity: .4;
+            }
+            50%{
+                 transform:perspective(300px)  rotateY(0deg);
+                 opacity: 1;
+            }
+            100%
+            {
+             transform:perspective(300px)  rotateY(-90deg);
+             opacity: .4;
+            }
+        }
+        #loder{
+            width: 100px;
+            height: 100px;
+            border: 10px solid gray;
+            border-top-color: orange;
+            border-radius: 50%;
+            animation-name: xyz;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes xyz{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div>
+        <div id="loder"></div>
+        <p class="bgtext">
+            <span>C</span>
+            <span>O</span>
+            <span>D</span>
+            <span>E</span>
+            <span>H</span>
+            <span>E</span>
+            <span>L</span>
+            <span>P</span>
+            <span>E</span>
+            <span>R</span>
+        </p>
+        <p class="ftext">
+            <span>C</span>
+            <span>O</span>
+            <span>D</span>
+            <span>E</span>
+            <span>H</span>
+            <span>E</span>
+            <span>L</span>
+            <span>P</span>
+            <span>E</span>
+            <span>R</span>
+        </p>
+    </div>
+</body>
+</html>

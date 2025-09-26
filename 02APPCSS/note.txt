@@ -423,9 +423,9 @@ descendant Selector
 Attribute selector
 -------------------------
 syntax:
-element[attribute='value]
+element[attribute='value']
 or
-tag[attribute='value]
+tag[attribute='value']
 
 Ex:
 <input type="text"/>
@@ -486,7 +486,7 @@ direct child selector=>
 #outer > p{
 
 }
-selecte element =>
+selected element =>
  this is para1
  this is para2
 this is para5
@@ -543,3 +543,38 @@ Pseudo Elements
 
 ===============
 display : block |Inline-block | inline
+
+
+
+==============================
+Media Query
+---------------------------
+@media screen and (min-width:value)
+@media screen and (max-width:value)
+@media screen and (min-width:value) and (max-width:value)
+@media screen and (orientation:portrait)
+@media screen and (orientation:landscpae)
+@media(prefers-colo-scheme:dark);
+@media(prefers-colo-scheme:light);
+
+-----------
+Ex:
+@media screen and( min-width:400px){
+
+  body{
+    background:red;
+  }
+  
+}
+
+
+@media screen and( max-width:300px){
+
+  body{
+    background:orange;
+  }
+  
+}
+
+
+
