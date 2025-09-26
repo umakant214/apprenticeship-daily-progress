@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background:linear-gradient(200deg ,var(--ycolor),var(--ncolor));
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+        :root{
+            --ncolor:#002248;
+            --ycolor:#fac400;
+        }
+        #outer{
+            width: 1200px;
+            min-height: 800px;
+            margin: auto;
+            background-color: white ;
+            border-radius: 10px;
+            
+        }
+        #top{
+            width: 1200px;
+            height: 40px;
+            background-color: var(--ncolor);
+            padding: 0px 150px;
+            box-sizing: border-box;
+            border-radius: 10px 10px 0px 0px ;
+        }
+        .t1{
+            width: 200px;
+            height: 40px;
+            float: left;
+            line-height: 40px;
+            font-size: 18px;
+            color: white;
+        }
+        .t2{
+            width: 500px;
+            height: 40px;
+            float: left;
+        }
+        .btn{
+            width: 120px;
+            height: 40px;
+            background-color: var(--ycolor);
+            text-align: center;
+            border: none;
+            font-size: 18px;
+            margin-left: 380px;
+            border-radius: 3px;
+        }
+        #header{
+            width: 1200px;
+            height: 50px;
+            background-color: aliceblue;
+            padding: 0px 150px;
+            box-sizing: border-box;
+        }
+        .logo{
+            width: 200px;
+            height: 50px;
+            float: left;
+            line-height: 0px;
+            font-size: 28px;
+            color: var(--ncolor);
+            font-weight: bold;
+        }
+        .logo1{
+            width: 80px;
+            height: 50px;
+            float: left;
+            margin-top: 5px;
+        }
+        .logoname{
+            width: 120px;
+            height: 50px;
+            float: left;
+            line-height: 50px;
+        }
+        .menu{
+            width: 450px;
+            height: 50px;
+            float: left;
+        }
+        .menu ul {
+            list-style: none;
+        }
+        .menu ul li{
+            width: 80px;
+            height: 50px;
+            display: inline-block;
+            line-height: 50px;
+            font-size: 16px;
+            transform: translateY(-15px);
+            color: black;
+            text-align: center;
+            font-size: 17px;
+            
+        }
+        .search{
+            width: 250px;
+            height: 50px;
+           
+            float: left;
+        }
+        .text{
+            width: 200px;
+            height: 35px;
+            border: none;
+            background: rgba(255,255,255,.9);
+            margin-top: 6px;
+            border-radius: 5px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 8px 5px lightgray;
+        }
+        #slider{
+            width: 1200px;
+            height: 450px;
+            background: linear-gradient(rgba(0,0,0,.4)),url(images/p3.jpg);
+            background-size: cover;
+            padding: 110px  400px;
+            box-sizing: border-box;
+        }
+        .btn1{
+            width: 120px;
+            height: 45px;
+            background-color: var(--ycolor);
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            margin-left: 130px;
+            border-radius: 5px;
+        }
+        #card{
+            width: 1200px;
+            height: 350px;
+            padding: 0px 150px;
+            box-sizing: border-box;
+            
+
+        }
+        .c1{
+            width: 280px;
+            height: 330px;
+            background:white;
+            float: left;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            position: relative;
+            transform: translateY(-100px);
+            box-shadow: 0px 0px 8px 5px rgba(0,0,0,.5);
+        }
+        .c1 .m1
+        {
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            top: -70px;
+            left: 15px;
+        }
+         .c1 .m2
+        {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            left: 120px;
+        }
+          .c1 .m3
+        {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            left: 120px;
+        }
+        .btn2{
+            width: 120px;
+            height: 45px;
+            background-color: var(--ycolor);
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+           margin-left: 60px;
+            border-radius: 5px;
+        }
+        input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="top">
+            <div class="t1">+913439434411</div>
+            <div class="t1">info@gmail.com</div>
+            <div class="t2"><button class="btn">Apply Now</button></div>
+        </div>
+
+        <div id="header">
+            <div class="logo"> 
+                <div class="logo1"><img src="images/hicon.png" width="50px" alt=""></div>
+                <div class="logoname">Mastery</div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Pages</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search ...." class="text" >
+            </div>
+        </div>
+
+        <div id="slider">
+            <div style="font-size: 40px;color: white;text-align: center;font-weight: bold;margin-bottom: 20px;">Better Education For A Better World </div>
+            <button class="btn1">Read More</button> 
+        </div>
+
+
+        <div id="card">
+            <div class="c1">
+                <div><img class="m1" src="images/icon1.png" alt=""></div>
+                <div style="padding-top: 90px;text-align: center;font-size: 25px;">Learning Course Online</div>
+                <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, qui ducimus. Reici .</p>
+                <button  class="btn2">Read More</button>
+            </div>
+            <div class="c1"><div><img class="m2" src="images/icon2.png" alt=""></div>
+        <div style="padding-top: 90px;text-align: center;font-size: 25px;">High Quality Teachers</div>
+        <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, qui ducimus. Reici .
+        </p>
+        <button class="btn2">Read More</button></div>
+            
+            <div class="c1"><div><img class="m3" src="images/icon3.png" alt=""></div>
+        <div style="padding-top: 90px;text-align: center;font-size: 25px;">Book Library <br> & Store</div>
+        <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, qui ducimus. Reici .
+        </p>
+        <button class="btn2">Read More</button></div>
+        </div>
+    </div>
+</body>
+</html>

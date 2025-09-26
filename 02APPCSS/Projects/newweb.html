@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color1:#002248;
+            --color2:#daaa00;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+        #outer{
+            width: 1200px;
+            min-height: 1000px;
+            margin: 0px auto;
+           position: relative;
+        }
+        #top
+        {
+            min-height: 500px;
+            width: 1200px;
+            background:linear-gradient(rgba(0,0,0,.3)), url(images/pix2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            padding:10px 150px ;
+            box-sizing: border-box;
+        }
+        #top1{
+            width: 900px;
+           min-height: 480px;
+            
+        }
+        #header{
+            height: 50px;
+            width: 900px;
+            background: rgba(255,255,255,.1);
+             position: sticky;
+            top: 0px;
+             
+        }
+        #logo{
+            height: 50px;
+            width: 300px;
+            float: left;
+            font-size: 30px;
+            color: white;
+            line-height: 50px;
+            padding-left: 30px;
+            box-sizing: border-box;
+        }
+          #menu{
+            height: 50px;
+            width: 600px;
+            float: left;
+            /* padding-left: 10px; */
+            box-sizing: border-box;
+          
+        }
+        #menu ul{
+            list-style: none;
+              transform: translateY(-12px);
+        }
+        #menu ul li {
+            height: 40px;
+            min-width: 90px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;   
+            color: white;    
+            font-size: 17px;  
+        }
+        .btn{
+            width: 120px !important;
+            border-radius: 30px;
+            background: var(--color2);
+            color: white;
+        }
+        #box{
+            width: 400px;
+            height: 300px;
+            margin-top: 100px;
+            color: white;
+        }
+        #services{
+            width: 1200px;
+            min-height: 800px;
+            padding: 0px 150px;
+            box-sizing: border-box;
+        }
+        .row1{
+            width: 900px;
+            height: 100px;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+        .row1 b:hover{
+            text-decoration: underline;
+
+        }
+        .row2{
+            width: 900px;
+            height: 350px;
+        }
+        .card{
+            width: 280px;
+            height: 360px;
+            float: left;
+           margin: 10px;
+           border-radius: 5px;
+        }
+        .card:hover{
+            box-shadow: 0px 0px 6px 5px rgba(0,0,0,.4);
+        }
+        .cimg{
+            width: 280px;
+            height: 200px;
+          
+        }
+        
+         .ctext{
+            width: 280px;
+            height: 140px;
+            text-align: center;
+            padding:10px 20px;
+            box-sizing: border-box;
+        }
+        .btn1{
+            width: 130px;
+            height: 40px;
+            border-radius: 30px;
+            border: 1px solid black;
+            font-size: 14px;
+            font-weight: bold;
+            background: rgba(255,255,255,.7);
+            box-shadow: 0px 0px 8px 5px rgba(0,0,0,.2);
+        }
+        .btn1:hover{
+            background-color: var(--color2);
+            color: white;
+        }
+        .web{
+            width: 180px;
+            height: 50px;
+            background-color: var(--color2);
+            color: white;
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            font-size: 18px;
+            transform: rotate(45deg);
+            left: 1030px;
+            top: 30px;
+
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="web">Webpage</div>
+        <div id="top">
+            <div id="top1">
+                <div id="header">
+                    <div id="logo">Tech<b>Hub</b></div>
+                    <div id="menu">
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About US</li></a>
+                            <a href="#"><li>Contact Us</li></a>
+                            <a href="#"><li>Login</li></a>
+                            <a href="#"><li class="btn">Register Now</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div id="box">
+                    <div style="font-size: 28px;font-weight: bold;color: var(--color2);">Books an <span style="background: var(--color1);padding: 2px 8px;">Exclusive</span></div>
+                    <b>Hurry up! and book now Lorem ipsum dolor sit.</b>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam quia odio illo voluptas aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <a href="#" style="background: var(--color2);height: 35px;width: 120px; display: block;text-align: center;line-height: 35px;text-decoration: none;border-radius: 50px;color:white;">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="row1">
+                <b>Most famous Places <br><span style="font-size: 15px; color: rgb(175, 175, 175);">Recommended</span></b> <br>
+            </div>
+<!--Card section-->
+            <div class="row2">
+                <div class="card">
+                    <div class="cimg">
+                        <img style="border-radius: 5px;" src="images/p1.jpg" height="200px" width="280px" alt="">
+                    </div>
+                    <div class="ctext">
+                      <div style="font-size: 20px; font-weight: bold;">London</div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum .</p>
+                      <button class="btn1">Overview Place</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cimg">
+                        <img style="border-radius: 5px;" src="images/p2.jpg" height="200px" width="280px" alt="">
+                    </div>
+                    <div class="ctext">
+                        <div style="font-size: 20px;font-weight: bold;">Amsterdom</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum .</p>
+                        <button class="btn1">Overview Place</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cimg">
+                        <img style="border-radius: 5px;" src="images/p3.jpg" height="200px" width="280px" alt="">
+                    </div>
+                    <div class="ctext">
+                        <div style="font-size: 20px; font-weight: bold;">Pairs</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum .</p>
+                        <button class="btn1">Overview Place</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Second cared-->
+            <div class="row2">
+                <div class="card">
+                    <div class="cimg">
+                        <img style="border-radius: 5px;" src="images/p4.jpg" height="200px" width="280px" alt="">
+                    </div>
+                    <div class="ctext">
+                        <div style="font-size: 20px;font-weight: bold;">Barcalona</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum .</p>
+                        <button class="btn1">Overview Place</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cimg">
+                        <img style="border-radius: 5px;" src="images/p5.jpg" height="200px" width="280px" alt="">
+                    </div>
+                    <div class="ctext">
+                        <div style="font-size: 20px;font-weight:bold;">Reme</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum .</p>
+                        <button class="btn1">Overview Place</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cimg">
+                        <img style="border-radius: 5px;" src="images/p2.jpg" height="200px" width="280px" alt="">
+                    </div>
+                    <div class="ctext">
+                        <div style="font-size: 20px;font-weight: bold;">Cluj-Nopoca</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum .</p>
+                        <button class="btn1">Overview Place</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

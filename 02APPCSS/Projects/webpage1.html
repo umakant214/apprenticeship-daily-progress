@@ -7,9 +7,10 @@
     <style>
       :root {
         /* --dcolor: #e65100; */
-        --dcolor: green;
-        /* --lcolor: #ffa726; */
-        --lcolor: lightgreen;
+       
+
+        --dcolor:#D81B60;
+          --lcolor:#6a1b9a;
       }
       /* Universal Selector It selects all tag */
       * {
@@ -197,6 +198,9 @@
 
         padding-left: 65px;
         box-sizing: border-box;
+        position: sticky;
+        top: 0px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,.3);
       }
       nav ul {
         list-style: none;
@@ -363,6 +367,20 @@
         border: 2px solid var(--dcolor);
         box-shadow: 0px 0px 20px rgba(0,0,0,.4);
       }
+      @media screen and (min-width:0px) and (max-width:500px)
+      {
+        :root{
+          --dcolor: green;
+          --lcolor: lightgreen;
+        }
+      }
+         @media screen and (min-width:500px) and (max-width:1000px)
+      {
+        :root{
+          --dcolor:#304ffe;
+          --lcolor:#311b92;
+        }
+      }
     </style>
   </head>
   <body>
@@ -414,12 +432,12 @@
       <nav class="bg-mycolor">
         <ul>
           <a href="#"> <li>Home</li></a>
-          <a href="#"> <li>About Us</li></a>
-          <a href="#"> <li>Services</li></a>
+          <a href="#intro"> <li>About Us</li></a>
+          <a href="#services"> <li>Services</li></a>
           <a href="#"> <li>Register</li></a>
           <a href="#"> <li>Plan & Pricing</li></a>
-          <a href="#"> <li>Gallery</li></a>
-          <a href="#"> <li>Product</li></a>
+          <a href="#gallery"> <li>Gallery</li></a>
+          <a href="#product"> <li>Product</li></a>
           <a href="#"> <li>Contact Us</li></a>
           <a href="#"> <li>Login</li></a>
         </ul>

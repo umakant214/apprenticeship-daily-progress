@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgba(0,0,0,.3) !important; 
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+       :root{
+        --color1:#ff3d00;
+        --color2:orange;
+       }
+       .bg-mycolor{
+        background:linear-gradient(45deg,var(--color1),var(--color2));
+       }
+       #outer{
+        min-height: 500px;
+        width: 1000px;
+        margin: 80px auto;
+        position: relative;
+       }
+       #top{
+        height: 100px;
+        width: 1000px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 70px;
+        background: repeating-radial-gradient(circle at 50% 50%,var(--color1)5%,var(--color2)10%);
+         background-clip: text;
+        -webkit-text-fill-color: transparent;
+       }
+        #bottom{
+        height: 500px;
+        width: 1000px;
+        background-color: green;
+       }
+       .b{
+        height: 500px;
+        width: 500px;
+        background:white;
+        float: left;
+        padding: 50px;
+        box-sizing: border-box;
+       
+       }
+       .b1{
+        width: 400px;
+        height: 400px;
+        background: rgba(255,255,255,.3);
+        backdrop-filter: blur(5px);
+        padding: 50px;
+        box-sizing: border-box;
+        font-size: 18px;
+        line-height: 36px;
+        
+       }
+       .x{
+        background:linear-gradient(rgba(0,0,0,.2)), url(images/img2.jpeg);
+        background-size: cover;
+        /* background-attachment: fixed; */
+       }
+       .txt{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        color: var(--color2);
+        padding-left: 15px;
+        border: none;
+         font-size: 16px;
+        background: rgba(0,0,0,.05);
+       }
+       ::placeholder{
+       color: var(--color1);
+       font-size: 15px;
+       }
+       :focus{
+        outline: 2px solid red;
+       }
+       .txta{
+        width: 100%;
+        height: 100px;
+        resize: none;
+        border-radius: 5px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+         font-size: 16px;
+        border: none;
+        background: rgba(0,0,0,.05);
+       }
+       .btn{
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: white;
+       }
+       .animate{
+        width: 50px;
+        height: 50px;
+        background: rgba(255,255,255,.5);
+        box-shadow: 2px 2px 10px rgba(244,255,12,.5) inset,-2px -2px 10px rgba(144,155,123,.5) inset;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 5px;
+        color: var(--color1);
+        font-weight: bold;
+        position: absolute;
+        top: -50px;
+       animation: abc 2s ease infinite normal;
+       }
+       @keyframes abc{
+        0%{
+            top: -50px;
+            left: 0%;
+            transform:rotate(-360deg);
+        }
+        25%{
+            top: -50px;
+            left: 100%;
+             transform:rotate(-360deg);
+        }
+        50%{
+            top: 100%;
+            left: 100%;
+             transform:rotate(360deg);
+        }
+         75%{
+            top: 100%;
+            left: -50px;
+             transform:rotate(360deg);
+        }
+        100%{
+             top: -50px;
+            left: -50px;
+             transform:rotate(360deg);
+         
+        }
+       }
+    </style>
+</head>
+<body class="bg-mycolor">
+    <div id="outer">
+
+        <div id="top">Welcome to <b>CodeHelper</b></div>
+        <div id="bottom">
+            <div class="b x">
+                <div class="b1">
+                    <b>Call Us :</b> <br>
+                    23224242446,327732783 <br>
+
+                    <b>Mail Us :</b> <br>
+                    prashad@gmail.com <br>
+                    <b>Address :</b> <br>
+                    Plot No:02 Vashundhara Bihar Colony, Adil Nagar
+                </div>
+            </div>
+            <div class="b">
+                <input class="txt" type="text" placeholder="Name.."> <br>
+                <input class="txt" type="email" placeholder="Email.."> <br>
+                <input class="txt" type="number" placeholder="Mob Number.."> <br>
+               <textarea class="txta" placeholder="Message"></textarea> <br>
+               <button class="btn bg-mycolor">Save</button>
+            </div>
+        </div>
+        <div class="animate">TP</div>
+    </div>
+</body>
+</html>
