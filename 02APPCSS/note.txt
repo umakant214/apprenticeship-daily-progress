@@ -576,5 +576,55 @@ Ex:
   
 }
 
+======================
+flex box =>
+-------------------
+flex-container
+flex-item
 
+main parent : flex-container
+child : flex-item
+main-axis -> Horizontal
+cross axis ->vertical
+===
+flex-container property :
 
+display:flex;
+flex-direction:row (default) | row-reverse | column| column-reverse 
+flex-wrap: nowrap(default) | wrap | wrap-reverse
+
+flex-direction and flex-wrap shorthand rule:
+
+flex-flow:flex-direction | flex-wrap
+
+justify-content: flex-start | flex-end | center| space-between | space-around | space-evenly
+
+align-items: stregth | flex-start | flex-end | center | baseline
+
+align-content: stregth | flex-start | flex-end | center | space-between | space-around | space-evenly
+--------
+row-gap
+column-gap
+gap 
+=====
+flex-items property =>
+----------------
+flex-grow
+flex-shrink
+flex-basis
+
+flex-basis is define item width before flex-shrink and flex-grow.
+order: 0 (default value) 
+
+align-self:flex-start | center | flex-end
+
+======
+justify-content:
+=====
+justify-content is used align flex-items on the basis of main axis.
+=====
+align-items:   /*work on single row */
+==========
+align-items is used to align flex items on the basis cross axis. 
+
+align-content: center;   /*work on multiple row*/
