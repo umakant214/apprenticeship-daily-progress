@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .a{
+            height: 400px;
+        }
+        .b{
+            height: 200px;
+        }
+        .c{
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container a">
+        <div class="row b bg-dark">
+            <div class="col-10 bg-warning">
+                <div class="row c bg-primary"></div>
+                <div class="row c bg-secondary">
+                    <div class="col-2 bg-danger"></div>
+                    <div class="col-10 bg-warning"></div>
+                </div>
+            </div>
+            <div class="col-2 bg-info">
+                <div class="row bg-danger" style="height: 150px;"></div>
+                <div class="row bg-dark" style="height: 50px;"></div>
+            </div>
+        </div>
+        <div class="row b bg-success">
+            <div class="col-2 bg-dark">
+                <div class="row bg-primary" style="height: 50px;"></div>
+                <div class="row bg-warning" style="height: 150px;"></div>
+            </div>
+            <div class="col-10 bg-secondary">
+                <div class="row c bg-info"></div>
+                <div class="row c bg-dark">
+                    <div class="col-10 bg-success"></div>
+                    <div class="col-2 bg-warning"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

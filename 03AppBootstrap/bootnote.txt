@@ -1,0 +1,206 @@
+Twitter Bootstrap:
+=======================================================
+Bootstrap is used to create responsive mobile website and application.
+Includes HTML,CSS,JS
+Bootstrap provides predefined classes for web development.
+Bootstrap provides faster and easer web development.
+
+History :
+=======================
+Bootstrap, originally named Twitter Blueprint, was created at Twitter by Mark Otto and Jacob Thornton in mid-2010, with the first public release in August 2011. This open-source front-end framework provides a collection of HTML, CSS, and JavaScript components for building responsive, mobile-first websites.
+
+==============================================================================
+Bootstrap predefined classes :
+-----------------
+primary
+secondary
+info
+success
+warning
+danger
+dark
+light
+==========
+background color:
+-----------------------------
+bg-colorname
+Ex: 
+bg-primary 
+bg-warning
+bg-success 
+
+color
+==============
+text-colorname
+ex:
+text-primary
+text-warning
+
+==============================
+text-transform:uppercase | lowercase | capitalize
+Ex:
+text-uppercase
+text-lowercase
+text-capitalize
+
+=====================
+h1-h6
+---------
+font-size
+====================
+fs(1-5)
+fs-1
+fs-2
+fs-3
+fs-4
+fs-5
+
+===================================
+width 
+------
+w-25 for 25% width
+w-50 for 50% width
+w-75 for 75% width
+w-100 for 100% width
+
+================================
+text-alignment=>
+-----
+text-align
+BSV-4
+-----------------------------
+text-left | text-center | text-right
+===============
+BSV-5 -
+----------------
+text-start | text-center |text-end
+
+text-bg-colorname
+ex: 
+text-bg-dark
+text-bg-success
+
+=================================================
+Bootstrap Button
+--------------
+btn btn-colorname
+Ex: 
+btn btn-danger
+btn btn-dark
+btn btn-success
+
+=========
+outline buttons
+==========
+btn btn-outline-colorname
+Ex:
+btn btn-outline-danger
+
+======================
+padding in bootstrap :
+--------------
+p(0-5)
+p-0
+p-1  => left right top bottom
+p-2
+p-3
+p-4
+p-5
+
+=============
+BSV-4
+padding-left => pl-(0-5)
+padding-right  => pr-(0-5)
+padding-top => pt-(0-5)
+padding-bottom => pb-(0-5)
+-----------
+BSV-5
+padding-start => ps-(0-5)
+padding-end  => pe-(0-5)
+padding-top => pt-(0-5)
+padding-bottom => pb-(0-5)
+
+=============
+px-(0-5)=>padding-start and padding-end
+py-(0-5) =>padding-top nad padding-bottom
+
+===============================================
+Margin in bootstrap :
+-----------
+m(0-5)=> left right top bottom
+m-0
+m-1  
+m-2
+m-3
+m-4
+m-5
+-----------
+BSV-4
+margin-left => ml-(0-5)
+margin-right  => mr-(0-5)
+margin-top => mt-(0-5)
+margin-bottom => mb-(0-5)
+-----------
+BSV-5
+margin-start => ms-(0-5)
+margin-end  => me-(0-5)
+margin-top => mt-(0-5)
+margin-bottom => mb-(0-5)
+
+=============
+mx-(0-5)=>margin-start and margin-end
+my-(0-5) =>margin-top nad margin-bottom
+margin:0px auto =>mx-auto
+
+=================================
+border in bootstrap 
+==========
+border border-colorname border(0-5)
+Ex:
+border border-danger border-5
+
+==============
+alert alert-colorname
+Ex:
+alert alert-success
+alert alert-danger
+alert alert-warning
+=========================
+border-radius:
+--------------
+rounded rounded-(0-5)
+rounded-circle
+rounded-pill
+
+=================
+image responsive in bootstrap
+=====================
+BSV-4
+img-responsive
+----------
+BSV-5
+------------
+img-fluid
+img-thumbnail (with border and rounded)
+
+=====================
+display : inline | block |inline-block
+---
+d-block
+d-inline
+
+===============font  
+
+fa-beat
+fa-fade
+fa-spin
+fa-shake
+fa-bounce
+fa-flip
+
+
+================
+for division
+==============
+container- include left right margin
+container-fluid
