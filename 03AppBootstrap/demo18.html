@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .a{
+           min-height: 300px;
+        }
+        .cardimg{
+            height: 200px;
+            transition: all .5s;
+        }
+        .cardimg:hover{
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+        /* .card:hover{
+            transform: scale(.9);
+            transition: all 1s;
+
+        } */
+        .card{
+            transition: all .5s;
+            overflow: hidden;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container a">
+        <div class="row a">
+            <div class="col-4 bg-light">
+                <div class="card img-fluid  my-3 shadow-lg border-0 mx-auto w-75">
+                    <img src="images/img4.jpg" class="card-img-top cardimg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                            content.</p>
+                        <a href="#" class="btn btn-success">About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 bg-light">
+                <div class="card img-fluid  my-3  shadow-lg border-0 mx-auto w-75">
+                    <img src="images/img2.jpg" class="card-img-top cardimg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">FrontEnd Developer</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                            content.</p>
+                        <a href="#" class="btn btn-success">About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 bg-light">
+                <div class="card img-fluid  my-3  shadow-lg border-0 mx-auto w-75">
+                    <img src="images/img3.jpg" class="card-img-top cardimg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Content Creater</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                            content.</p>
+                        <a href="#" class="btn btn-success">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

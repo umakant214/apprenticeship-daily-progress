@@ -204,3 +204,17 @@ for division
 ==============
 container- include left right margin
 container-fluid
+
+=========================================================
+06-10-25
+---------------------------
+Grid System(Breaking Point)
+---------------------------
+Extra small -> col-value => 0px -576px
+small screen ->col-sm-value => 576px-768px
+Medium screen -> col-md-value =>768px-992px
+Large screen -> col-lg-value => 992px- 1200px
+Extra Large screen -> col-xl-value -> 1200px-up
+
+==========================================
+
