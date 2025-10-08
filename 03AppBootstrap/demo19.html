@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        body{
+            background: url(images/img18.jpg);
+            background-size: 100% 100%;
+        }
+       .login{
+        min-height: 300px;
+        margin-top: 8%;
+        margin-bottom: 10%;
+        transition: all .5s;
+        background: rgba(255,255,255,.3);
+        backdrop-filter: blur(2px);
+
+       }
+       .login:hover{
+        transform:perspective(400px) rotateY(10deg) scale(1.1);
+        transition: all .5s;
+       }
+       .form-control{
+        height: 50px;
+       }
+    </style>
+</head>
+<body class="bg-warning">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-sm-5 mx-auto login rounded-2 p-5 shadow-lg border border-warning border-3 border-bottom-0">
+                <h2 class="text-center py-2">ADMIN <span class="text-warning">LOGIN<i class="fa-solid fa-lock text-danger fa-spin"></i></span></h2>
+
+                <input class="form-control" type="text" placeholder="Userid"  > <br>
+                <input class="form-control" type="password" placeholder="Password"> <br>
+                <button class="btn btn-warning form-control fs-5">Login</button> <br>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

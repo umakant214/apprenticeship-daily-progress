@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        body{
+                      background: linear-gradient(45deg,rgb(141, 209, 248),rgb(131, 172, 235));
+
+        }
+       
+        .a{
+            min-height: 400px;
+            margin-top: 5%;
+        }
+        .column{
+            background: linear-gradient(45deg,rgba(34,166,242),rgba(13,110,253));
+        }
+        h4::selection{
+            background-color: red;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body class="bg-info">
+    <div class="container">
+        <div class="row a text-light">
+            <div class="col-sm-4 mx-auto bg-primary rounded column p-4">
+                <h4 class="mb-4 fs-6 fw-bold">Sign up once and watch our free things.</h4>
+<!---->
+                <label for="inputPassword5" class="form-label fw-bold">Your Name</label>
+                <div class="input-group flex-nowrap mb-2">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user text-primary fa-bounce"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter Your Name" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <!---->
+                <label for="inputPassword5" class="form-label fw-bold">Your Email</label>
+                <div class="input-group flex-nowrap mb-2">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope text-primary  fa-bounce"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+                <label for="inputPassword5" class="form-label fw-bold">Your Username</label>
+                <div class="input-group flex-nowrap mb-2">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-users text-primary fa-bounce"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter Your Username" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+
+                <label for="inputPassword5" class="form-label fw-bold">Your Password</label>
+                <div class="input-group flex-nowrap mb-2">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock text-primary fa-flip"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter Your Password" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+
+                <label for="inputPassword5" class="form-label fw-bold"> Confirm Your Password</label>
+                <div class="input-group flex-nowrap mb-2 ">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock text-primary fa-flip"></i></span>
+                    <input type="text" class="form-control" placeholder="Confirm Your Password" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <button class="w-100 btn btn-light mt-3">Register</button>
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

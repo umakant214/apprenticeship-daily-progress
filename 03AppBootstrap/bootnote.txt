@@ -217,4 +217,15 @@ Large screen -> col-lg-value => 992px- 1200px
 Extra Large screen -> col-xl-value -> 1200px-up
 
 ==========================================
+07-10-2025
+-------------
+form =>
+========
+form-control
 
+------------
+slider automatic slide 
+====
+data-bs--ride => false (default)  | carousel(autoplay)
+data-bs-interval="timeinmilisecond"   => speed management
+1s=1000MS

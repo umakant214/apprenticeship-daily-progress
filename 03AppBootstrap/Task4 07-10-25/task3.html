@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Modal Demo</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body>
+    <!-- Trigger Button -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal-->
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title">Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text border-0 bg-light">@</span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control border-0 border-bottom border-secondary" id="floatingInputGroup1"
+                            placeholder="Administrator">
+
+                        <label for="floatingInputGroup1">Administrator</label>
+                    </div>
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text border-0 bg-light">@</span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control border-0 border-bottom border-secondary" id="floatingInputGroup1"
+                            placeholder="E-mail Address">
+                        <label for="floatingInputGroup1">Email</label>
+                    </div>
+                </div>
+
+
+                   <div class="row">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text border-0 bg-light"><i class="fa-solid fa-key"></i></span>
+                            <div class="form-floating">
+                                <input type="password" class="form-control border-0 border-bottom border-secondary" id="floatingInputGroup1"
+                                    placeholder="Password">
+                                <label for="floatingInputGroup1">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text border-0 bg-light"><i class="fa-solid fa-key"></i></span>
+                            <div class="form-floating">
+                                <input type="password" class="form-control border-0 border-bottom border-secondary" id="floatingInputGroup1"
+                                    placeholder="Confirm Password">
+                                <label for="floatingInputGroup1">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+
+                </div>
+                <div class="modal-footer">
+                   
+                    <button type="button" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

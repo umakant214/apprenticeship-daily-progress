@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        body {
+            background: url(images/img18.jpg);
+            background-size: 100% 100%;
+        }
+
+        .login {
+            min-height: 300px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            transition: all .5s;
+            background: rgba(255, 255, 255, .3);
+            backdrop-filter: blur(2px);
+
+        }
+
+        .login:hover {
+            /* transform: perspective(400px) rotateY(10deg) scale(1.1);
+            transition: all .5s; */
+            transform: scale(1.1);
+            transition: all .5s;
+        }
+
+        .form-control {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body class="bg-warning">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-sm-4 mx-auto login rounded-2 p-5 shadow-lg border border-success border-3 border-bottom-0">
+                <h2 class="text-center py-2">Registration <span class="text-success">Form<i class="fa-solid fa-user fa-bounce text-success"></i></span></h2>
+                <div class="input-group flex-nowrap my-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user fa-bounce text-success"></i></span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap my-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope fa-bounce text-success"></i></span>
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap my-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock fa-flip text-success"></i></span>
+                    <input type="password" class="form-control" placeholder="Password" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap my-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock fa-flip text-success"></i></span>
+                    <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <button class="btn btn-success form-control fs-5">Register Now</button> <br>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
