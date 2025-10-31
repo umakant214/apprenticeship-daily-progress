@@ -29,7 +29,7 @@ bg-primary
 bg-warning
 bg-success 
 
-color
+textcolor
 ==============
 text-colorname
 ex:
@@ -197,6 +197,8 @@ fa-spin
 fa-shake
 fa-bounce
 fa-flip
+==========================
+float-end
 
 
 ================
@@ -229,3 +231,35 @@ slider automatic slide
 data-bs--ride => false (default)  | carousel(autoplay)
 data-bs-interval="timeinmilisecond"   => speed management
 1s=1000MS
+
+
+=================
+position
+=======
+position-absolute
+position-relative
+position-fixed
+position-sticky
+---------------------
+top-0
+top-50
+top-100
+------
+bottom-0
+bottom-50
+bottom-100
+-----
+start-0
+start-50
+start-100
+------
+end-0
+end-50
+end-100
+--------------
+==============
+gatter classes  => always define parent and apply child
+-----------
+g
+gx
+gy
