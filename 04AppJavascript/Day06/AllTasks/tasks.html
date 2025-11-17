@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //1. Use map() to double each number in an array.
+      let arr = [2, 3, 4, 5, 6, 7];
+      let double = arr.map((num) => num * 2);
+      console.log(double, "double each number");
+
+      //2. Use map() to square each number in an array.
+
+      let number = [2, 4, 6, 8, 10];
+      let square = number.map((num) => num * num);
+      console.log(square, "square each number");
+
+      //3. Use map() to add 10 to each number in an array.
+      let element = [10, 20, 30, 40, 50];
+      let add = element.map((num1) => num1 + 10);
+      console.log(add, "add 10 each number");
+
+      //4. Use map() to convert all negative numbers into positive numbers.
+
+      let arr1 = [-10, -2, -3, -4, -5];
+      let positive = arr1.map((num) => {
+        if (num < 0) {
+          return num * -1;
+        } else {
+          return num;
+        }
+      });
+      console.log(positive, "negative to positive");
+
+      //5. Use map() to return 0 for even numbers and 1 for odd numbers.
+
+      let arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+      let evenOdd = arr2.map((num) => {
+        if (num % 2 == 0) {
+          return 0;
+        } else {
+          return 1;
+        }
+      });
+      console.log(evenOdd, "Even=0,Odd=1");
+
+      //6. Use filter() to keep only even numbers from an array.
+
+      let arr3 = [1, 2, 3, 4, 5, 6];
+      let onlyEven = arr3.filter((num) => {
+        if (num % 2 == 0) {
+          return num;
+        }
+      });
+      console.log(onlyEven, "only even numbers");
+
+      //7. Use filter() to keep only numbers greater than 50.
+
+      let arr4 = [20, 30, 60, 80, 90, 10, 100];
+      let greater = arr4.filter((num) => {
+        if (num > 50) {
+          return num;
+        }
+      });
+      console.log(greater, "numbers greater than 50");
+
+      //8. Use filter() to keep only positive numbers.
+      let arr5 = [12, 3, -3, -2, -4, -5, 2];
+      let positiveNumber = arr5.filter((num) => {
+        if (num > 0) {
+          return num;
+        }
+      });
+      console.log(positiveNumber, "positive number");
+
+      //9. Use filter() to keep only numbers that are divisible by 5.
+
+      let arr6 = [10, 4, 5, 15, 26, 25, 50];
+      let divisibleBy5 = arr6.filter((num) => {
+        if (num % 5 == 0) {
+          return num;
+        }
+      });
+      console.log(divisibleBy5, "divisible by 5");
+
+      //10. Use filter() to keep only numbers that are between 20 and 60.
+
+      let arr7 = [10, 3, 30, 40, 50, 80, 90];
+      let numBetween = arr7.filter((num) => {
+        if (num >= 20 && num <= 60) {
+          return num;
+        }
+      });
+      console.log(numBetween, "between 20 and 60");
+
+      //11. Use reduce() to find the sum of all numbers in an array.
+      let arr8 = [1, 2, 3, 4, 5, 6, 7];
+      let sum = arr8.reduce((acc, item) => {
+        return acc + item;
+      }, 0);
+      console.log(sum, " sum of all numbers in an array");
+
+      //12. Use reduce() to find the maximum number in an array.
+      let number1 = [10, 20, 30, 40, 50];
+      let maximum = number1.reduce((max, item) => {
+        if (item > max) {
+          return item;
+        }
+      }, 0);
+      console.log(maximum);
+
+      //13. Use forEach() to print each number with its index.
+
+      let number3 = [1, 2, 3, 4, 5, 6];
+      let index = number3.forEach((item, index, array) => {
+        console.log(item, index);
+      });
+
+      //14. Use forEach() to count how many numbers are greater than 100.
+
+      let number4 = [20, 120, 130, 30, 40, 105];
+      let count = 0;
+      let howManyNum = number4.forEach((item) => {
+        if (item > 100) {
+          count++;
+        }
+      });
+      console.log(count);
+
+      //15. Use entries() to print index and value of each number in an array.
+      let number5 = [12, 12, 23, 34, 45, 56];
+      let iteration = number5.entries();
+      for (let [index, value] of iteration) {
+        console.log(index, value);
+      }
+
+      //16. Use for...of loop to print each number from an array.
+
+      let array = [1, 2, 3, 4, 5, 6, 7, 7];
+      for (x of array) {
+        console.log(x);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

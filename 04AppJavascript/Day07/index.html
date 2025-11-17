@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //unshift() - add starting in array
+      let arr = [1, 2, 2, 3, 45, 56, 67];
+      arr.unshift(100);
+      console.log(arr);
+
+      //push() - add rear of  array
+      let arr1 = [1, 2, 2, 3, 45, 56, 67];
+      arr1.unshift(200);
+      console.log(arr1);
+
+      //shift() -delete starting
+      let arr2 = [1, 2, 2, 3, 45, 56, 67];
+      arr2.shift();
+      console.log(arr2);
+
+      //pop() -delete ending
+      let arr3 = [1, 2, 2, 3, 45, 56, 67];
+      arr3.pop();
+      console.log(arr3);
+
+      //splice -
+      let arr4 = [1, 2, 3, 4, 5, 6];
+      let newArr = arr4.splice(1, 2);
+      console.log(newArr, arr4);
+
+      //slice- include , exclude
+      let arr5 = [1, 2, 3, 4, 5, 6];
+      let upArr = arr5.slice(1, 4);
+      console.log(upArr);
+
+      //isArray()
+      let arr6 = [1, 2, 3, 4, 5, 6];
+      let result = Array.isArray(arr6);
+      console.log(result);
+
+      //includes()
+      let arr7 = [1, 2, 3, 4, 5, 6];
+      let res = arr7.includes(5);
+      console.log(res);
+
+      //some()
+      let arr8 = [1, 2, 3, 34, 45, 5];
+      let ret = arr8.some((num) => num > 100);
+      console.log(ret);
+      //every()
+      let arr9 = [1, 2, 3, 34, 45, 5];
+      let resu = arr8.every((num) => num > 100);
+      console.log(resu);
+
+      //find()
+      let number = [1, 2, 3, 4, 5, 6];
+      let nresult = number.find((num) => num % 2 == 0);
+      console.log(nresult);
+
+      //findIndex()
+
+      let numbers = [1, 9, 2, 3, 4, 5, 6];
+      let nresults = numbers.findIndex((num) => num % 2 == 0);
+      console.log(nresult);
+
+      //indexOf()
+      let num1 = [1, 23, 56, 67, 78, 4];
+      const newResult = num1.indexOf(78);
+      console.log(newResult);
+
+      //sort()
+      //   let num2 = [1, 5, 32, 3, 2];
+      //   num2.sort();
+      //   console.log(num2, "sorted element");
+
+      //reverse()
+      //   let num2 = [1, 5, 32, 22, 2];
+      //   num2.sort();
+      //   num2.reverse();
+      //   console.log(num2, "reverse element");
+
+      //fill
+      let num2 = [1, 5, 32, 22, 2];
+      num2.fill(0, 2, 3);
+      console.log(num2);
+
+      //join()
+      let fruits = ["Orange", "banana", "Mango"];
+      let result1 = fruits.join(" ");
+      console.log(result1);
+    </script>
+  </head>
+  <body></body>
+</html>

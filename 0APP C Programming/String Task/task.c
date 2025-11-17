@@ -1,0 +1,1 @@
+//WAP to input first name,middle name ,last name of user and print the full name

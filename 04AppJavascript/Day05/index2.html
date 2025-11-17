@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = [1, 2, 3, 4];
+      //localStorage.setItem("name", JSON.stringify(a));
+      // let res = JSON.parse(localStorage.getItem("name"));
+      //console.log(res);
+      // localStorage.removeItem("name");
+      //localStorage.clear();
+
+      //session
+      sessionStorage.setItem("name", JSON.stringify(a));
+      sessionStorage.setItem("name", JSON.stringify(a));
+      let res = JSON.parse(sessionStorage.getItem("name"));
+      console.log(res);
+      // sessionStorage.removeItem("name");
+      //sessionStorage.clear();
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const personalInfo = {
+        name: "Umakant Yadav",
+        age: 20,
+        course: "diploma",
+        dis: "Azamgarh",
+        isMarige: false,
+      };
+      //   for (let key in personalInfo) {
+      //     console.log(key, personalInfo[key]);
+      //   }
+
+      //Method 1:
+      //   personalInfo.branch = "CSE";
+      //   console.log(personalInfo);
+
+      //Method 2:
+
+      const newObj = { ...personalInfo, branch: "EE", car: "Thar" };
+      console.log(newObj);
+    </script>
+  </head>
+  <body></body>
+</html>
