@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input onclick="demo()" type="text" id="input1" />
+    <input onclick="demo()" type="text" id="input2" />
+
+    <script>
+      demo = () => {
+        let input1Ref = document.querySelector("#input1");
+        let input2Ref = document.querySelector("#input2");
+
+        input2Ref.value = input1Ref.value;
+      };
+    </script>
+  </body>
+</html>

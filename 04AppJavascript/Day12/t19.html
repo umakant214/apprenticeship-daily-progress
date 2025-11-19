@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../Day11/pexels-eberhardgross-730981.jpg" alt="" height="400px" />
+    <button onclick="demo()">Changed style</button>
+    <script>
+      let imgRef = document.querySelector("img");
+      demo = () => {
+        imgRef.style.height = "300px";
+        imgRef.style.border = "10px solid black";
+        imgRef.style.borderRadius = "20px";
+      };
+    </script>
+  </body>
+</html>

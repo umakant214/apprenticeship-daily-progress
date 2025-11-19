@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <input type="text" id="college" placeholder="Enter your college" />
+    <button onclick="demo()">Submit</button>
+
+    <p>Name</p>
+    <div>college</div>
+
+    <script>
+      const demo = () => {
+        let nameRef = document.querySelector("#name");
+        let collegeRef = document.querySelector("#college");
+        let nameVal = nameRef.value;
+        let collegeVal = collegeRef.value;
+        document.querySelector("p").innerHTML = `My Name is : ${nameVal}`;
+        document.querySelector(
+          "div"
+        ).innerHTML = `My college name is : ${collegeVal}`;
+      };
+    </script>
+  </body>
+</html>

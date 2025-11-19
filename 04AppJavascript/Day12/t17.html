@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <br><br>
+    <button onclick="demo()">Change Div Properties</button>
+    <script>
+      let divRef = document.querySelector("div");
+      demo = () => {
+        divRef.style.height = "300px";
+        divRef.style.width = "300px";
+        divRef.style.borderRadius="80px"
+        divRef.style.background = "red";
+      };
+    </script>
+  </body>
+</html>

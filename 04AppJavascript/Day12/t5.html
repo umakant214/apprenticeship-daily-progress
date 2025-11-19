@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <button onclick="demo()">click me</button>
+    <script>
+      demo = () => {
+        let divRef = document.querySelector("div");
+        divRef.style.height = "300px";
+        divRef.style.width = "600px";
+        divRef.style.background = "blue";
+      };
+    </script>
+  </body>
+</html>

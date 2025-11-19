@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="" />
+    <button onclick="demo()">check</button>
+    <script>
+      let inputRef = document.querySelector("input");
+      demo = () => {
+        //console.log(inputRef.value);
+
+        if (inputRef.checked) {
+          alert("checkbox is checked !");
+        } else {
+          alert("checkbox is not checked !");
+        }
+      };
+    </script>
+  </body>
+</html>

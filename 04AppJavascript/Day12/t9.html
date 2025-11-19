@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>This is paragraph</p>
+    <button onclick="demo1()">Red</button>
+    <button onclick="demo2()">Green</button>
+    <button onclick="demo3()">Blue</button>
+    <script>
+      let paraRef = document.querySelector("p");
+      demo1 = () => {
+        paraRef.style.color = "Red";
+      };
+      demo2 = () => {
+        paraRef.style.color = "Green";
+      };
+      demo3 = () => {
+        paraRef.style.color = "blue";
+      };
+    </script>
+  </body>
+</html>

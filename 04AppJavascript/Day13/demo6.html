@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Heading</p>
+    <button onclick="demo()">click me</button>
+    <script>
+      const demo = () => {
+        const pRef = document.querySelector("p");
+      //  pRef.innerText = "Heading tag";
+        pRef.innerHTML = "<h1>Heading Tag</h1>";
+      };
+    </script>
+  </body>
+</html>

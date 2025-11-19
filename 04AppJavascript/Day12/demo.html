@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="input"
+      placeholder="Enter Your Name"
+      style="color: red"
+    />
+    <button onclick="demo()" id="btn">Click me</button>
+    <script>
+      const demo = () => {
+        //input
+        let inputRef = document.getElementById("input");
+        inputRef.style.color = "green";
+        inputRef.style.border = "3px solid black";
+        inputRef.style.borderRadius = "20px";
+        inputRef.style.background = "lightgreen";
+        inputRef.style.textAlign = "center";
+        //button
+        let btnRef = document.getElementById("btn");
+        btnRef.style.color = "green";
+        btnRef.style.border = "3px solid black";
+        btnRef.style.borderRadius = "10px";
+        btnRef.style.background = "yellow";
+        btnRef.style.textAlign = "center";
+      };
+    </script>
+  </body>
+</html>

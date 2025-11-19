@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1. setInterval(cb,time in ms)
+      //   let count = 0;
+      //   setInterval(() => {
+      //     console.log("setInterval", count);
+      //     count++;
+      //   }, 2000);
+
+      //2. setTimeout(cb,time in ms)
+      //   setTimeout(() => {
+      //     console.log("this msg was print after 4 second");
+      //   }, 4000);
+
+      //3. clearInterval
+      //   let count = 0;
+      //   let timer = setInterval(() => {
+      //     console.log("chal raha hai", count);
+      //     count++;
+      //     if (count > 5) {
+      //       clearInterval(timer);
+      //     }
+      //   }, 2000);
+
+      //
+      let Timer = setTimeout(() => {
+        console.log("this msg was print after 4 second");
+      }, 4000);
+
+      clearInterval(Timer);
+    </script>
+  </body>
+</html>

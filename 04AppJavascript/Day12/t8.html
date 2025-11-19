@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>This is paragraph tag</p>
+    <button onclick="demo1()">Uppercase</button>
+    <button onclick="demo2()">lowercase</button>
+    <script>
+      demo1 = () => {
+        let paraRef = document.querySelector("p");
+        paraRef.style.textTransform = "uppercase";
+      };
+      demo2 = () => {
+        let paraRef = document.querySelector("p");
+        paraRef.style.textTransform = "lowercase";
+      };
+    </script>
+  </body>
+</html>

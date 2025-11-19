@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="password" id="input" />
+    <!-- <button onclick="demo()">show</button> -->
+    <input type="button" value="show" onclick="demo()" name="" id="btn" />
+    <script>
+      const demo = () => {
+        let inputRef = document.querySelector("#input");
+        let btnRef = document.querySelector("#btn");
+        if (btnRef.value == "show") {
+          inputRef.type = "text";
+          btnRef.value = "hide";
+          inputRef.style.border = "10px solid red";
+        } else {
+          inputRef.type = "password";
+          btnRef.value = "show";
+          inputRef.style.border = "10px solid green";
+        }
+      };
+    </script>
+  </body>
+</html>

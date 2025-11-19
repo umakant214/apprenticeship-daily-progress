@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <button onclick="checkPinCode()">check pin code</button>
+    <script>
+      const checkPinCode = () => {
+        let inputRef = document.getElementById("input");
+        if (inputRef.value.length == 6) {
+          inputRef.style.border = "3px solid green";
+        } else {
+          inputRef.style.border = "3px solid red";
+        }
+      };
+    </script>
+  </body>
+</html>

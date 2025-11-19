@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <img
+      id="myImg"
+      src="../Day11/pexels-eberhardgross-730981.jpg"
+      alt=""
+      width="300"
+      height="200"
+    />
+
+    <br /><br />
+
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+      changeImage = () => {
+        let imgRef = document.querySelector("#myImg");
+        imgRef.src = "blog1.jpg";
+      };
+    </script>
+  </body>
+</html>

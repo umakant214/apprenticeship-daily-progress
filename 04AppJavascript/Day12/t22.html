@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <audio id="Audio" src="audio1.mpeg"></audio>
+
+    <button onclick="toggleAudio()">Play and Pause</button>
+
+    <script>
+      function toggleAudio() {
+        let audioRef = document.querySelector("#Audio");
+
+        if (audioRef.paused) {
+          audioRef.play();
+        } else {
+          audioRef.pause();
+        }
+      }
+    </script>
+  </body>
+</html>

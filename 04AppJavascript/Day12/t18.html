@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="input1" />
+    <input type="text" name="" id="input2" />
+    <input type="text" name="" id="input3" placeholder="Output" readonly />
+
+    <button onclick="demo1()">clicked</button>
+    <script>
+      let input1Ref = document.querySelector("#input1");
+      let input2Ref = document.querySelector("#input2");
+      let input3Ref = document.querySelector("#input3");
+      demo1 = () => {
+        //console.log(input1Ref.value );
+
+        input3Ref.value = Number(input1Ref.value) + Number(input2Ref.value);
+      };
+    </script>
+  </body>
+</html>
