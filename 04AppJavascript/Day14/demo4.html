@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-7-mono"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: black;
+      }
+      #box {
+        min-height: 200px;
+        width: 800px;
+        border: 20px solid red;
+        border-radius: 10px;
+        background-color: white;
+        margin: 100px auto;
+        box-shadow: 0px 0px 10px 10px black inset;
+        text-align: center;
+        line-height: 200px;
+        color: red;
+        font-size: 148px;
+        font-family: Digital-7;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Time</div>
+    <script>
+      const watch = () => {
+        let time = new Date().toLocaleTimeString();
+        document.querySelector("#box").innerHTML = time;
+      };
+      setInterval(watch, 1000);
+    </script>
+  </body>
+</html>

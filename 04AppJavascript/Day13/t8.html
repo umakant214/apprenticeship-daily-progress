@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1" onclick="demo1()">Increase</button>
+    <button id="btn2" onclick="demo2()">decrease</button>
+    <button id="btn3" onclick="demo3()">Reset</button>
+    <script>
+      let btn1Ref = document.querySelector("#btn1");
+      let btn2Ref = document.querySelector("#btn2");
+      let btn3Ref = document.querySelector("#btn3");
+      let count = 0;
+      let demo1 = () => {
+        btn1Ref.innerHTML = count;
+        count++;
+      };
+
+      //
+      let demo2 = () => {
+        btn2Ref.innerHTML = count;
+        count--;
+      };
+
+      //
+      let demo3 = () => {
+        btn2Ref.innerHTML = " ";
+        btn1Ref.innerHTML = " ";
+      };
+    </script>
+  </body>
+</html>

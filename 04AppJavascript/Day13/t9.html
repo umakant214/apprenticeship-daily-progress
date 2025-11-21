@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>output</p>
+    <input type="number" id="input1" /><br /><br />
+    <input type="number" id="input2" /><br /><br />
+    <button onclick="sumOfNum()">+</button>
+    <script>
+      let input1Ref = document.querySelector("#input1");
+      let input2Ref = document.querySelector("#input2");
+      let paraRef = document.querySelector("p");
+      const sumOfNum = () => {
+        let sum = parseInt(input1Ref.value) + parseInt(input2Ref.value);
+        paraRef.innerHTML = `<h1>${sum}</h1>`;
+      };
+    </script>
+  </body>
+</html>

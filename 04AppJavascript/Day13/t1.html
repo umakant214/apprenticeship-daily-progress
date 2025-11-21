@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>this</p>
+    <input type="number" id="input1" /><br /><br />
+    <input type="number" id="input2" /><br /><br />
+    <button onclick="sumOfNum()">+</button>
+    <button onclick="subOfNum()">-</button>
+    <button onclick="MultiOfNum()">*</button>
+    <button onclick="divOfNum()">/</button>
+    <script>
+      let input1Ref = document.querySelector("#input1");
+      let input2Ref = document.querySelector("#input2");
+      let paraRef = document.querySelector("p");
+        const sumOfNum = () => {
+          let sum = parseInt(input1Ref.value) + parseInt(input2Ref.value);
+          paraRef.innerHTML = sum;
+        };
+      const subOfNum = () => {
+        let sub = parseInt(input1Ref.value) - parseInt(input2Ref.value);
+        paraRef.innerHTML = sub;
+      };
+
+      const MultiOfNum = () => {
+        let multi = parseInt(input1Ref.value) * parseInt(input2Ref.value);
+        paraRef.innerHTML = multi;
+      };
+      const divOfNum = () => {
+        let div = parseInt(input1Ref.value) / parseInt(input2Ref.value);
+        paraRef.innerHTML = div;
+      };
+    </script>
+  </body>
+</html>

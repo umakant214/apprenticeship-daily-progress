@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>This is para</p>
+    <button onclick="demo()">Change</button>
+    <script>
+      const demo = () => {
+        let paraRef = document.querySelector("p");
+        paraRef.innerHTML = "<h1>Change Paragraph</h1>";
+      };
+    </script>
+  </body>
+</html>

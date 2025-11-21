@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        height: 500px;
+        width: 750px;
+        margin: 0px auto;
+      }
+      #main {
+        height: 350px;
+        width: 750px;
+      }
+      #footer {
+        height: 150px;
+        width: 750px;
+      }
+      .child {
+        width: 185px;
+        height: 150px;
+        border: 1px solid gray;
+        float: left;
+        margin-left: 0.5px;
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main">
+        <img
+          src="../Day11/pexels-eberhardgross-730981.jpg"
+          height="350"
+          width="750"
+          alt=""
+          id="mainImg"
+        />
+      </div>
+      <div id="footer">
+        <div class="child">
+          <img
+            src="love2.avif"
+            onmouseover="this"
+            height="150"
+            width="185"
+            alt=""
+          />
+        </div>
+        <div class="child">
+          <img
+            src="love3.avif"
+            onmouseover="this"
+            height="150"
+            width="185"
+            alt=""
+          />
+        </div>
+        <div class="child">
+          <img
+            src="love4.avif"
+            onmouseover="this"
+            height="150"
+            width="185"
+            alt=""
+          />
+        </div>
+        <div class="child">
+          <img
+            src="../Day12/blog1.jpg"
+            onmouseover="this"
+            height="150"
+            width="185"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      const gallery = (x) => {
+        // let childImgName = x.src;
+        document.querySelector("#mainImg").src = x.src;
+      };
+    </script>
+  </body>
+</html>

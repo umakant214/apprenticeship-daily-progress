@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio id="audioTag" controls src="../../Day12/audio1.mpeg"></audio>
+    <br /><br />
+
+    <button onclick="demo()" style="padding: 10px">Play / Pause</button>
+
+    <script>
+      const audioRef = document.getElementById("audioTag");
+
+      const demo = () => {
+        if (audioRef.paused) {
+          audioRef.play();
+        } else {
+          audioRef.pause();
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="demo1()" id="btn1">Dark</button>
+    <button onclick="demo2()" id="btn2">light</button>
+    <script>
+      let bodyRef = document.querySelector("body");
+      const demo1 = () => {
+        bodyRef.style.background = "black";
+      };
+      const demo2 = () => {
+        bodyRef.style.background = "White";
+      };
+    </script>
+  </body>
+</html>

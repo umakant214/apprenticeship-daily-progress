@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <img id="myImg" src="..//love4.avif" width="300" alt="" /> <br /><br />
+
+    <button onclick="toggleImg()">Hide Image</button>
+    <script>
+      const toggleImg = () => {
+        const img = document.getElementById("myImg");
+
+        if (img.style.display === "none") {
+          img.style.display = "block";
+          btn.textContent = "Hide Image";
+        } else {
+          img.style.display = "none";
+          btn.textContent = "Show Image";
+        }
+      };
+    </script>
+  </body>
+</html>

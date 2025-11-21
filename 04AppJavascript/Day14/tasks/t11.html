@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <img
+      id="myImg"
+      src="../../Day11/pexels-eberhardgross-730981.jpg"
+      height="500px"
+      width="100%"
+      alt=""
+    />
+
+    <br />
+    <button onclick="demo()" style="padding: 10px">Next</button>
+    <button onclick="demo1()" style="padding: 10px">Pre</button>
+
+    <script>
+      let imgRef = document.getElementById("myImg");
+
+      const demo = () => {
+        imgRef.src = "../../Day12/blog1.jpg";
+      };
+
+      const demo1 = () => {
+        imgRef.src = "../../Day11/pexels-eberhardgross-730981.jpg";
+      };
+    </script>
+
+  </body>
+</html>

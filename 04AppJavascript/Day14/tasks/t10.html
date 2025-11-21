@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select>
+      <option>---Select city----</option>
+      <option>Lucknow</option>
+      <option>Azamgarh</option>
+      <option>Varanasi</option>
+      <option>Prayagraj</option>
+      <option>Delhi</option>
+    </select>
+    <br />
+    <br />
+    <button onclick="demo()">click Me</button>
+
+    <script>
+      let selectRef = document.querySelector("select");
+      demo = () => {
+        alert(selectRef.value);
+      };
+    </script>
+  </body>
+</html>

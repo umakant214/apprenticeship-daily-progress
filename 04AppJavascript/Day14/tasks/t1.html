@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p onclick="demo()" id="para1">This is First Paragraph</p>
+    <p onclick="demo()" id="para2">This is second Paragraph</p>
+
+    <script>
+      const demo = () => {
+        let para1Ref = document.querySelector("#para1");
+        let para2Ref = document.querySelector("#para2");
+
+        
+        let para1Value = para1Ref.innerHTML;
+        let para2Value = para2Ref.innerHTML;
+
+        let temp = para1Value;
+        para1Value = para2Value;
+        para2Value = temp;
+
+        para1Ref.innerHTML = para1Value;
+        para2Ref.innerHTML = para2Value;
+      };
+    </script>
+  </body>
+</html>

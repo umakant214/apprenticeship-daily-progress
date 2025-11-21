@@ -1,0 +1,76 @@
+<!--2. Create a like-dislike button with a counter that increases/decreases on click.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #container {
+        height: 100px;
+        width: 300px;
+        border: 1px solid black;
+        margin: 100px auto;
+      }
+      .child {
+        width: 150px;
+        height: 100px;
+        float: left;
+        text-align: center;
+        font-size: 30px;
+        line-height: 100px;
+      }
+      .c1 {
+        width: 75px;
+        height: 100px;
+        background-color: aqua;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="child">
+        <div class="c1">
+          <i
+            onclick="demo()"
+            id="up"
+            class="fa-regular fa-thumbs-up"
+            style="margin-left: 30px"
+          ></i>
+        </div>
+
+        <div class="c1">
+          <button style="margin-right: 40px">d</button>
+        </div>
+      </div>
+      <div class="child">
+        <div class="c1">
+          <i
+            id="down"
+            class="fa-regular fa-thumbs-down"
+            style="margin-left: 30px"
+          ></i>
+        </div>
+
+        <div class="c1">
+          <button style="margin-right: 40px">d</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const demo = () => {
+        let upRef = document.querySelector("#up");
+        let downRef = document.querySelector("#down");
+      };
+    </script>
+  </body>
+</html>

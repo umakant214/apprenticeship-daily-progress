@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../Day12/blog1.jpg" alt="" id="img1" height="200" width="200" />
+    <br />
+    <img
+      src="../Day11/pexels-eberhardgross-730981.jpg"
+      alt=""
+      id="img2"
+      height="200"
+      width="200"
+    />
+    <br />
+    <button onclick="swap()">Swap</button>
+
+    <script>
+      let img1Ref = document.querySelector("#img1");
+      let img2Ref = document.querySelector("#img2");
+
+      const swap = () => {
+        let temp;
+        temp = img1Ref.src;
+        img1Ref.src = img2Ref.src;
+        img2Ref.src = temp;
+      };
+    </script>
+  </body>
+</html>

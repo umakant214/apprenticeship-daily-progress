@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1" onclick="timer()">Start</button>
+    <button id="btn2" onclick="timerStop()">stop</button>
+
+    <script>
+      let btn1Ref = document.querySelector("#btn1");
+      let btn2Ref = document.querySelector("#btn2");
+      let count = 0;
+
+      function timer() {
+        setInterval(() => {
+          btn1Ref.innerText = count;
+          count++;
+        }, 1000);
+      }
+
+      function timerStop() {
+        setInterval(() => {
+          btn1Ref.innerText = count;
+          count++;
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

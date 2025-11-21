@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para">This is the paragraph.</p>
+
+    <button onclick="duplicate()">Duplicate</button>
+
+    <script>
+      const duplicate = () => {
+        let bodyRef = document.body;
+        let text = document.getElementById("para").innerHTML;
+
+        bodyRef.innerHTML += `<p>${text}</p>`;
+      };
+    </script>
+  </body>
+</html>

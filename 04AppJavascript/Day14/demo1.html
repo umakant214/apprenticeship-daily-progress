@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="../Day12/blog1.jpg" alt="" id="img1" height="200" /> <br>
+    <!-- <img src="../Day11/pexels-eberhardgross-730981.jpg" alt="" id="img1" /> -->
+    <button onclick="print()">Print</button>
+    <p>Hello</p>
+    <script>
+      let imgRef = document.querySelector("img");
+      let paraRef = document.querySelector("p");
+      const print = () => {
+        let imgName = imgRef.src;
+        paraRef.innerHTML = imgName;
+      };
+    </script>
+  </body>
+</html>
