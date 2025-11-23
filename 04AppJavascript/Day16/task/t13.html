@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <thead class="table table-dark">
+        <tr>
+          <th>name</th>
+          <th>price</th>
+          <th>duration</th>
+          <th>instructor</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const courses = [
+        {
+          name: "JavaScript",
+          price: 1999,
+          duration: "3 Months",
+          instructor: "Amit",
+        },
+        {
+          name: "Python",
+          price: 2499,
+          duration: "4 Months",
+          instructor: "Raj",
+        },
+        {
+          name: "React.js",
+          price: 2999,
+          duration: "2 Months",
+          instructor: "Sneha",
+        },
+        {
+          name: "Node.js",
+          price: 3499,
+          duration: "3 Months",
+          instructor: "Deepak",
+        },
+        { name: "DSA", price: 3999, duration: "5 Months", instructor: "Vikas" },
+      ];
+
+      let res = "";
+      courses.forEach((item, index, array) => {
+        res += `<tr>
+        <td>${item.name}</td>
+        <td>${item.price}</td>
+        <td>${item.duration}</td>
+        <td>${item.instructor}</td>
+        </tr>`;
+      });
+      document.querySelector("tbody").innerHTML = res;
+    </script>
+  </body>
+</html>

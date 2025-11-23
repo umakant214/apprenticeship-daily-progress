@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="mySelect"></select>
+
+    <script>
+      let countries = [
+        "India",
+        "USA",
+        "Canada",
+        "Australia",
+        "India",
+        "Brazil",
+        "Germany",
+        "France",
+        "USA",
+        "Japan",
+        "China",
+        "Nepal",
+        "China",
+        "Sri Lanka",
+        "Bangladesh",
+        "Nepal",
+        "Italy",
+        "Spain",
+        "France",
+        "Brazil",
+        "Mexico",
+        "Argentina",
+        "Germany",
+        "Japan",
+        "South Africa",
+        "Kenya",
+        "Uganda",
+        "Kenya",
+        "Russia",
+        "India",
+        "Australia",
+        "Spain",
+      ];
+
+      let unique = countries.filter(
+        (value, index, array) => array.indexOf(value) === index
+      );
+
+      //
+
+      let res = document.querySelector("#mySelect");
+      // Using forEach
+      let options = "";
+
+      unique.forEach((item) => {
+        options += `<option>${item}</option>`;
+      });
+
+      res.innerHTML = options;
+      // Create proper dropdown options
+      // res.innerHTML = unique.map((item) => `<option>${item}</option>`).join("");
+    </script>
+  </body>
+</html>

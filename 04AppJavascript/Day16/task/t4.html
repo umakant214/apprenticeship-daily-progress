@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <script>
+      let arr = [
+        "Aarav",
+        "",
+        "  ",
+        "Vihaan",
+        "Ishika",
+        "  ",
+        " ",
+        "Kabir",
+        "Aarav",
+        "Radhika",
+        "  ",
+        "Meera",
+        "",
+        "Tanish",
+        "Saanvi",
+        "  Sneha  ",
+        "Mahi",
+        "  ",
+        "Kartik",
+        "Krisha",
+        "Aryan",
+        "",
+        "  ",
+        "Anaya",
+        "Vivaan",
+        "Reyansh",
+        "  ",
+        "Prisha",
+        "Advik",
+        "  ",
+        "Diya",
+        " ",
+        "  Riya",
+        "Harsh",
+        "",
+        "  ",
+        "Darsh",
+        "Myra",
+        "  ",
+        "Ayaan",
+        "Sarthak",
+        "  Ishani  ",
+        "  ",
+        "Om",
+        "  ",
+        "Jiya",
+        "Rudra",
+        "",
+        "  ",
+        "Lavanya",
+      ];
+      let result = arr.filter((item) => item.trim() !== "");
+      let res = "";
+      result.forEach((item, index, array) => {
+        res += `<p>${item}</p>`;
+      });
+      document.querySelector("div").innerHTML = res;
+    </script>
+  </body>
+</html>

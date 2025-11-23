@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <!--Databind-->
+    </ul>
+    <script>
+      let arr = [40, 10, 50, 20, 30, 90, 70, 10, 5, 85, 60, 15, 45, 100, 75,234,56,67];
+      let newArr = arr.sort((a, b) => b - a);
+      let res = "";
+      newArr.forEach((item, index, array) => {
+        res += `<li>${item}</li>`;
+      });
+      document.querySelector("ul").innerHTML = res;
+    </script>
+  </body>
+</html>

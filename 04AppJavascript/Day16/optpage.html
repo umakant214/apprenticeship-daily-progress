@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 ps-5 rounded-4 p-5 mx-auto mt-4 bg-success">
+          <h2 class="text-center text-light mb-3">OTP Generator</h2>
+          <button id="btn1" class="btn btn-light">0</button>
+          <button id="btn2" class="btn btn-light">0</button>
+          <button id="btn3" class="btn btn-light">0</button>
+          <button id="btn4" class="btn btn-light">0</button>
+          <button id="btn5" class="btn btn-light">0</button>
+          <button id="btn6" class="btn btn-light">0</button> <br /><br />
+          <button
+            onclick="generateOpt()"
+            class="btn btn-light ms-5"
+            style="margin-left: 70px !important"
+          >
+            Generate
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let generateOpt = () => {
+        let btn1 = document.querySelector("#btn1");
+        let btn2 = document.querySelector("#btn2");
+        let btn3 = document.querySelector("#btn3");
+        let btn4 = document.querySelector("#btn4");
+        let btn5 = document.querySelector("#btn5");
+        let btn6 = document.querySelector("#btn6");
+
+        let otp = Math.floor(Math.random() * 1000000); // Always 6 digit
+
+        let otpStr = otp.toString();
+
+        btn1.innerText = otpStr[0];
+        btn2.innerText = otpStr[1];
+        btn3.innerText = otpStr[2];
+        btn4.innerText = otpStr[3];
+        btn5.innerText = otpStr[4];
+        btn6.innerText = otpStr[5];
+      };
+    </script>
+  </body>
+</html>

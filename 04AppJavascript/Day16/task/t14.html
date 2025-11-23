@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <thead class="table table-dark">
+        <tr>
+          <th>id</th>
+          <th>city</th>
+          <th>type</th>
+          <th>price</th>
+          <th>size</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const properties = [
+        {
+          id: 101,
+          city: "Delhi",
+          type: "Apartment",
+          price: 8500000,
+          size: "3BHK",
+        },
+        {
+          id: 102,
+          city: "Mumbai",
+          type: "Flat",
+          price: 12000000,
+          size: "2BHK",
+        },
+        { id: 103, city: "Pune", type: "Villa", price: 30000000, size: "5BHK" },
+        {
+          id: 104,
+          city: "Lucknow",
+          type: "Row House",
+          price: 6500000,
+          size: "3BHK",
+        },
+        {
+          id: 105,
+          city: "Jaipur",
+          type: "Farmhouse",
+          price: 50000000,
+          size: "6BHK",
+        },
+      ];
+      let res = "";
+      properties.forEach((item, index, array) => {
+        res += `<tr>
+        <td>${item.id}</td>
+        <td>${item.city}</td>
+        <td>${item.type}</td>
+        <td>${item.price}</td>
+        <td>${item.size}</td>
+        </tr>`;
+      });
+
+      document.querySelector("tbody").innerHTML = res;
+    </script>
+  </body>
+</html>

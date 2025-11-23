@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+    <script>
+      const arrCountry = ["India", "China", "Pakistan", "Russia", "Austrellia"];
+      const color = ["red", "blue", "yellow", "aqua", "green"];
+      let res = "";
+      arrCountry.forEach((item, index, array) => {
+        res += `<li style="color:${color[index]}">${item}</li>`;
+      });
+      document.querySelector("ul").innerHTML = res;
+    </script>
+  </body>
+</html>

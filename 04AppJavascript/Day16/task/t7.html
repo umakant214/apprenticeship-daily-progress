@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table">
+          <thead class="table table-info">
+            <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>class</th>
+              <th>math</th>
+              <th>sci</th>
+              <th>eng</th>
+              <th>attendance</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      const students = [
+        {
+          id: 1,
+          name: "Amit",
+          class: "10th",
+          marks: { math: 88, sci: 92, eng: 81 },
+          attendance: 95,
+        },
+        {
+          id: 2,
+          name: "Riya",
+          class: "10th",
+          marks: { math: 72, sci: 80, eng: 78 },
+          attendance: 90,
+        },
+        {
+          id: 3,
+          name: "Kabir",
+          class: "9th",
+          marks: { math: 91, sci: 85, eng: 87 },
+          attendance: 97,
+        },
+        {
+          id: 4,
+          name: "Ishika",
+          class: "11th",
+          marks: { math: 64, sci: 71, eng: 75 },
+          attendance: 86,
+        },
+        {
+          id: 5,
+          name: "Vivaan",
+          class: "12th",
+          marks: { math: 95, sci: 98, eng: 94 },
+          attendance: 99,
+        },
+      ];
+      let res;
+      students.forEach((item, index, array) => {
+        res += `
+        <tr>
+        <td>${item.id}</td>    
+        <td>${item.name}</td>    
+        <td>${item.class}</td>    
+        <td>${item.marks.math}</td>    
+        <td>${item.marks.sci}</td>    
+        <td>${item.marks.eng}</td>    
+        <td>${item.attendance}</td>    
+        </tr>
+        `;
+      });
+      document.querySelector("tbody").innerHTML = res;
+    </script>
+  </body>
+</html>

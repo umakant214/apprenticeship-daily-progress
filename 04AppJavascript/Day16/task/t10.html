@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <thead class="table table-dark">
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>genre</th>
+          <th>borrowed</th>
+          <th>available</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const library = [
+        {
+          id: 11,
+          title: "Atomic Habits",
+          genre: "Self Help",
+          borrowed: 150,
+          available: true,
+        },
+        {
+          id: 12,
+          title: "Rich Dad Poor Dad",
+          genre: "Finance",
+          borrowed: 210,
+          available: true,
+        },
+        {
+          id: 13,
+          title: "Harry Potter",
+          genre: "Fantasy",
+          borrowed: 500,
+          available: false,
+        },
+        {
+          id: 14,
+          title: "Clean Code",
+          genre: "Programming",
+          borrowed: 120,
+          available: true,
+        },
+        {
+          id: 15,
+          title: "The Alchemist",
+          genre: "Fiction",
+          borrowed: 320,
+          available: false,
+        },
+      ];
+
+      let res = "";
+      library.forEach((item, index, array) => {
+        res += `<tr>
+            <td>${item.id}</td>
+            <td>${item.title}</td>
+            <td>${item.genre}</td>
+            <td>${item.borrowed}</td>
+            <td>${item.available}</td>
+            </tr>`;
+      });
+
+      document.querySelector("tbody").innerHTML = res;
+    </script>
+  </body>
+</html>

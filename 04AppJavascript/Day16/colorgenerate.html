@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        min-height: 300px;
+        width: 800px;
+        border: 2px solid orangered;
+        margin: 50px auto;
+      }
+      td {
+        height: 40px;
+        width: 200px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <table>
+        <tbody></tbody>
+      </table>
+
+      <script>
+        const generateColor = () => {
+          let str = "23456abcdef1890";
+          let color = "#";
+          for (let i = 0; i <= 5; i++) {
+            let index = Math.floor(Math.random() * 10);
+            color += str[index];
+          }
+          return color;
+        };  
+
+        const demo = () => {
+          let result = "";
+          for (let i = 0; i <= 7; i++) {
+            result += `<tr>
+                <td style="color:${generateColor()};border:2px solid ${generateColor()}">${generateColor()}</td>
+                <td style="color:${generateColor()};border:2px solid ${generateColor()}">${generateColor()}</td>
+                <td style="color:${generateColor()};border:2px solid ${generateColor()}">${generateColor()}</td>
+                <td style="color:${generateColor()};border:2px solid ${generateColor()}">${generateColor()}</td>
+                </tr>`;
+          }
+          document.querySelector("tbody").innerHTML = result;
+        };
+
+        setInterval(demo, 900);
+      </script>
+    </div>
+  </body>
+</html>

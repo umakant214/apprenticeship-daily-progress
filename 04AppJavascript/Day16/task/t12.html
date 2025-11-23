@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <thead class="table table-dark">
+        <tr>
+          <td>brand</td>
+          <td>model</td>
+          <td>year</td>
+          <td>price</td>
+          <td>fuel</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const movies = [
+        {
+          title: "KGF 2",
+          rating: 9.2,
+          language: "Kannada",
+          platform: "Amazon Prime",
+          year: 2022,
+        },
+        {
+          title: "Jawan",
+          rating: 8.5,
+          language: "Hindi",
+          platform: "Netflix",
+          year: 2023,
+        },
+        {
+          title: "RRR",
+          rating: 9.0,
+          language: "Telugu",
+          platform: "Zee5",
+          year: 2022,
+        },
+        {
+          title: "Leo",
+          rating: 7.8,
+          language: "Tamil",
+          platform: "Hotstar",
+          year: 2023,
+        },
+        {
+          title: "Kantara",
+          rating: 9.3,
+          language: "Kannada",
+          platform: "Netflix",
+          year: 2022,
+        },
+      ];
+
+      let res = "";
+      movies.forEach((item, index, array) => {
+        res += `<tr>
+        <td>${item.title}</td>
+        <td>${item.rating}</td>
+        <td>${item.language}</td>
+        <td>${item.platform}</td>
+        <td>${item.year}</td>
+        </tr>`;
+      });
+
+      document.querySelector("tbody").innerHTML = res;  
+    </script>
+  </body>
+</html>

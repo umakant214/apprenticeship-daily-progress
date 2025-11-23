@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-1 bg-secondary"></div>
+      <div class="col-sm-10">
+        <table class="table">
+          <thead class="table table-dark">
+            <tr>
+              <th>id</th>
+              <th>name</th>
+              <th>age</th>
+              <th>city</th>
+              <th>email</th>
+              <th>phone</th>
+              <th>gender</th>
+              <th>country</th>
+              <th>department</th>
+              <th>salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--Databind-->
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-1 bg-danger"></div>
+    </div>
+    <script>
+      const employees = [
+        {
+          id: 1,
+          name: "   rani devi  ",
+          age: 22,
+          city: "delhi",
+          email: "rani@gmail.com",
+          phone: "999001122",
+          gender: "female",
+          country: "india",
+          department: "hr",
+          salary: 20000,
+        },
+        {
+          id: 2,
+          name: "   suresh kumar  ",
+          age: 25,
+          city: "mumbai",
+          email: "suresh@gmail.com",
+          phone: "999883322",
+          gender: "male",
+          country: "india",
+          department: "sales",
+          salary: 25000,
+        },
+        {
+          id: 3,
+          name: "  mohan lal  ",
+          age: 28,
+          city: "jaipur",
+          email: "mohan@gmail.com",
+          phone: "998877665",
+          gender: "male",
+          country: "india",
+          department: "finance",
+          salary: 30000,
+        },
+        {
+          id: 4,
+          name: "   geeta sharma ",
+          age: 24,
+          city: "pune",
+          email: "geeta@gmail.com",
+          phone: "887766554",
+          gender: "female",
+          country: "india",
+          department: "marketing",
+          salary: 27000,
+        },
+        {
+          id: 5,
+          name: "   raj verma   ",
+          age: 26,
+          city: "surat",
+          email: "raj@gmail.com",
+          phone: "778899001",
+          gender: "male",
+          country: "india",
+          department: "it",
+          salary: 32000,
+        },
+        {
+          id: 6,
+          name: "   seema patel ",
+          age: 23,
+          city: "ahmedabad",
+          email: "seema@gmail.com",
+          phone: "667788990",
+          gender: "female",
+          country: "india",
+          department: "hr",
+          salary: 21000,
+        },
+        {
+          id: 7,
+          name: "  anil kapoor  ",
+          age: 29,
+          city: "noida",
+          email: "anil@gmail.com",
+          phone: "889900112",
+          gender: "male",
+          country: "india",
+          department: "it",
+          salary: 35000,
+        },
+        {
+          id: 8,
+          name: "  lata shree ",
+          age: 21,
+          city: "bhopal",
+          email: "lata@gmail.com",
+          phone: "776655443",
+          gender: "female",
+          country: "india",
+          department: "sales",
+          salary: 22000,
+        },
+        {
+          id: 9,
+          name: "   vikas pandey ",
+          age: 30,
+          city: "indore",
+          email: "vikas@gmail.com",
+          phone: "665544332",
+          gender: "male",
+          country: "india",
+          department: "finance",
+          salary: 40000,
+        },
+        {
+          id: 10,
+          name: "  jyoti nagar ",
+          age: 27,
+          city: "lucknow",
+          email: "jyoti@gmail.com",
+          phone: "554433221",
+          gender: "female",
+          country: "india",
+          department: "admin",
+          salary: 28000,
+        },
+        {
+          id: 11,
+          name: "  sunil kumar   ",
+          age: 24,
+          city: "kanpur",
+          email: "sunil@gmail.com",
+          phone: "998822334",
+          gender: "male",
+          country: "india",
+          department: "it",
+          salary: 33000,
+        },
+        {
+          id: 12,
+          name: "   kavita sharma  ",
+          age: 22,
+          city: "gwalior",
+          email: "kavita@gmail.com",
+          phone: "887744221",
+          gender: "female",
+          country: "india",
+          department: "hr",
+          salary: 24000,
+        },
+        {
+          id: 13,
+          name: "   varun tiwari ",
+          age: 29,
+          city: "nagpur",
+          email: "varun@gmail.com",
+          phone: "776644332",
+          gender: "male",
+          country: "india",
+          department: "marketing",
+          salary: 29000,
+        },
+        {
+          id: 14,
+          name: "  sneha patil  ",
+          age: 23,
+          city: "thane",
+          email: "sneha@gmail.com",
+          phone: "665533221",
+          gender: "female",
+          country: "india",
+          department: "it",
+          salary: 31000,
+        },
+        {
+          id: 15,
+          name: "  arjun mehta ",
+          age: 31,
+          city: "chennai",
+          email: "arjun@gmail.com",
+          phone: "998811223",
+          gender: "male",
+          country: "india",
+          department: "sales",
+          salary: 27000,
+        },
+        {
+          id: 16,
+          name: "  pinky rao  ",
+          age: 22,
+          city: "kochi",
+          email: "pinky@gmail.com",
+          phone: "887733221",
+          gender: "female",
+          country: "india",
+          department: "finance",
+          salary: 26000,
+        },
+        {
+          id: 17,
+          name: "   rohit kumar ",
+          age: 26,
+          city: "hyderabad",
+          email: "rohit@gmail.com",
+          phone: "776622331",
+          gender: "male",
+          country: "india",
+          department: "admin",
+          salary: 28000,
+        },
+        {
+          id: 18,
+          name: "   deepak joshi ",
+          age: 30,
+          city: "kolkata",
+          email: "deepak@gmail.com",
+          phone: "665522331",
+          gender: "male",
+          country: "india",
+          department: "it",
+          salary: 36000,
+        },
+        {
+          id: 19,
+          name: "   neha singh  ",
+          age: 24,
+          city: "patna",
+          email: "neha@gmail.com",
+          phone: "554422110",
+          gender: "female",
+          country: "india",
+          department: "marketing",
+          salary: 25000,
+        },
+        {
+          id: 20,
+          name: "  karan yadav ",
+          age: 28,
+          city: "gurgaon",
+          email: "karan@gmail.com",
+          phone: "443322110",
+          gender: "male",
+          country: "india",
+          department: "sales",
+          salary: 34000,
+        },
+      ];
+
+      let res = "";
+      employees.forEach((item, index, array) => {
+        res += `
+    <tr>
+       <td>${item.id}</td> 
+       <td>${item.name.trim()}</td> 
+       <td>${item.age}</td> 
+       <td>${item.city}</td> 
+       <td>${item.email}</td> 
+       <td>${item.phone}</td> 
+       <td>${item.gender}</td> 
+       <td>${item.country}</td> 
+       <td>${item.department}</td> 
+       <td>${item.salary}</td> 
+    </tr>
+    `;
+      });
+      document.querySelector("tbody").innerHTML = res;
+    </script>
+  </body>
+</html>

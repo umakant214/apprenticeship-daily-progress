@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p></p>
+    <select onclick="demo()" id="dp"></select>
+    <script>
+      const arr = ["Js", "Mern", ".Net", "PHP", "Python", "Dart"];
+      let res = "";
+      arr.forEach((item) => {
+        res += `<option>${item}</option>`;
+      });
+      document.querySelector("#dp").innerHTML = res;
+
+      //wrong because use onclick
+      const demo = () => {
+        let r = document.querySelector("select").value;
+        let para = document.querySelector("p");
+        para.innerHTML = r;
+      };
+    </script>
+  </body>
+</html>

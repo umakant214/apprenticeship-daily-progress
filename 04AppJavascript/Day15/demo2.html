@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="ENter text" />
+    <p style="background-color: azure"></p>
+    <button onclick="submit()">submit</button>
+
+    <script>
+      let inputRef = document.querySelector("input");
+      let paraRef = document.querySelector("p");
+      let submit = () => {
+        let inputValue = inputRef.value;
+        let TrimValue = inputValue.trim();
+        let seperator = TrimValue.replaceAll(" ", "_");
+        // console.log(seperator);
+        paraRef.innerHTML = seperator.toUpperCase();
+      };
+    </script>
+  </body>
+</html>

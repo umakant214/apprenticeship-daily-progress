@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <thead class="table table-dark">
+        <th>item</th>
+        <th>category</th>
+        <th>price</th>
+        <th>spicy</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const restaurantMenu = [
+        { item: "Butter Paneer", category: "Veg", price: 240, spicy: false },
+        {
+          item: "Chicken Biryani",
+          category: "Non-Veg",
+          price: 350,
+          spicy: true,
+        },
+        { item: "Masala Dosa", category: "Veg", price: 120, spicy: true },
+        { item: "Fish Curry", category: "Non-Veg", price: 400, spicy: true },
+        { item: "Gulab Jamun", category: "Dessert", price: 90, spicy: false },
+      ];
+      let res = "";
+      restaurantMenu.forEach((item, index, array) => {
+        res += `<tr>
+        <td>${item.item}</td>
+        <td>${item.category}</td>
+        <td>${item.price}</td>
+        <td>${item.spicy}</td>
+        </tr>`;
+      });
+      document.querySelector("tbody").innerHTML = res;
+    </script>
+  </body>
+</html>

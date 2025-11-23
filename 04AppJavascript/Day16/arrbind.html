@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+    <script>
+      const arr = ["Js", "Mern", ".Net", "PHP", "Python", "Dart"];
+      const color = ["red", "black", "blue", "yellow", "aqua", "green"];
+      const bgColor = ["yellow", "aqua", "green", "red", "black", "lightblue"];
+      let res = "";
+      arr.forEach((item, index, array) => {
+        res += `<li style="color:${color[index]};background:${bgColor[index]};width:200px">${item}</li>`;
+      });
+      document.querySelector("ul").innerHTML = res;
+    </script>
+  </body>
+</html>

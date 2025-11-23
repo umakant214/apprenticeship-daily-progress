@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <thead class="table table-dark">
+        <tr>
+          <td>brand</td>
+          <td>model</td>
+          <td>year</td>
+          <td>price</td>
+          <td>fuel</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const cars = [
+        {
+          brand: "Toyota",
+          model: "Fortuner",
+          year: 2024,
+          price: 3800000,
+          fuel: "Diesel",
+        },
+        {
+          brand: "Honda",
+          model: "City",
+          year: 2023,
+          price: 1500000,
+          fuel: "Petrol",
+        },
+        {
+          brand: "Tata",
+          model: "Nexon EV",
+          year: 2024,
+          price: 1800000,
+          fuel: "Electric",
+        },
+        {
+          brand: "Hyundai",
+          model: "Creta",
+          year: 2023,
+          price: 1800000,
+          fuel: "Petrol",
+        },
+        {
+          brand: "Mahindra",
+          model: "Thar",
+          year: 2024,
+          price: 2500000,
+          fuel: "Diesel",
+        },
+      ];
+      let res = "";
+      cars.forEach((item, index, array) => {
+        res += `<tr>
+            <td>${item.brand}</td>
+            <td>${item.model}</td>
+            <td>${item.year}</td>
+            <td>${item.price}</td>
+            <td>${item.fuel}</td>
+            </tr>`;
+      });
+      document.querySelector("tbody").innerHTML = res;
+    </script>
+  </body>
+</html>

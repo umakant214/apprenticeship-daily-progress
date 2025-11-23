@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10 mx-auto">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>department</th>
+                <th>salary</th>
+                <th>city</th>
+                <th>Experience</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    const employeesData = [
+  { id: 1, name: "Rakesh", department: "IT", salary: 60000, city: "Delhi", experience: 5 },
+  { id: 2, name: "Geeta", department: "HR", salary: 45000, city: "Mumbai", experience: 3 },
+  { id: 3, name: "Sameer", department: "Finance", salary: 70000, city: "Pune", experience: 7 },
+  { id: 4, name: "Sneha", department: "Marketing", salary: 52000, city: "Jaipur", experience: 4 },
+  { id: 5, name: "Arjun", department: "Admin", salary: 38000, city: "Noida", experience: 2 }
+];
+let res=""
+employeesData.forEach((item,index,array)=>{
+    res+=`
+    <tr>
+    <td>${item.id}</td>    
+    <td>${item.name}</td>    
+    <td>${item.department}</td>    
+    <td>${item.salary}</td>    
+    <td>${item.city}</td>    
+    <td>${item.experience}</td>    
+    </tr>
+    `
+})
+document.querySelector("tbody").innerHTML=res
+    </script>
+  </body>
+</html>

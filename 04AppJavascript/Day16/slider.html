@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="../Day11/pexels-eberhardgross-730981.jpg"
+      height="150px"
+      width="100%"
+      alt=""
+      style="background-size: cover"
+    />
+
+    <button  id="next">Next</button>
+    <button onclick="demo()" id="pre">Previous</button>
+
+    <script>
+      let images = ["category3.jpg", "category2.jpg", "Hero_section.jpg"];
+      let i = 0;
+      const slider = () => {
+        let imgRef = document.querySelector("img");
+        imgRef.src = images[i];
+        i++;
+        if (i == images.length) {
+          i = 0;
+        }
+      };
+      setInterval(slider, 5000);
+
+     //button click per 
+    </script>
+  </body>
+</html>

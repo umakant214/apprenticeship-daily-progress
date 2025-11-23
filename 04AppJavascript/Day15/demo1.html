@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="Enter a number" />
+    <button onclick="table()">click</button>
+    <br /><br /><br />
+    <div id="output"></div>
+
+    <script>
+      const table = () => {
+        let inputRef = document.querySelector("#input");
+        let divRef = document.querySelector("#output");
+        let valueRef = parseInt(inputRef.value);
+
+        let result = ""; // start empty
+
+        for (let i = 1; i <= 10; i++) {
+          result += `${valueRef} × ${i} = ${valueRef * i}<br>`;
+        }
+
+        divRef.innerHTML = result; // show in browser
+      };
+    </script>
+  </body>
+</html>
