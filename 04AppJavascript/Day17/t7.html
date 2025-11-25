@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="js/bootstrap.bundle.js" />
+    <link rel="stylesheet" href="css/all.css" />
+
+    <style>
+      .all {
+        box-shadow: 0px 0px 10px 10px #9b2651;
+      }
+      .a {
+        background: linear-gradient(45deg, rgba(33, 37, 41), rgb(155, 38, 81));
+      }
+    </style>
+  </head>
+  <body onload="showTableData()">
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-sm-8 a all mx-auto">
+          <div class="row">
+            <div class="col-sm-6 text-light rounded-4 py-5 p-3">
+              <h1 class="text-center mb-4">Login</h1>
+              <div class="input-group flex-nowrap">
+                <input
+                  id="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                />
+                <span class="input-group-text"
+                  ><i class="fa-solid fa-user"></i
+                ></span>
+              </div>
+              <br />
+              <div class="input-group flex-nowrap">
+                <input
+                  id="password"
+                  type="password"
+                  class="form-control"
+                  placeholder="password"
+                />
+                <span class="input-group-text"
+                  ><i class="fa-solid fa-lock"></i
+                ></span>
+              </div>
+              <br />
+
+              <div class="d-flex justify-content-center">
+                <button
+                  onclick="register()"
+                  class="btn btn a text-center form-control"
+                >
+                  Login
+                </button>
+              </div>
+              <p class="text-center mt-4">Don't have account Sign up?</p>
+            </div>
+            <div
+              class="col-sm-6 rounded text-center p-5 text-light"
+              style="padding-top: 100px !important"
+            >
+              <h1>Welcome,Back</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                temporibus quae recusandae aut sint minus, perferendis dicta
+                corporis rem reprehenderit voluptatum doloremque beatae
+                voluptates libero, facere quos quidem repudiandae non.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-sm-8 mx-auto mt-3">
+          <h1 class="text-danger text-center mb-3">Login Form Data</h1>
+          <table class="table">
+            <thead class="table table-dark">
+              <tr>
+                <th>Sr. No</th>
+                <th>Name</th>
+                <th>password</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      let dataArr = [
+        {
+          name: "Abhi Yadav",
+          password: "1234456776",
+        },
+      ];
+      const showTableData = () => {
+        let res = "";
+        dataArr.forEach((item, index) => {
+          res += `
+            <tr>
+            <td>${index + 1}</td>    
+            <td>${item.name}</td>    
+            <td>${item.password}</td>    
+            </tr>
+            `;
+        });
+        document.querySelector("tbody").innerHTML = res;
+      };
+
+      const register = () => {
+        let nameValue = document.querySelector("#name").value;
+        let passwordValue = document.querySelector("#password").value;
+
+        const obj = {
+          name: nameValue,
+          password: passwordValue,
+        };
+        dataArr.push(obj);
+        showTableData();
+      };
+    </script>
+  </body>
+</html>

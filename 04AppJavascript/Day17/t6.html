@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body onload="showData()">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 mx-auto">
+          <div class="row">
+            <div class="col-5 p-0 rounded-4 bg-danger">
+              <img
+                src="img3.png"
+                width="100%"
+                class="img-fluid rounded-4"
+                alt=""
+              />
+            </div>
+            <div class="col-7 bg-dark text-light rounded-4 p-4">
+              <h3 class="mb-4">Registration info</h3>
+              <input
+                type="text"
+                name=""
+                id="name"
+                placeholder="Enter your Name"
+                class="form-control mb-3"
+              />
+              <input
+                type="date"
+                name=""
+                id="dob"
+                placeholder="Enter your dob"
+                class="form-control mb-3"
+              />
+              <input
+                type="text"
+                name=""
+                id="gender"
+                placeholder="Enter your gender"
+                class="form-control mb-3"
+              />
+              <input
+                type="email"
+                name=""
+                id="email"
+                placeholder="Enter your email"
+                class="form-control mb-3"
+              />
+              <input
+                type="number"
+                name=""
+                id="phone"
+                placeholder="Enter your number"
+                class="form-control mb-3"
+              />
+              <button onclick="login()" class="btn btn-success text-light">
+                submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 mx-auto mt-3">
+          <h1 class="text-light text-center mb-3">Login Form Data</h1>
+          <table class="table">
+            <thead class="table table-dark">
+              <tr>
+                <th>Sr. No</th>
+                <th>Name</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>dob</th>
+                <th>gender</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      let dataArr = [
+        {
+          name: "Umakant Yadav",
+          email: "umakant@gmail.com",
+          phone: "23456756",
+          dob: "3-04-2004",
+          gender: "male",
+        },
+      ];
+      const showData = () => {
+        let res = "";
+        dataArr.forEach((item, index) => {
+          res += `
+            <tr>
+            <td>${index + 1}</td>    
+            <td>${item.name}</td>    
+            <td>${item.email}</td>    
+            <td>${item.phone}</td>    
+            <td>${item.dob}</td>    
+            <td>${item.gender}</td>   
+            </tr>
+            `;
+        });
+        document.querySelector("tbody").innerHTML = res;
+      };
+      const login = () => {
+        let nameValue = document.querySelector("#name").value;
+        let emailValue = document.querySelector("#email").value;
+        let phoneValue = document.querySelector("#phone").value;
+        let dobValue = document.querySelector("#dob").value;
+        let genderValue = document.querySelector("#gender").value;
+
+        let obj = {
+          name: nameValue,
+          email: emailValue,
+          phone: phoneValue,
+          dob: dobValue,
+          gender: genderValue,
+        };
+
+        dataArr.push(obj);
+        showData();
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="js/bootstrap.bundle.js" />
+  </head>
+  <body onload=" showTableData()">
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-sm-4 mx-auto border border-2 border-dark rounded mt-3 p-4"
+        >
+          <h2 class="text-center mb-5">
+            Registration <span class="text-danger">Form</span>
+          </h2>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Name"
+            id="name"
+          />
+          <br />
+          <input
+            type="email"
+            class="form-control mb-4"
+            placeholder="Enter Your email"
+            id="email"
+          />
+          <input
+            type="num'"
+            class="form-control mb-3"
+            placeholder="Enter Your Mobile"
+            id="phone"
+          />
+
+          <button
+            onclick="register()"
+            class="btn btn-warning form-control mb-3"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 mx-auto mt-3">
+          <h1 class="text-danger text-center mb-3">Registration Form Data</h1>
+          <table class="table">
+            <thead class="table table-dark">
+              <tr>
+                <th>Sr. No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      let dataArr = [
+        {
+          name: "Abhi Yadav",
+          email: "abhi@gmail.com",
+          phone: "234466876543",
+        },
+      ];
+      const showTableData = () => {
+        let res = "";
+        dataArr.forEach((item, index) => {
+          res += `
+            <tr>
+            <td>${index + 1}</td>    
+            <td>${item.name}</td>    
+            <td>${item.email}</td>    
+            <td>${item.phone}</td>
+            <td>
+               <button class="btn btn-danger">Del</button> 
+               <button class="btn btn-warning">Edit</button> 
+            </td>    
+            </tr>
+            `;
+        });
+        document.querySelector("tbody").innerHTML = res;
+      };
+
+      const register = () => {
+        let nameValue = document.querySelector("#name").value;
+        let emailValue = document.querySelector("#email").value;
+        let phoneValue = document.querySelector("#phone").value;
+
+        const obj = {
+          name: nameValue,
+          email: emailValue,
+          phone: phoneValue,
+        };
+        dataArr.push(obj);
+        showTableData();
+      };
+    </script>
+  </body>
+</html>

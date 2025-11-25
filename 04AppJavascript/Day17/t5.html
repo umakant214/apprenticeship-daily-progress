@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      .bg-color {
+        background-color: #826afc;
+      }
+      .mb {
+        height: 80px;
+        width: 100%;
+      }
+      .mb1 {
+        height: 80px;
+        width: 50%;
+        float: left;
+      }
+      h1 {
+        margin-top: 200px;
+      }
+    </style>
+  </head>
+  <body onload="showData()">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 mx-auto bg-color">
+          <div class="row p-2">
+            <div class="col-sm-5 p-5">
+              <h1 class="text-light">Responsive Registration Form</h1>
+            </div>
+            <div class="col-sm-7 bg-light rounded-2 p-3">
+              <h2 class="text-center mb-4">Registration Form</h2>
+
+              <label for="inputPassword5" class="form-label">Full Name</label>
+              <input
+                type="password"
+                id="name"
+                class="form-control"
+                placeholder="Enter Full Name"
+              />
+              <br />
+              <label for="inputPassword5" class="form-label">Full Name</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter email"
+              />
+              <br />
+              <div class="mb">
+                <div class="mb1 p-1">
+                  <label for="inputPassword5" class="form-label"
+                    >Mobile Number</label
+                  >
+                  <input
+                    type="number"
+                    id="phone"
+                    class="form-control"
+                    placeholder="Enter number"
+                  />
+                </div>
+                <div class="mb1 p-1">
+                  <label for="inputPassword5" class="form-label"
+                    >Birth Date</label
+                  >
+                  <input type="date" id="dob" class="form-control" />
+                </div>
+              </div>
+              <br />
+              <label for="inputPassword5" class="form-label">Address</label>
+              <input
+                type="email"
+                id="address"
+                class="form-control"
+                placeholder="Enter Full Address"
+              />
+              <br />
+              <div class="mb">
+                <div class="mb1 p-1">
+                  <input
+                    type="text"
+                    id="country"
+                    class="form-control"
+                    placeholder="Enter country name"
+                  />
+                </div>
+                <div class="mb1 p-1">
+                  <input
+                    type="text"
+                    id="pcode"
+                    class="form-control"
+                    placeholder="Enter Postal code"
+                  />
+                </div>
+              </div>
+              <button onclick="login()" class="btn btn bg-color form-control">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-10 mx-auto mt-3">
+          <h1 class="text-light text-center mb-3">Login Form Data</h1>
+          <table class="table">
+            <thead class="table table-dark">
+              <tr>
+                <th>Sr. No</th>
+                <th>Name</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>dob</th>
+                <th>address</th>
+                <th>country</th>
+                <th>pcode</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let dataArr = [
+        {
+          name: "Umakant Yadav",
+          email: "umakant@gmail.com",
+          phone: "23456756",
+          dob: "3-04-2004",
+          address: "Lucknow",
+          country: "India",
+          pcode: "322121",
+        },
+      ];
+      const showData = () => {
+        let res = "";
+        dataArr.forEach((item, index) => {
+          res += `
+            <tr>
+            <td>${index + 1}</td>    
+            <td>${item.name}</td>    
+            <td>${item.email}</td>    
+            <td>${item.phone}</td>    
+            <td>${item.dob}</td>    
+            <td>${item.address}</td>    
+            <td>${item.country}</td>    
+            <td>${item.pcode}</td>    
+            </tr>
+            `;
+        });
+        document.querySelector("tbody").innerHTML = res;
+      };
+      const login = () => {
+        let nameValue = document.querySelector("#name").value;
+        let emailValue = document.querySelector("#email").value;
+        let phoneValue = document.querySelector("#phone").value;
+        let dobValue = document.querySelector("#dob").value;
+        let addressValue = document.querySelector("#address").value;
+        let countryValue = document.querySelector("#country").value;
+        let pcodeValue = document.querySelector("#pcode").value;
+
+        let obj = {
+          name: nameValue,
+          email: emailValue,
+          phone: phoneValue,
+          dob: dobValue,
+          address: addressValue,
+          country: countryValue,
+          pcode: pcodeValue,
+        };
+
+        dataArr.push(obj);
+        showData();
+      };
+    </script>
+  </body>
+</html>

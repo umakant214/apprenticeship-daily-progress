@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="js/bootstrap.bundle.js" />
+    <link rel="stylesheet" href="css/all.css" />
+    <style>
+      body {
+        background: url(img1.avif);
+      }
+      .login {
+        background-color: #627f69;
+        margin-top: 100px;
+      }
+      .main {
+        height: 50px;
+        width: 100%;
+      }
+      .sub {
+        height: 50px;
+        width: 50%;
+        float: left;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body onload="showData()">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-4 p-3 py-5 mx-auto login text-light rounded-4 border border-2 border-light"
+        >
+          <h2 class="text-center mb-4">Login</h2>
+          <div class="input-group flex-nowrap">
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              placeholder="Email"
+            />
+            <span class="input-group-text"
+              ><i class="fa-solid fa-message"></i
+            ></span>
+          </div>
+          <br />
+          <div class="input-group flex-nowrap">
+            <input
+              id="password"
+              type="password"
+              class="form-control"
+              placeholder="password"
+            />
+            <span class="input-group-text"
+              ><i class="fa-solid fa-lock"></i
+            ></span>
+          </div>
+          <div class="main">
+            <div class="sub">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  style="margin-top: 20px"
+                  id="checkDefault"
+                />
+                <label class="form-check-label" for="checkDefault">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <div class="sub"><p>Forget Password?</p></div>
+          </div>
+          <button
+            onclick="login()"
+            class="btn btn-light form-control rounded-5 mb-3"
+          >
+            Log in
+          </button>
+          <p class="text-center">
+            Don't have a account <span class="fw-bold">Register</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-sm-8 mx-auto mt-3">
+          <h1 class="text-danger text-center mb-3">Login Form Data</h1>
+          <table class="table">
+            <thead class="table table-dark">
+              <tr>
+                <th>Sr. No</th>
+                <th>Email</th>
+                <th>password</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let arrData = [
+        {
+          email: "umakant@gmail.com",
+          password: "122334343",
+        },
+      ];
+
+      const showData = () => {
+        let res = "";
+        arrData.forEach((item, index) => {
+          res += `<tr>
+                <td>${index + 1}</td>
+                <td>${item.email}</td>
+                <td>${item.password}</td>
+                </tr>`;
+        });
+        document.querySelector("tbody").innerHTML = res;
+      };
+      const login = () => {
+        let emailValue = document.querySelector("#email").value;
+        let passwordValue = document.querySelector("#password").value;
+
+        const obj = {
+          email: emailValue,
+          password: passwordValue,
+        };
+
+        arrData.push(obj);
+        showData();
+      };
+    </script>
+  </body>
+</html>
