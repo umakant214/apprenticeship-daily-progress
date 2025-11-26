@@ -61,6 +61,69 @@
           </table>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Update Data
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Name"
+                id="modalName"
+              />
+              <br />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Your email"
+                id="modalEmail"
+              />
+              <br />
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Enter Your number"
+                id="modalPhone"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                onclick="update()"
+                type="button"
+                class="btn btn-warning text-light"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
       let dataArr = [
@@ -80,8 +143,8 @@
             <td>${item.email}</td>    
             <td>${item.phone}</td>
             <td>
-               <button class="btn btn-danger">Del</button> 
-               <button class="btn btn-warning">Edit</button> 
+               <button onclick="deleteData(${index})" class="btn btn-danger">Del</button> 
+               <button onclick="editData(${index})"   data-bs-toggle="modal" data-bs-target="#exampleModal"    class="btn btn-warning">Edit</button> 
             </td>    
             </tr>
             `;
@@ -102,6 +165,31 @@
         dataArr.push(obj);
         showTableData();
       };
+
+      const deleteData = (x) => {
+        dataArr.splice(x, 1);
+        showTableData();
+      };
+      const editData = (y) => {
+        localStorage.setItem("editId", JSON.stringify(y));
+        const id = JSON.parse(localStorage.getItem(editData));
+      };
+      const update = () => {
+        let id = JSON.parse(localStorage.getItem("editId"));
+        let name = document.querySelector("#modalName").value;
+        let email = document.querySelector("#modalEmail").value;
+        let phone = document.querySelector("#modalPhone").value;
+
+        let updateObj = {
+          name: name,
+          email: email,
+          phone: phone,
+        };
+
+        dataArr[id] = updateObj;
+        showTableData();
+      };
     </script>
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>

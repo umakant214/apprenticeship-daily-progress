@@ -95,14 +95,68 @@
                 <th>Sr. No</th>
                 <th>Email</th>
                 <th>password</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
         </div>
       </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Update</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <input
+                type="email"
+                id="modalEmail"
+                placeholder="Enter Your Email"
+                class="form-control mb-3"
+              />
+              <input
+                type="password"
+                id="modalPassword"
+                placeholder="Enter Your password"
+                class="form-control mb-3"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-warning text-light"
+                onclick="updateData()"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script src="js/bootstrap.bundle.js"></script>
     <script>
       let arrData = [
         {
@@ -118,6 +172,10 @@
                 <td>${index + 1}</td>
                 <td>${item.email}</td>
                 <td>${item.password}</td>
+                   <td>
+          <button onclick="deleteData(${index})" class="btn btn-danger">Del</button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="editData(${index})" class="text-light btn btn-warning">Edit</button>
+          </td>
                 </tr>`;
         });
         document.querySelector("tbody").innerHTML = res;
@@ -132,6 +190,31 @@
         };
 
         arrData.push(obj);
+        showData();
+      };
+
+      const deleteData = (index) => {
+        arrData.splice(index, 1);
+        showData();
+      };
+
+      const editData = (index) => {
+        localStorage.setItem("newId", JSON.stringify(index));
+      };
+
+      const updateData = () => {
+        let id = JSON.parse(localStorage.getItem("newId"));
+        let modalEmail = document.querySelector("#modalEmail").value;
+        let modalPassword = document.querySelector("#modalPassword").value;
+
+        console.log(id, modalEmail, modalPassword);
+
+        let updateObj = {
+          modalEmail,
+          modalPassword,
+        };
+
+        arrData[id] = updateObj;
         showData();
       };
     </script>
