@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div
+          class="col-sm-6 mx-auto bg-light p-4 rounded-3 shadow-lg"
+          style="border: 1px solid lightgray !important"
+        >
+          <h3 class="">Information</h3>
+          <hr class="thin-" />
+          <div class="row">
+            <div class="col-6">
+              <label for="inputname" class="form-label fw-medium"
+                >City Name
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="cityName"
+                class="form-control bg-light mb-2"
+                placeholder="City Name"
+              />
+              <span id="ErrorCity" class="text-danger ms-1"></span>
+            </div>
+            <div class="col-6">
+              <label for="inputname" class="form-label fw-medium"
+                >Time <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="time"
+                id="time"
+                class="form-control bg-light mb-2"
+                placeholder="Time"
+              />
+              <span id="errorTime" class="text-danger ms-1"></span>
+            </div>
+            <div class="col-6">
+              <label for="inputname" class="form-label fw-medium"
+                >Social Media Username
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="socialMedia"
+                class="form-control bg-light mb-2"
+                placeholder="Social Media Username"
+              />
+              <span id="errorSocialMedia" class="text-danger ms-1"></span>
+            </div>
+            <div class="col-6 mb-4">
+              <label for="inputname" class="form-label fw-medium"
+                >Hex Color Code
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="colorCode"
+                class="form-control bg-light mb-2"
+                placeholder="Hex Color Code"
+              />
+              <span id="errorColorCode" class="text-danger ms-1"></span>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-secondary rounded-5">
+                Total Amount : 0
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                onclick="register()"
+                class="btn btn text-light rounded-5"
+                style="margin-left: 48%; background-color: orangered"
+              >
+                Register & Pay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      const register = () => {
+        //input fields
+        let cityRef = document.querySelector("#cityName");
+        let timeRef = document.querySelector("#time");
+        let socialMediaRef = document.querySelector("#socialMedia");
+        let colorCodeRef = document.querySelector("#colorCode");
+        //error msg
+        let ErrorCity = document.querySelector("#ErrorCity");
+        let errorTime = document.querySelector("#errorTime");
+        let errorSocialMedia = document.querySelector("#errorSocialMedia");
+        let errorColorCode = document.querySelector("#errorColorCode");
+
+        //reset error
+        ErrorCity.innerHTML = "";
+        errorTime.innerHTML = "";
+        errorSocialMedia.innerHTML = "";
+        errorColorCode.innerHTML = "";
+
+        //flag variable
+        let isValid = true;
+
+        //CityName validation
+        let CityRegex = /^[A-Za-z ]+(?:[ -][A-Za-z]+)*$/;
+        if (cityRef.value.trim() === "") {
+          ErrorCity.innerHTML = "Required fields";
+          isValid = false;
+        } else if (!CityRegex.test(cityRef.value)) {
+          ErrorCity.innerHTML = "City Name should contain only alphabets.";
+          isValid = false;
+        }
+
+        //time validation
+        let timeRegex = /^([01]\d|2[0-3]):[0-5]\d$/;
+        if (timeRef.value.trim() === "") {
+          errorTime.innerHTML = "Required fields";
+          isValid = false;
+        } else if (!timeRegex.test(timeRef.value)) {
+          errorTime.innerHTML = "Time  should contain only number.";
+          isValid = false;
+        }
+
+        //Social media name
+        let SocialMediaRegex = /^[a-zA-Z0-9._]{1,30}$/;
+        if (socialMediaRef.value.trim() === "") {
+          errorSocialMedia.innerHTML = "Required fields";
+          isValid = false;
+        } else if (!SocialMediaRegex.test(socialMediaRef.value)) {
+          errorSocialMedia.innerHTML =
+            " Username should contain only alphabets.";
+          isValid = false;
+        }
+
+        //Hex color code
+        let hexRegex = /^#[A-Fa-f0-9]{6}$/;
+
+        if (colorCodeRef.value.trim() === "") {
+          errorColorCode.innerHTML = "Required field";
+          isValid = false;
+        } else if (!hexRegex.test(colorCodeRef.value.trim())) {
+          errorColorCode.innerHTML =
+            "Color code must start with # and have exactly 6 digits.";
+          isValid = false;
+        }
+      };
+    </script>
+  </body>
+</html>

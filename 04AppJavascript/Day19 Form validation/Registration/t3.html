@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div
+          class="col-sm-6 mx-auto bg-light p-4 rounded-3 shadow-lg"
+          style="border: 1px solid lightgray !important"
+        >
+          <h3 class="">New Student</h3>
+          <hr class="thin-" />
+          <div class="row">
+            <div class="col-6 mb-2">
+              <label for="inputname" class="form-label fw-medium"
+                >Country Name
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="countryName"
+                class="form-control bg-light mb-2"
+                placeholder="Country Name"
+              />
+              <span id="ErrorCountry" class="text-danger"></span>
+            </div>
+            <div class="col-6 mb-2">
+              <label for="inputname" class="form-label fw-medium"
+                >Roll Number
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="number"
+                id="rollNumber"
+                class="form-control bg-light"
+                placeholder="Roll Number"
+              />
+              <span id="ErrorRollNumber" class="text-danger"></span>
+            </div>
+            <div class="col-6 mb-2">
+              <label for="inputname" class="form-label fw-medium"
+                >Credit Card Number
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="creditCard"
+                class="form-control bg-light"
+                placeholder="Credit Card"
+              />
+              <span id="ErrorCreditCard" class="text-danger"></span>
+            </div>
+            <div class="col-6 mb-4">
+              <label for="inputname" class="form-label fw-medium"
+                >Student ID (alphanumeric)
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="studentId"
+                class="form-control bg-light"
+                placeholder="Student ID (alphanumeric)"
+              />
+              <span id="ErrorStudentId" class="text-danger"></span>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-secondary rounded-5">
+                Total Amount : 0
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                onclick="register()"
+                class="btn btn text-light rounded-5"
+                style="margin-left: 48%; background-color: orangered"
+              >
+                Register & Pay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      const register = () => {
+        // Input fields
+        let countryRef = document.querySelector("#countryName");
+        let rollNumberRef = document.querySelector("#rollNumber");
+        let creditCardRef = document.querySelector("#creditCard");
+        let studentIdRef = document.querySelector("#studentId");
+
+        // Error spans
+        let ErrorCountry = document.querySelector("#ErrorCountry");
+        let ErrorRollNumber = document.querySelector("#ErrorRollNumber");
+        let ErrorCreditCard = document.querySelector("#ErrorCreditCard");
+        let ErrorStudentId = document.querySelector("#ErrorStudentId");
+
+        // Clear errors
+        ErrorCountry.innerHTML = "";
+        ErrorRollNumber.innerHTML = "";
+        ErrorCreditCard.innerHTML = "";
+        ErrorStudentId.innerHTML = "";
+
+        let isValid = true;
+
+        // Country Validation
+        let CountryRegex = /^[A-Za-z ]+(?:[ -][A-Za-z]+)*$/;
+        if (countryRef.value.trim() === "") {
+          ErrorCountry.innerHTML = "Required field";
+          isValid = false;
+        } else if (!CountryRegex.test(countryRef.value.trim())) {
+          ErrorCountry.innerHTML =
+            "Country name should contain only alphabets.";
+          isValid = false;
+        }
+
+        // rollNumber Validation
+        let rollNumberRegex = /^[0-9]+$/;
+
+        if (rollNumberRef.value.trim() === "") {
+          ErrorRollNumber.innerHTML = "Required field";
+          isValid = false;
+        } else if (!rollNumberRegex.test(rollNumberRef.value.trim())) {
+          ErrorRollNumber.innerHTML = "Invalid RollNumber.";
+          isValid = false;
+        }
+
+        // creditCard validation
+        let creditCardRegex = /^\d{13,19}$/;
+        if (creditCardRef.value.trim() === "") {
+          ErrorCreditCard.innerHTML = "Required field";
+          isValid = false;
+        } else if (!creditCardRegex.test(creditCardRef.value.trim())) {
+          ErrorCreditCard.innerHTML =
+            "Username can contain letters, numbers, dot, underscore.";
+          isValid = false;
+        }
+
+        // student id
+        let studentIdRegex = /^[A-Za-z0-9]+$/;
+        if (studentIdRef.value.trim() === "") {
+          ErrorStudentId.innerHTML = "Required field";
+          isValid = false;
+        } else if (!studentIdRegex.test(studentIdRef.value.trim())) {
+          ErrorStudentId.innerHTML = "Must be include alphanumeric id";
+          isValid = false;
+        }
+      };
+    </script>
+  </body>
+</html>

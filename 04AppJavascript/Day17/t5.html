@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/all.css" />
     <style>
       .bg-color {
-        background-color: #826afc;
+        background-color: #826afc !important;
       }
       .mb {
         height: 80px;
@@ -37,19 +37,22 @@
 
               <label for="inputPassword5" class="form-label">Full Name</label>
               <input
-                type="password"
+                type="text"
                 id="name"
                 class="form-control"
                 placeholder="Enter Full Name"
               />
+              <span id="nameError" class="text-danger ms-2"></span>
               <br />
-              <label for="inputPassword5" class="form-label">Full Name</label>
+              <label for="inputPassword5" class="form-label">Email</label>
               <input
                 type="email"
                 id="email"
                 class="form-control"
                 placeholder="Enter email"
               />
+
+              <span id="emailError" class="text-danger ms-2"></span>
               <br />
               <div class="mb">
                 <div class="mb1 p-1">
@@ -62,22 +65,28 @@
                     class="form-control"
                     placeholder="Enter number"
                   />
+
+                  <span id="phoneError" class="text-danger ms-2"></span>
                 </div>
                 <div class="mb1 p-1">
                   <label for="inputPassword5" class="form-label"
                     >Birth Date</label
                   >
                   <input type="date" id="dob" class="form-control" />
+
+                  <span id="dobError" class="text-danger ms-2"></span>
                 </div>
               </div>
               <br />
               <label for="inputPassword5" class="form-label">Address</label>
               <input
-                type="email"
+                type="text"
                 id="address"
                 class="form-control"
                 placeholder="Enter Full Address"
               />
+
+              <span id="addressError" class="text-danger ms-2"></span>
               <br />
               <div class="mb">
                 <div class="mb1 p-1">
@@ -87,6 +96,7 @@
                     class="form-control"
                     placeholder="Enter country name"
                   />
+                  <span id="countryError" class="text-danger ms-2"></span>
                 </div>
                 <div class="mb1 p-1">
                   <input
@@ -95,6 +105,8 @@
                     class="form-control"
                     placeholder="Enter Postal code"
                   />
+
+                  <span id="pcodeError" class="text-danger ms-2"></span>
                 </div>
               </div>
               <button onclick="login()" class="btn btn bg-color form-control">
@@ -166,6 +178,99 @@
         let countryValue = document.querySelector("#country").value;
         let pcodeValue = document.querySelector("#pcode").value;
 
+        //
+        // Reset Error Msg
+        nameError.innerHTML = "";
+        emailError.innerHTML = "";
+        phoneError.innerHTML = "";
+        dobError.innerHTML = "";
+        addressError.innerHTML = "";
+        countryError.innerHTML = "";
+        pcodeError.innerHTML = "";
+
+        let isValid = true;
+
+        // NAME VALIDATION
+        let nameRegex = /^[A-Za-z ]{2,16}$/;
+        if (nameValue.trim() === "") {
+          nameError.innerHTML = "Name is required.";
+          isValid = false;
+        } else if (!nameRegex.test(nameValue)) {
+          nameError.innerHTML = "Name should contain only alphabets.";
+          isValid = false;
+        }
+
+        // EMAIL VALIDATION
+        let emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if (emailValue.trim() === "") {
+          emailError.innerHTML = "Email is required.";
+          isValid = false;
+        } else if (emailValue.length < 5) {
+          emailError.innerHTML = "Email must be at least 5 characters.";
+          isValid = false;
+        } else if (emailValue.length > 40) {
+          emailError.innerHTML = "Email must not exceed 40 characters.";
+          isValid = false;
+        } else if (!emailRegex.test(emailValue)) {
+          emailError.innerHTML = "Please enter a valid email address.";
+          isValid = false;
+        }
+        // MOBILE VALIDATION
+        let mobileRegex = /^[6-9]\d{9}$/;
+
+        if (phoneValue.trim() === "") {
+          phoneError.innerHTML = "Mobile number is required.";
+          isValid = false;
+        } else if (phoneValue.length !== 10) {
+          phoneError.innerHTML = "Mobile number must be exactly 10 digits.";
+          isValid = false;
+        } else if (!mobileRegex.test(phoneValue)) {
+          phoneError.innerHTML =
+            "Please enter a valid mobile number starting with 6–9.";
+          isValid = false;
+        }
+
+        //dob
+        let dobRegex = /^\d{4}-\d{2}-\d{2}$/;
+        if (dobValue.trim() === "") {
+          dobError.innerHTML = "DOB is required.";
+          isValid = false;
+        } else if (!dobRegex.test(dobValue)) {
+          dobError.innerHTML = "Please enter DOB in YYYY-MM-DD format.";
+          isValid = false;
+        }
+        //address
+        let addressRegex = /^[A-Za-z0-9\s,.\-\/]{5,100}$/;
+        if (addressValue.trim() === "") {
+          addressError.innerHTML = "Address is required.";
+          isValid = false;
+        } else if (!addressRegex.test(addressValue)) {
+          addressError.innerHTML = "Please enter a valid address.";
+          isValid = false;
+        }
+
+        //country
+        let countryRegex = /^[A-Za-z\s]{2,40}$/;
+
+        if (countryValue.trim() === "") {
+          countryError.innerHTML = "Country is required.";
+          isValid = false;
+        } else if (!countryRegex.test(countryValue)) {
+          countryError.innerHTML = "Please enter a valid country name.";
+          isValid = false;
+        }
+
+        //postalRegex
+        let postalRegex = /^[1-9][0-9]{5}$/;
+        if (pcodeValue.trim() === "") {
+          pcodeError.innerHTML = "Postal code is required.";
+          isValid = false;
+        } else if (!postalRegex.test(pcodeValue)) {
+          pcodeError.innerHTML = "Please enter a valid postal code.";
+          isValid = false;
+        }
+
+        //
         let obj = {
           name: nameValue,
           email: emailValue,
@@ -176,8 +281,10 @@
           pcode: pcodeValue,
         };
 
-        dataArr.push(obj);
-        showData();
+        if (isValid) {
+          dataArr.push(obj);
+          showData();
+        }
       };
     </script>
   </body>

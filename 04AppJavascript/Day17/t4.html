@@ -36,7 +36,7 @@
           class="col-sm-4 p-3 py-5 mx-auto login text-light rounded-4 border border-2 border-light"
         >
           <h2 class="text-center mb-4">Login</h2>
-          <div class="input-group flex-nowrap">
+          <div class="input-group flex-nowrap mb-1">
             <input
               id="email"
               type="email"
@@ -47,6 +47,7 @@
               ><i class="fa-solid fa-message"></i
             ></span>
           </div>
+          <span id="emailError" class="text-danger ms-2"></span>
           <br />
           <div class="input-group flex-nowrap">
             <input
@@ -59,6 +60,7 @@
               ><i class="fa-solid fa-lock"></i
             ></span>
           </div>
+          <span id="passwordError" class="text-danger ms-2"></span>
           <div class="main">
             <div class="sub">
               <div class="form-check">
@@ -128,13 +130,54 @@
         let emailValue = document.querySelector("#email").value;
         let passwordValue = document.querySelector("#password").value;
 
+        //
+        emailError.innerHTML = "";
+        passwordError.innerHTML = "";
+
+        let isValid = true;
+        // EMAIL VALIDATION
+        let emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if (emailValue.trim() === "") {
+          emailError.innerHTML = "Email is required.";
+          isValid = false;
+        } else if (emailValue.length < 5) {
+          emailError.innerHTML = "Email must be at least 5 characters.";
+          isValid = false;
+        } else if (emailValue.length > 40) {
+          emailError.innerHTML = "Email must not exceed 40 characters.";
+          isValid = false;
+        } else if (!emailRegex.test(emailValue)) {
+          emailError.innerHTML = "Please enter a valid email address.";
+          isValid = false;
+        }
+        // PASSWORD VALIDATION
+        let passwordRegex =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{8,15}$/;
+
+        if (passwordValue.trim() === "") {
+          passwordError.innerHTML = "Password is required.";
+          isValid = false;
+        } else if (passwordValue.length < 8) {
+          passwordError.innerHTML = "Password must be at least 8 characters.";
+          isValid = false;
+        } else if (passwordValue.length > 15) {
+          passwordError.innerHTML = "Password must not exceed 15 characters.";
+          isValid = false;
+        } else if (!passwordRegex.test(passwordValue)) {
+          passwordError.innerHTML =
+            "Password must include uppercase, lowercase, number and special character.";
+          isValid = false;
+        }
+        //
         const obj = {
           email: emailValue,
           password: passwordValue,
         };
 
-        arrData.push(obj);
-        showData();
+        if (isValid) {
+          arrData.push(obj);
+          showData();
+        }
       };
     </script>
   </body>

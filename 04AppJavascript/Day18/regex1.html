@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Regex in Javascript</h1>
+    <script>
+      //start
+      // let regExp = /^A/;
+      // let result = regExp.test("Abhinav");  => true
+      // let result = regExp.test("navin");  //=> false
+      // console.log(result);
+
+      //End
+      //   let regExp = /d$/;
+      //   // let result = regExp.test("govind");  => true
+      //   let result = regExp.test("govin"); //=> false
+      //   console.log(result);
+
+      //Start and End
+      //   let regExp = /^HelloW$/;
+      //   // let result = regExp.test("HelloW");  => true
+      //   let result = regExp.test("HelloWamllkW"); //=> false
+      //   console.log(result);
+
+      //character classes
+      // let result = /[^a-z]/.test("A");
+      //let result = /[^A-Z]/.test("A");
+      //let result = /[^0-9]/.test("A");
+      //let result = /[a-zA-Z0-9]/.test("A");
+      //let result = /[^a-zA-Z0-9]/.test("A");
+      // let result = /[^a-zA-Z0-9]/.test("$");
+      //let result = /[@]/.test("@");
+
+      // let result = / \d/.test("nmdaqk"); //false
+      //let result = / \D/.test("2342454"); //false
+      // let result = /\w/.test("23sdcs"); //true
+      //let result = /\W/.test("23sdcs"); //false
+      //let result = /\n/.test(" "c  );
+      let result = /\N/.test(`
+       
+       `);
+      console.log(result);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-4 mx-auto bg-light mt-5 p-4 border border-2 border-dark rounded-3 shadow-lg"
+        >
+          <h2 class="text-center mb-4 text-danger">
+            Form <span class="text-dark">Validation</span>
+            <i class="fa-solid fa-user fa-bounce"></i>
+          </h2>
+          <div class="input-group flex-nowrap mb-1">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-user"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter Your Name"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <span class="text-danger" id="nameError"> </span>
+          <br />
+          <div class="input-group flex-nowrap mb-1">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <span class="text-danger" id="emailError"></span>
+          <br />
+          <div class="input-group flex-nowrap mb-1">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-unlock"></i
+            ></span>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Enter Your Password"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <span class="text-danger" id="passwordError"></span>
+          <br />
+          <div class="input-group flex-nowrap mb-1">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-phone"></i
+            ></span>
+            <input
+              type="number"
+              id="mobile"
+              class="form-control"
+              placeholder="Enter Your Mobile"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <span class="text-danger d-block" id="mobileError"></span>
+          <br />
+          <!-- <button
+            onclick="demo()"
+            class="btn btn-warning text-light form-control"
+          >
+            Submit
+          </button> -->
+          <input
+            onclick="demo()"
+            type="button```````````````````````````````````````````````````````````````"
+            value="Submit"
+            class="form-control bg-warning"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      const demo = () => {
+        // INPUT Fields
+        let nameRef = document.querySelector("#name");
+        let emailRef = document.querySelector("#email");
+        let passwordRef = document.querySelector("#password");
+        let mobileRef = document.querySelector("#mobile");
+
+        // ERR Fields
+        let nameError = document.querySelector("#nameError");
+        let emailError = document.querySelector("#emailError");
+        let passwordError = document.querySelector("#passwordError");
+        let mobileError = document.querySelector("#mobileError");
+
+        // Reset Error Msg
+        nameError.innerHTML = "";
+        emailError.innerHTML = "";
+        passwordError.innerHTML = "";
+        mobileError.innerHTML = "";
+
+        let isValid = true;
+        // NAME VALIDATION
+        let nameRegex = /^[A-Za-z ]{2,16}$/;
+        if (nameRef.value.trim() === "") {
+          nameError.innerHTML = "Name is required.";
+          isValid = false;
+        } else if (!nameRegex.test(nameRef.value)) {
+          nameError.innerHTML = "Name should contain only alphabets.";
+          isValid = false;
+        }
+        // EMAIL VALIDATION
+        let emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if (emailRef.value.trim() === "") {
+          emailError.innerHTML = "Email is required.";
+          isValid = false;
+        } else if (emailRef.value.length < 5) {
+          emailError.innerHTML = "Email must be at least 5 characters.";
+          isValid = false;
+        } else if (emailRef.value.length > 40) {
+          emailError.innerHTML = "Email must not exceed 40 characters.";
+          isValid = false;
+        } else if (!emailRegex.test(emailRef.value)) {
+          emailError.innerHTML = "Please enter a valid email address.";
+          isValid = false;
+        }
+        // PASSWORD VALIDATION
+        let passwordRegex =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{8,15}$/;
+
+        if (passwordRef.value.trim() === "") {
+          passwordError.innerHTML = "Password is required.";
+          isValid = false;
+        } else if (passwordRef.value.length < 8) {
+          passwordError.innerHTML = "Password must be at least 8 characters.";
+          isValid = false;
+        } else if (passwordRef.value.length > 15) {
+          passwordError.innerHTML = "Password must not exceed 15 characters.";
+          isValid = false;
+        } else if (!passwordRegex.test(passwordRef.value)) {
+          passwordError.innerHTML =
+            "Password must include uppercase, lowercase, number and special character.";
+          isValid = false;
+        }
+        // MOBILE VALIDATION
+        let mobileRegex = /^[6-9]\d{9}$/;
+
+        if (mobileRef.value.trim() === "") {
+          mobileError.innerHTML = "Mobile number is required.";
+          isValid = false;
+        } else if (mobileRef.value.length !== 10) {
+          mobileError.innerHTML = "Mobile number must be exactly 10 digits.";
+          isValid = false;
+        } else if (!mobileRegex.test(mobileRef.value)) {
+          mobileError.innerHTML =
+            "Please enter a valid mobile number starting with 6–9.";
+          isValid = false;
+        }
+        // SUBMIT Form
+        if (isValid) {
+          alert("Form submitted successfully!");
+        }
+      };
+    </script>
+  </body>
+</html>

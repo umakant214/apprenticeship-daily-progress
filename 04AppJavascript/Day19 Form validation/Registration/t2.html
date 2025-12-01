@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div
+          class="col-sm-6 mx-auto bg-light p-4 rounded-3 shadow-lg"
+          style="border: 1px solid lightgray !important"
+        >
+          <h3 class="">New Student</h3>
+          <hr />
+          <div class="row">
+            <!-- Country Name -->
+            <div class="col-6 mb-2">
+              <label for="countryName" class="form-label fw-medium">
+                Country Name <span class="text-danger fw-bold fs-5">*</span>
+              </label>
+              <input
+                type="text"
+                id="countryName"
+                class="form-control bg-light mb-2"
+                placeholder="Country Name"
+              />
+              <span id="ErrorCountry" class="text-danger"></span>
+            </div>
+
+            <!-- Time -->
+            <div class="col-6 mb-2">
+              <label for="time" class="form-label fw-medium">
+                Time <span class="text-danger fw-bold fs-5">*</span>
+              </label>
+              <input
+                type="time"
+                id="time"
+                class="form-control bg-light mb-2"
+                placeholder="Time"
+              />
+              <span id="errorTime" class="text-danger"></span>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-6 mb-2">
+              <label for="socialMedia" class="form-label fw-medium">
+                Social Media Username
+                <span class="text-danger fw-bold fs-5">*</span>
+              </label>
+              <input
+                type="text"
+                id="socialMedia"
+                class="form-control bg-light mb-2"
+                placeholder="Username"
+              />
+              <span id="ErrorSocialMedia" class="text-danger"></span>
+            </div>
+
+            <!-- Hex Code -->
+            <div class="col-6 mb-4">
+              <label for="colorCode" class="form-label fw-medium">
+                Hex Color Code <span class="text-danger fw-bold fs-5">*</span>
+              </label>
+              <input
+                type="text"
+                id="colorCode"
+                class="form-control bg-light mb-2"
+                placeholder="#AABBCC"
+              />
+              <span id="ErrorColorCode" class="text-danger"></span>
+            </div>
+
+            <div class="col-6">
+              <button class="btn btn-secondary rounded-5">
+                Total Amount : 0
+              </button>
+            </div>
+
+            <div class="col-6">
+              <button
+                onclick="register()"
+                class="btn rounded-5 text-light"
+                style="margin-left: 48%; background-color: orangered"
+              >
+                Register & Pay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const register = () => {
+        // Input fields
+        let countryRef = document.querySelector("#countryName");
+        let timeRef = document.querySelector("#time");
+        let socialMediaRef = document.querySelector("#socialMedia");
+        let colorCodeRef = document.querySelector("#colorCode");
+
+        // Error msg
+        let ErrorCountry = document.querySelector("#ErrorCountry");
+        let errorTime = document.querySelector("#errorTime");
+        let ErrorSocialMedia = document.querySelector("#ErrorSocialMedia");
+        let ErrorColorCode = document.querySelector("#ErrorColorCode");
+
+        // reset errors
+        ErrorCountry.innerHTML = "";
+        errorTime.innerHTML = "";
+        ErrorSocialMedia.innerHTML = "";
+        ErrorColorCode.innerHTML = "";
+
+        let isValid = true;
+
+        // Country Validation
+        let CountryRegex = /^[A-Za-z ]+(?:[ -][A-Za-z]+)*$/;
+        if (countryRef.value.trim() === "") {
+          ErrorCountry.innerHTML = "Required field";
+          isValid = false;
+        } else if (!CountryRegex.test(countryRef.value.trim())) {
+          ErrorCountry.innerHTML =
+            "Country name should contain only alphabets.";
+          isValid = false;
+        }
+
+        // Time Validation
+        let timeRegex = /^([01]\d|2[0-3]):[0-5]\d$/;
+        if (timeRef.value.trim() === "") {
+          errorTime.innerHTML = "Required field";
+          isValid = false;
+        } else if (!timeRegex.test(timeRef.value.trim())) {
+          errorTime.innerHTML = "Invalid time format.";
+          isValid = false;
+        }
+
+        // Social Media Username
+        let SocialMediaRegex = /^[a-zA-Z0-9._]{1,30}$/;
+        if (socialMediaRef.value.trim() === "") {
+          ErrorSocialMedia.innerHTML = "Required field";
+          isValid = false;
+        } else if (!SocialMediaRegex.test(socialMediaRef.value.trim())) {
+          ErrorSocialMedia.innerHTML =
+            "Username can contain letters, numbers, dot, underscore.";
+          isValid = false;
+        }
+
+        // Hex Color Code
+        let hexRegex = /^#[A-Fa-f0-9]{6}$/;
+        if (colorCodeRef.value.trim() === "") {
+          ErrorColorCode.innerHTML = "Required field";
+          isValid = false;
+        } else if (!hexRegex.test(colorCodeRef.value.trim())) {
+          ErrorColorCode.innerHTML =
+            "Color code must start with # and have exactly 6 digits.";
+          isValid = false;
+        }
+      };
+    </script>
+  </body>
+</html>

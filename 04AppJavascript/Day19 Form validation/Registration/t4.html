@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div
+          class="col-sm-6 mx-auto bg-light p-4 rounded-3 shadow-lg"
+          style="border: 1px solid lightgray !important"
+        >
+          <h3 class="">Registration Details</h3>
+          <hr class="thin-" />
+          <div class="row">
+            <div class="col-6 mb-2">
+              <label for="inputname" class="form-label fw-medium"
+                >PAN Card <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="panCard"
+                class="form-control bg-light mb-2"
+                placeholder="PAN Card"
+              />
+              <span id="ErrorPanCard" class="text-danger"></span>
+            </div>
+            <div class="col-6 mb-2">
+              <label for="inputname" class="form-label fw-medium"
+                >Aadhaar Number
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="number"
+                id="adhaarNumber"
+                class="form-control bg-light mb-2"
+                placeholder="Aadhaar Number"
+              />
+              <span id="ErrorAdharNumber" class="text-danger"></span>
+            </div>
+            <div class="col-6 mb-2">
+              <label for="inputname" class="form-label fw-medium"
+                >Pincode <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="pinCode"
+                class="form-control bg-light mb-2"
+                placeholder="Pincode"
+              />
+              <span id="ErrorPincode" class="text-danger"></span>
+            </div>
+            <div class="col-6 mb-4">
+              <label for="inputname" class="form-label fw-medium"
+                >Portfolio Website
+                <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="portfolio"
+                class="form-control bg-light mb-2"
+                placeholder="Portfolio Website"
+              />
+              <span id="ErrorPortfolio" class="text-danger"></span>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-secondary rounded-5">
+                Total Amount : 0
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                onclick="register()"
+                class="btn btn text-light rounded-5"
+                style="margin-left: 48%; background-color: orangered"
+              >
+                Register & Pay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      const register = () => {
+        // Input fields
+        let panCardRef = document.querySelector("#panCard");
+        let adhaarNumberRef = document.querySelector("#adhaarNumber");
+        let pinCodeRef = document.querySelector("#pinCode");
+        let portfolioRef = document.querySelector("#portfolio");
+
+        // Error spans
+        let ErrorPanCard = document.querySelector("#ErrorPanCard");
+        let ErrorAdharNumber = document.querySelector("#ErrorAdharNumber");
+        let ErrorPincode = document.querySelector("#ErrorPincode");
+        let ErrorPortfolio = document.querySelector("#ErrorPortfolio");
+
+        //reset error
+        ErrorPanCard.innerHTML = "";
+        ErrorAdharNumber.innerHTML = "";
+        ErrorPincode.innerHTML = "";
+        ErrorPortfolio.innerHTML = "";
+
+        let isValid = true;
+
+        //panCard
+        //Format: ABCDE1234F
+        //5letters
+        //4 digits
+        //1 letter
+
+        let panCardRegex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+
+        if (panCardRef.value.trim() === "") {
+          ErrorPanCard.innerHTML = "Required fields";
+          isValid = false;
+        } else if (!panCardRegex.test(panCardRef.value)) {
+          ErrorPanCard.innerHTML =
+            "Invalid PanCard Format use this format ABCDE1234F";
+          isValid = false;
+        }
+
+        //AadharCard
+
+        //Aadhaar has 12 digits and never starts with 0 or 1.
+        // Valid example:
+        // 2345 6789 1234
+        //567812341234
+        let aadhaarRegex = /^[2-9][0-9]{11}$/;
+        if (adhaarNumberRef.value.trim() === "") {
+          ErrorAdharNumber.innerHTML = "Required fields";
+          isValid = false;
+        } else if (!aadhaarRegex.test(adhaarNumberRef.value)) {
+          ErrorAdharNumber.innerHTML = "Invalid Aadhaar number ";
+          isValid = false;
+        }
+
+        //pincode
+
+        //Indian PIN codes are 6 digits and cannot start with 0.
+        let pincodeRegex = /^[1-9][0-9]{5}$/;
+        if (pinCodeRef.value.trim() === "") {
+          ErrorPincode.innerHTML = "Required fields";
+          isValid = false;
+        } else if (!pincodeRegex.test(pinCodeRef.value)) {
+          ErrorPincode.innerHTML =
+            "Invalid Pin Code Format like: PIN codes are 6 digits and cannot start with 0";
+          isValid = false;
+        }
+
+        //portfolio
+        let portfolioRegex =
+          /^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[A-Za-z]{2,}(\/.*)?$/;
+
+        if (portfolioRef.value.trim() === "") {
+          ErrorPortfolio.innerHTML = "Required fields";
+          isValid = false;
+        } else if (!portfolioRegex.test(portfolioRef.value)) {
+          ErrorPortfolio.innerHTML = "Invalid portfolio";
+          isValid = false;
+        }
+
+        // SUBMIT Form
+        if (isValid) {
+          alert("Form submitted successfully!");
+        }
+      };
+    </script>
+  </body>
+</html>

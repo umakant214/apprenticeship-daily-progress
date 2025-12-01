@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-1">
+        <div
+          class="col-sm-5 mx-auto bg-light p-4 rounded-3 shadow-lg"
+          style="border: 1px solid lightgray !important"
+        >
+          <label for="inputname" class="form-label fw-medium"
+            >Product Name <span class="text-danger fw-bold fs-5">*</span></label
+          >
+          <input
+            type="text"
+            id="productName"
+            class="form-control bg-light mb-1"
+            placeholder="Type Here"
+          />
+
+          <span id="productNameError" class="text-danger ms-2"></span> <br />
+
+          <label for="inputname" class="form-label fw-medium"
+            >Product Description
+            <span class="text-danger fw-bold fs-5">*</span></label
+          >
+          <input
+            type="text"
+            id="productDescription"
+            class="form-control bg-light mb-1"
+            placeholder="Type Here"
+          />
+          <span id="productDescriptionError" class="text-danger ms-2"></span>
+          <br />
+
+          <label for="inputname" class="form-label fw-medium"
+            >Category <span class="text-danger fw-bold fs-5">*</span></label
+          >
+          <br />
+          <select class="form-control text-dark bg-light" id="category">
+            <option>select Category</option>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+          <span id="categoryError" class="text-danger ms-2"></span> <br />
+          <label for="inputname" class="form-label fw-medium"
+            >Product Price
+            <span class="text-danger fw-bold fs-5">*</span></label
+          >
+          <input
+            type="number"
+            id="productPrice"
+            class="form-control bg-light mb-1"
+            placeholder="Type Here"
+          />
+          <span id="productPriceError" class="text-danger ms-2"></span> <br />
+          <label for="inputname" class="form-label fw-medium"
+            >Offer Price <span class="text-danger fw-bold fs-5">*</span></label
+          >
+          <input
+            type="text"
+            id="offerPrice"
+            class="form-control bg-light mb-1"
+            placeholder="Type Here"
+          />
+          <span id="offerPriceError" class="text-danger ms-2"></span> <br />
+
+          <label for="inputname" class="form-label fw-medium"
+            >Stock <span class="text-danger fw-bold fs-5">*</span></label
+          >
+          <input
+            type="text"
+            id="stock"
+            class="form-control bg-light mb-1"
+            placeholder="Type Here"
+          />
+          <span id="stockError" class="text-danger ms-2"></span> <br />
+          <button onclick="register()" class="btn btn-success px-5">ADD</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      const register = () => {
+        //input fields
+        let productNameRef = document.querySelector("#productName");
+        let productDescriptionRef = document.querySelector(
+          "#productDescription"
+        );
+        let categoryRef = document.querySelector("#category");
+        let productPriceRef = document.querySelector("#productPrice");
+        let offerPriceRef = document.querySelector("#offerPrice");
+        let stockRef = document.querySelector("#stock");
+        //error
+        let productNameError = document.querySelector("#productNameError");
+        let productDescriptionError = document.querySelector(
+          "#productDescriptionError"
+        );
+        let categoryError = document.querySelector("#categoryError");
+        let productPriceError = document.querySelector("#productPriceError");
+        let offerPriceError = document.querySelector("#offerPriceError");
+        let stockError = document.querySelector("#stockError");
+
+        //reset error
+        productNameError.innerHTML = "";
+        productDescriptionError.innerHTML = "";
+        categoryError.innerHTML = "";
+        productPriceError.innerHTML = "";
+        offerPriceError.innerHTML = "";
+        stockError.innerHTML = "";
+        let isValid = true;
+
+        //production name
+        let productNameRegex = /^[A-Za-z ]{2,50}$/;
+        if (productNameRef.value.trim() === "") {
+          productNameError.innerHTML = "Required fields !";
+          isValid = false;
+        } else if (!productNameRef.value.test(productNameRegex)) {
+          productNameError.innerHTML = "Product name contains only character";
+          isValid = false;
+        }
+
+        //product description
+        // Only alphabets + numbers + spaces
+        // Length: 10–300 characters
+        let productDescRegex = /^[A-Za-z0-9 ]{10,300}$/;
+        if (productDescriptionRef.value.trim() === "") {
+          productDescriptionError.innerHTML = "Required fields !";
+          isValid = false;
+        } else if (!productDescriptionRef.value.test(productDescRegex)) {
+          productDescriptionError.innerHTML =
+            "Product name contains only character";
+          isValid = false;
+        }
+
+        // categoryRef
+        if (categoryRef.value === "") {
+          categoryError.innerHTML = "Please select one category";
+          isValid = false;
+        }
+
+        //productPrice
+        let priceRegex = /^[0-9]+$/;
+        if (productPriceRef.value.trim() === "") {
+          productPriceError.innerHTML = "Required fields !";
+          isValid = false;
+        } else if (!productPriceRef.value.test(priceRegex)) {
+          productPriceError.innerHTML = "Product price should be number";
+          isValid = false;
+        }
+
+        //offerPrice
+        let offerPriceRegex = /^[0-9]+$/;
+        if (offerPriceRef.value.trim() === "") {
+          offerPriceError.innerHTML = "Required fields !";
+          isValid = false;
+        } else if (!offerPriceRef.value.test(offerPriceRegex)) {
+          offerPriceError.innerHTML = "Product price should be number";
+          isValid = false;
+        }
+
+        //stock
+        let stockRegex = /^[0-9]+$/;
+        if (stockRef.value.trim() === "") {
+          stockError.innerHTML = "Required fields !";
+          isValid = false;
+        } else if (!stockRef.value.test(stockRegex)) {
+          stockError.innerHTML = " stock should be number";
+          isValid = false;
+        }
+
+        // SUBMIT Form
+        if (isValid) {
+          alert("Form submitted successfully!");
+        }
+      };
+    </script>
+  </body>
+</html>

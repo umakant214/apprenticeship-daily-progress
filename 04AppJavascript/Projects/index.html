@@ -166,13 +166,13 @@
         showTableData();
       };
 
+      //delete data
       const deleteData = (x) => {
         dataArr.splice(x, 1);
         showTableData();
       };
       const editData = (y) => {
         localStorage.setItem("editId", JSON.stringify(y));
-        const id = JSON.parse(localStorage.getItem(editData));
       };
       const update = () => {
         let id = JSON.parse(localStorage.getItem("editId"));

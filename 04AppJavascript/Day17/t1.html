@@ -10,7 +10,7 @@
 
     <style>
       .bg-color {
-        background-color: #6c95ed;
+        background-color: #6c95ed !important;
       }
     </style>
   </head>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-sm-6 rounded-4 bg-light py-5 p-3">
               <h1 class="text-center mb-4">Login</h1>
-              <div class="input-group flex-nowrap">
+              <div class="input-group flex-nowrap mb-2">
                 <input
                   id="name"
                   type="text"
@@ -43,8 +43,9 @@
                   ><i class="fa-solid fa-user"></i
                 ></span>
               </div>
+              <span id="nameError" class="text-danger ms-2"></span>
               <br />
-              <div class="input-group flex-nowrap">
+              <div class="input-group flex-nowrap mt-1 mb-2">
                 <input
                   id="password"
                   type="password"
@@ -55,12 +56,13 @@
                   ><i class="fa-solid fa-lock"></i
                 ></span>
               </div>
+              <span id="passwordError" class="text-danger ms-2"></span>
               <br />
               <p class="text-center">Forget password?</p>
               <div class="d-flex justify-content-center">
                 <button
                   onclick="register()"
-                  class="btn btn bg-color text-center form-control"
+                  class="btn btn bg-color text-center text-light form-control"
                 >
                   Login
                 </button>
@@ -173,6 +175,49 @@
       };
 
       const register = () => {
+        //
+        // INPUT Fields
+        let nameRef = document.querySelector("#name");
+        let passwordRef = document.querySelector("#password");
+
+        //error fields
+        let nameError = document.querySelector("#nameError");
+        let passwordError = document.querySelector("#passwordError");
+
+        //reset
+        nameError.innerHTML = "";
+        passwordError.innerHTML = "";
+
+        let isValid = true;
+        // NAME VALIDATION
+        let nameRegex = /^[A-Za-z ]{2,16}$/;
+        if (nameRef.value.trim() === "") {
+          nameError.innerHTML = "Name is required.";
+          isValid = false;
+        } else if (!nameRegex.test(nameRef.value)) {
+          nameError.innerHTML = "Name should contain only alphabets.";
+          isValid = false;
+        }
+
+        // PASSWORD VALIDATION
+        let passwordRegex =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{8,15}$/;
+
+        if (passwordRef.value.trim() === "") {
+          passwordError.innerHTML = "Password is required.";
+          isValid = false;
+        } else if (passwordRef.value.length < 8) {
+          passwordError.innerHTML = "Password must be at least 8 characters.";
+          isValid = false;
+        } else if (passwordRef.value.length > 15) {
+          passwordError.innerHTML = "Password must not exceed 15 characters.";
+          isValid = false;
+        } else if (!passwordRegex.test(passwordRef.value)) {
+          passwordError.innerHTML =
+            "Password must include uppercase, lowercase, number and special character.";
+          isValid = false;
+        }
+        //
         let nameValue = document.querySelector("#name").value;
         let passwordValue = document.querySelector("#password").value;
 
@@ -180,8 +225,10 @@
           name: nameValue,
           password: passwordValue,
         };
-        dataArr.push(obj);
-        showTableData();
+        if (isValid) {
+          dataArr.push(obj);
+          showTableData();
+        }
       };
       const deleteData = (x) => {
         dataArr.splice(x, 1);

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div
+          class="col-sm-7 mx-auto bg-light p-4 rounded-3 shadow-lg"
+          style="border: 1px solid lightgray !important"
+        >
+          <h4 class="">You are applying for Techpile Winter Training 2025</h4>
+          <hr class="thin-hr" />
+          <div class="row">
+            <div class="col-6">
+              <label for="inputname" class="form-label fw-medium"
+                >Name <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                class="form-control bg-light mb-2"
+                placeholder="Full Name"
+              />
+
+              <span id="nameError" class="text-danger ms-1"></span>
+            </div>
+            <div class="col-6">
+              <label for="inputname" class="form-label fw-medium"
+                >EmailId <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                class="form-control bg-light mb-2"
+                placeholder="EmailId"
+              />
+
+              <span id="emailError" class="text-danger ms-1"></span>
+            </div>
+            <div class="col-6">
+              <label for="inputname" class="form-label fw-medium"
+                >MobileNo <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <input
+                type="text"
+                id="mobile"
+                class="form-control bg-light mb-2"
+                placeholder="WhatsApp Number"
+              />
+
+              <span id="mobileError" class="text-danger ms-1"></span>
+            </div>
+
+            <div class="col-6 mb-4">
+              <label for="inputname" class="form-label fw-medium"
+                >Gender <span class="text-danger fw-bold fs-5">*</span></label
+              >
+              <select class="form-control mb-2 bg-light" id="gender">
+                <option>---select gender---</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+
+              <span id="genderError" class="text-danger ms-1"></span>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-6">
+              <button
+                onclick="register()"
+                class="btn btn text-light rounded-5"
+                style="margin-left: 59%; background-color: orangered"
+              >
+                Register Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      const register = () => {
+        // INPUT Fields
+        let nameRef = document.querySelector("#name");
+        let emailRef = document.querySelector("#email");
+        let mobileRef = document.querySelector("#mobile");
+        let genderRef = document.querySelector("#gender");
+        // ERR Fields
+        let nameError = document.querySelector("#nameError");
+        let emailError = document.querySelector("#emailError");
+        let mobileError = document.querySelector("#mobileError");
+        let genderError = document.querySelector("#genderError");
+        // Reset Error Msg
+        nameError.innerHTML = "";
+        emailError.innerHTML = "";
+        mobileError.innerHTML = "";
+        genderError.innerHTML = "";
+        let isValid = true;
+        // NAME VALIDATION
+        let nameRegex = /^[A-Za-z ]{2,16}$/;
+        if (nameRef.value.trim() === "") {
+          nameError.innerHTML = "Name is required.";
+          isValid = false;
+        } else if (!nameRegex.test(nameRef.value)) {
+          nameError.innerHTML = "Name should contain only alphabets.";
+          isValid = false;
+        }
+        // EMAIL VALIDATION
+        let emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if (emailRef.value.trim() === "") {
+          emailError.innerHTML = "Email is required.";
+          isValid = false;
+        } else if (emailRef.value.length < 5) {
+          emailError.innerHTML = "Email must be at least 5 characters.";
+          isValid = false;
+        } else if (emailRef.value.length > 40) {
+          emailError.innerHTML = "Email must not exceed 40 characters.";
+          isValid = false;
+        } else if (!emailRegex.test(emailRef.value)) {
+          emailError.innerHTML = "Please enter a valid email address.";
+          isValid = false;
+        }
+        // MOBILE VALIDATION
+        let mobileRegex = /^[6-9]\d{9}$/;
+
+        if (mobileRef.value.trim() === "") {
+          mobileError.innerHTML = "Mobile number is required.";
+          isValid = false;
+        } else if (mobileRef.value.length !== 10) {
+          mobileError.innerHTML = "Mobile number must be exactly 10 digits.";
+          isValid = false;
+        } else if (!mobileRegex.test(mobileRef.value)) {
+          mobileError.innerHTML =
+            "Please enter a valid mobile number starting with 6–9.";
+          isValid = false;
+        }
+        //gender
+        if (genderRef.value === "---select gender---") {
+          genderError.innerHTML = "Gender is required.";
+          isValid = false;
+        }
+      };
+    </script>
+  </body>
+</html>
