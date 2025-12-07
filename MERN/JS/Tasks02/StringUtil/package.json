@@ -1,0 +1,16 @@
+{
+  "name": "stringutil",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev",
+    "dev": "nodemon index.js"
+  },
+  "author": "Umakant yadav",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
