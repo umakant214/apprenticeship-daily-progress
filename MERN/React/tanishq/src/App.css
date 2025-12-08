@@ -1,0 +1,30 @@
+ :root {
+   --pcolor: #f6eeee;
+   --mcolor: #832729;
+ }
+
+ .text-color {
+   color: #832729;
+ }
+
+ .a img {
+   height: 330px;
+ }
+
+ h2:hover {
+   text-decoration: underline;
+   color: #832729;
+ }
+
+ .menu ul li:hover {
+   color: #832729;
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 18px;
+ }
+
+ @media screen and (min-width:0px) and (max-width:557px) {
+   .dis {
+     display: none;
+   }
+ }
