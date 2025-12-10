@@ -1,0 +1,40 @@
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+:root {
+    --pink: #FF8473;
+    --lightpink: #F5AC9F;
+    --black: #000000;
+}
+
+.bg1-color {
+    background: #FF8473;
+}
+
+.bg2-color {
+    background: #F5AC9F;
+}
+
+.text-color {
+    color: #FF8473;
+    border-color: #ff5733;
+}
+
+.text:focus {
+    border: 1px solid #ff5733 !important;
+}
+
+.navbar .nav-link:hover {
+    color: #ff5733 !important;
+    font-size: 17px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
+
+.cimg {
+    height: 50%;
+    object-fit: cover;
+}

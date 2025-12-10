@@ -1,0 +1,9 @@
+:root{
+    --bgcolor:#0d0e10;
+    --lightgray:#222831;
+}
+.bgcolor{
+    background-color: var(--lightgray);
+}
+
+
