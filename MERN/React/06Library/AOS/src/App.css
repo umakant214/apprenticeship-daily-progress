@@ -1,0 +1,8 @@
+.box {
+  min-height: 200px;
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
