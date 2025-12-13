@@ -1,0 +1,94 @@
+:root {
+  --bcolor: #407bff;
+}
+body {
+  font-family: "Nunito", sans-serif !important;
+  line-height: 1.6 !important;
+  background: #ffffff !important;
+  overflow-x: hidden !important;
+  font-size: 16px !important;
+}
+
+.bgcolor {
+  background-color: var(--bcolor) !important;
+}
+.text-color {
+  color: var(--bcolor) !important;
+}
+.logo {
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  margin-right: 100px !important;
+  color: #000000 !important;
+}
+ul li {
+  font-size: 14.5px;
+}
+.nav-link {
+  color: #939393 !important;
+}
+.nav-link:hover {
+  color: #000000 !important;
+}
+ul {
+  margin-left: 0px;
+}
+
+.heading {
+  font-size: 70px;
+  font-weight: 600;
+}
+.grow {
+  font-weight: 500;
+  line-height: 1px;
+}
+.icon {
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 80%;
+  color: white;
+}
+.icon1 {
+  background-color: #6fe7dd;
+}
+.icon2 {
+  background-color: #ffc93c;
+}
+.icon3 {
+  background-color: #f73859;
+}
+.icon4 {
+  background-color: #407bff;
+}
+.free {
+  font-size: 32px !important;
+  font-weight: 500;
+}
+
+button {
+  padding: 6px !important;
+  width: 130px;
+  border-radius: 100px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+}
+.paracolor {
+  color: #939393 !important;
+}
+.mp {
+  margin: 0px;
+  padding: 0px;
+}
