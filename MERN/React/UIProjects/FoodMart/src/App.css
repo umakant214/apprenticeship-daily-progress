@@ -1,0 +1,39 @@
+:root {
+  --lightnavy: #e6f3fa;
+  --accent-color: #ffc43f;
+  --grey-color: #dbdbdb;
+  --dark-color: #222222;
+  --heading-font: "Nunito", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+.bg-color {
+  background-color: var(--lightnavy);
+}
+.natural {
+  font-family: "Garamond" !important;
+  font-size: 37px !important;
+  text-transform: capitalize !important;
+  color: var(--accent-color) !important;
+}
+.heroHeading {
+  font-family: var(--heading-font) !important;
+  color: var(--dark-color) !important;
+  font-size: 45px !important;
+  font-weight: 600;
+}
+.paraColor {
+  color: #747474 !important;
+}
+.phone {
+  background-color: #fff9eb;
+}
+.social-icon {
+  cursor: pointer;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffc93c;
+  transform: translateY(-3px);
+}

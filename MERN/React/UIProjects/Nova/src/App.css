@@ -1,0 +1,101 @@
+:root {
+  --ncolor: #b3d1fa;
+  --bcolor: #2f80ed;
+}
+.navcolor {
+  background-color: var(--ncolor) !important;
+}
+.btnbgcolor {
+  background-color: var(--bcolor) !important;
+  font-size: 18px !important;
+  padding: 10px 22px !important;
+  color: white !important;
+  border-radius: 40px 40px 40px 40px !important;
+}
+body {
+  font-family: "Heebo", sans-serif !important;
+  color: #585978 !important;
+}
+ul li {
+  font-size: 16px !important;
+  font-weight: 600;
+  color: #585978 !important;
+}
+.heroHeading {
+  font-size: 60px !important;
+  font-weight: 900;
+  font-weight: 700;
+  color: #323450;
+  font-family: "Fira Sans", sans-serif;
+}
+.heroPara {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  margin-top: 10px !important;
+  margin-bottom: 50px !important;
+}
+.smHeading {
+  font-size: 40px;
+  letter-spacing: 0.4px;
+  font-weight: 700;
+  color: #323450;
+  font-family: "Fira Sans", sans-serif;
+}
+.featuresPara {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+  color: #585978;
+}
+.Featurescard {
+  border: 0px !important;
+  border-bottom: 5px solid #323450 !important;
+  border-color: #585978 !important;
+  border-radius: 30px !important;
+}
+.card-title {
+  text-align: center;
+  font-weight: 600 !important;
+  margin-bottom: 25px !important;
+  color: #323450 !important;
+  font-size: 24px !important;
+  font-family: "Fira Sans", sans-serif !important;
+}
+.icon {
+  height: 75px;
+  width: 75px;
+  padding: 15px;
+  border-radius: 100px;
+  background-color: var(--ncolor);
+  color: var(--bcolor);
+}
+
+.aboutbgColor {
+  background-color: #f3f3f3 !important;
+}
+.pricingBgColor {
+  background-color: #f8f9fa !important;
+}
+.dollorColor {
+  color: var(--bcolor) !important;
+}
+.plan {
+  align-items: center !important;
+}
+.input-group {
+  height: 50px !important;
+  border: 0px !important;
+}
+
+.textarea {
+  height: 100px !important;
+  resize: none !important;
+}
+.iconbgColor {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 100px;
+  background-color: var(--bcolor) !important;
+  color: white !important;
+}
