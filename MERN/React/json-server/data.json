@@ -1,0 +1,167 @@
+{
+  "user": [
+    {
+      "username": "umakant_1234",
+      "name": "aman yadav",
+      "email": "yumakant486@gmail.com",
+      "id": "9f77"
+    }
+  ],
+  "product": [
+    {
+      "id": "2821",
+      "name": "Umakant Yadav",
+      "quantity": "323",
+      "price": "3232",
+      "delivery_address": "szx",
+      "payment": "32",
+      "order": "23"
+    }
+  ],
+  "registration": [
+    {
+      "name": "aman",
+      "email": "umakantchandra180@gmail.com",
+      "mobile": "9877544321",
+      "gender": "Female",
+      "password": "AS@#34ewe",
+      "confirm_password": "AS@#34ewe",
+      "id": "7086"
+    },
+    {
+      "id": "2341",
+      "name": "Umakant Yadav",
+      "email": "yumakant486@gmail.com",
+      "mobile": "9877544321",
+      "gender": "Male",
+      "password": "12345678",
+      "confirm_password": "12345678"
+    },
+    {
+      "name": "Umakant Yadav",
+      "email": "yumakant486@gmail.com",
+      "mobile": "9877544321",
+      "gender": "Female",
+      "password": "12345678",
+      "confirm_password": "12345678",
+      "id": "03f2"
+    },
+    {
+      "name": "Umakant Yadav abhi",
+      "email": "pipac43298@bulmp3.com",
+      "mobile": "9877544321",
+      "gender": "Female",
+      "password": "AS@#34ewe",
+      "confirm_password": "AS@#34ewe",
+      "id": "bc82"
+    }
+  ],
+  "login": [
+    {
+      "email": "sehawo7067@aperiol.com",
+      "password": "umakant@#$#",
+      "id": "032f"
+    },
+    {
+      "id": "ae28",
+      "email": "umakantchandra180@gmail.com",
+      "password": "12345678@#"
+    }
+  ],
+  "stu_registration": [
+    {
+      "id": "d2c9",
+      "name": "aman",
+      "dob": "3/4/2005",
+      "percentage": "90",
+      "address": "Azamgarh uttar pradesh",
+      "mobile": "9877544321"
+    }
+  ],
+  "contact": [
+    {
+      "name": "aman#################",
+      "email": "sehawo7067@aperiol.com",
+      "mobile": "9877544321",
+      "subject": "English",
+      "message": "What are do?",
+      "id": "8c42"
+    }
+  ],
+  "job_application_form": [
+    {
+      "name": "aman#################",
+      "email": "yumakant486@gmail.com",
+      "mobile": "9877544321",
+      "experience": "2",
+      "skill": "comnici",
+      "salary": "2000000000000000",
+      "id": "6d43"
+    },
+    {
+      "id": "63b6",
+      "name": "aman",
+      "email": "yumakant486@gmail.com",
+      "mobile": "9877544321",
+      "experience": "2",
+      "skill": "Html",
+      "salary": "2000000000000"
+    }
+  ],
+  "feedback_form": [
+    {
+      "name": "Umakant Yadav",
+      "email": "yumakant486@gmail.com",
+      "rating": "9",
+      "message": "What are do?",
+      "id": "7829"
+    }
+  ],
+  "reset_password": [
+    {
+      "email": "yumakant486@gmail.com",
+      "otp": "21123",
+      "new_password": "123123123#",
+      "confirm_password": "123123123#",
+      "id": "5849"
+    }
+  ],
+  "event_registration_form": [
+    {
+      "name": "aman yadav amit",
+      "email": "yumakant486@gmail.com",
+      "mobile": "9877544321",
+      "date": "12/2/2005",
+      "attendees": "we",
+      "meal": "veg",
+      "id": "e07d"
+    },
+    {
+      "id": "84cf",
+      "name": "aman",
+      "email": "yumakant486@gmail.com",
+      "mobile": "9877544321",
+      "date": "12/2/2005",
+      "attendees": "we",
+      "meal": "veg"
+    }
+  ],
+  "college_student": [
+    {
+      "id": "addc",
+      "name": "Umakant Yadav",
+      "email": "yumakant486@gmail.com",
+      "mobile": "9877544321",
+      "password": "12345678",
+      "confirm_password": "12345678"
+    },
+    {
+      "id": "7f00",
+      "name": "Arush",
+      "email": "arush43298@bulmp3.com",
+      "mobile": "9877544321",
+      "password": "umakant@",
+      "confirm_password": "umakant@"
+    }
+  ]
+}
